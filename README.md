@@ -1,2 +1,2 @@
-startbootstrap-grayscale
-========================
+Start Bootstrap - Grayscale
+=========
