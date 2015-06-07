@@ -1,1 +1,122 @@
+<html>
+  <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<script>
+var rq = '//api.syfaro.net/server/status';
+var error = 'unknown';
+var classes = {
+	error: "fa-question",
+	false: "fa-times",
+	true: "fa-check",
+};
+var allclasses = "";
+for(i in classes) {
+	allclasses += ' '+classes[i];
+};
 
+function q(addr, cb) {
+	$.ajax({
+		url: rq,
+		type: 'GET',
+		dataType: 'json',
+		data: {ip: addr, players: true},
+	})
+	.done(function(data) {
+		console.log("success");
+		console.log(data);
+		cb(data);
+	})
+	.fail(function(data) {
+		console.log("error");
+	})
+	.always(function() {
+	});
+}
+function setclass(o, c) {
+	o.removeClass(allclasses);
+	o.addClass(classes[c]);
+	o.html('');
+}
+function settext(o, t) {
+	o.removeClass(allclasses);
+	o.html(t);
+}
+function display(data) {
+	var np = $('#numplayers'),
+		version = $('#version'),
+		online = $('#online'),
+		motd = $('#motd'),
+		updated = $('#updated'),
+        players = $('#players');
+    data.online = data.status === 'success';
+
+    settext(updated, data.last_update);
+	setclass(online, data.online);
+    if (data.online) {
+        settext(np, data.players.now);
+	    settext(version, data.version);
+	    settext(motd, data.motd);
+        if (data.players.sample) {
+            settext(players,
+                data.players.sample.map(function(v){
+                    return v.name;
+                }).join(', '));
+        } else {
+            settext(players, '');
+        }
+    } else {
+        setclass(np, error);
+        setclass(version, error);
+        setclass(motd, error);
+        setclass(players, error);
+    }
+}
+$(document).ready(function() {
+	q('mc.q1cc.net', display);
+});
+</script>
+ 
+<style type="text/css" media="screen">
+	.statusbox {
+		min-width: 5em;
+		min-height: 2em;
+		border: 1px solid #999;
+		border-radius: 1em;
+		background-color: #eee;
+		padding: 0.5em;
+		margin: 0.5em;
+	}
+	.label {
+		text-align: right;
+		float: left;
+		margin-right: 1em;
+		min-width: 8em;
+		color: #444;
+	}
+	.grey {
+		color: #666;
+	}
+</style>
+ 
+<div class="statusbox">
+	<span class="label">Online: </span>
+	<i id="online" class="fa fa-question"></i>
+	<br/>
+	<span class="label">Version: </span>
+	<i id="version" class="fa fa-question"></i>
+	<br/>
+	<span class="label">MOTD: </span>
+	<i id="motd" class="fa fa-question"></i>
+	<br/>
+	<span class="label">Players: </span>
+	<i id="numplayers" class="fa fa-question"></i>
+	<br/>
+    <span class="label">&nbsp;</span>
+    <i id="players" class="fa fa-question"></i>
+    <br>
+ 
+	<span class="label grey">Last Updated: </span>
+	<i id="updated" class="fa fa-question grey"></i>
+	<br/>
+</div>
+</html>
