@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>David Hallinan's Portfolio</title>
+    <title>David Hallinan - Web Developer</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -56,7 +56,7 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a class="page-scroll" href="#download">Projects</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -89,7 +89,8 @@
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h1> About Me! </h1>
+                <p> <img src="img/profile-pic.jpg" height="30%" width="30%"> </p>
+                <p> <img src="img/About-me.png" height="80%" width="80%"> <p>
                 Over the past 12 years, I have worked in the field of music both in front of and behind the console. This has given me the ability to connect with projects and clients from both the aspect of the performer, as well as from that of the project lead and management. I have been able to shift from the recording of strictly musical artists to the recording of music for a wide range of fields, including Television, Commercials, Film and Video Games. These include original compositions, sound design and soundtrack work, voice over work, and songwriting for other artists. Clients worked with over the years include, but are not limited to: Toyota, NASCAR, The Disney Channel, FOX, Sony Pictures, IBM, Wrigley's Gum, Comedy Central, Headquarters Music and Black Iris Music.
                 <br>
                 <br>
@@ -104,6 +105,39 @@
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
+                  <p> <img src="img/projects.png" height="80%" width="80%"> <p>
+                  <h3> Backseat DJ </h3>
+                    <p>
+                        Assumed the role of team lead in a collaborative playlist, mobile friendly, web application that allows users to vote on
+                        their friends musical tastes. Users could log in through Soundcloud and create playlists that their friends could then log
+                        votes on whether the current song should be skipped or replayed. The majority of votes was then logged and the winning
+                        action would commence. The application was built decoupled in both Rails and Sinatra using the Soundcloud API.
+                        Firebase was also utilized in order to log users votes immediately and send information back to the PostgreSQL server in
+                        the back-end.
+                        <br>
+                        <br>
+
+                        Backseat DJ was built decoupled in both Rails and Sinatra, utilizing PostgresSQL, Firebase, Javascript, Jquery, AJAX, HTML5 and CSS3. SoundCloud was used for authentication.
+                    </p>
+
+                  <br>
+                  <br>
+                  <br>
+
+                  <h3> Graff Tours SF </h3>
+                    <p>
+                        A personal project that utilized the Instagram API and Google Maps API to display graffiti and street art markers
+                        throughout the city of San Francisco. Geolocation data and hashtag data was scraped from Instagram uploads and then
+                        displayed to markers that would populate a map of San Francisco. Users could then plot out walking tours of the city with
+                        the aim of seeing the hidden art gems that they never knew existed prior. SF Graff Tours was built in Sinatra as a mobile
+                        friendly one-page web application that heavily utilized AJAX to display a plethora of data to users in a clear and concise
+                        way.
+                        <br>
+                        <br>
+
+                        Graff Tours SF was built in Sinatra as a one page application, utilizing Ruby, Javascript, Jquery, AJAX, HTML5 and CSS3. The Instagram API was used for authentication and retrieving user's photos. Google Maps API was used for all map, marker and geolocation data.
+                    </p>
+
 
                 </div>
             </div>
@@ -114,7 +148,7 @@
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-
+            <p> <img src="img/contact.png" height="80%" width="80%"> <p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
                         <a href="https://twitter.com/david_hallinan" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
@@ -122,6 +156,7 @@
                     <li>
                         <a href="https://github.com/BUMBALORD" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                     </li>
+
                 </ul>
             </div>
         </div>
