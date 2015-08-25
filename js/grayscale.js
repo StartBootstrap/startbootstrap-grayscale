@@ -34,6 +34,10 @@ $('.navbar-collapse ul li a').click(function() {
 google.maps.event.addDomListener(window, 'load', init);
 
 function init() {
+    // Forces Nav Bar to update its formatting when the page is scolled and the scroll location is remembered by the browser.
+    // Tested on Edge 20.10240.16384.0 and Chrome 44.0.2403.157 m
+    $(window).scroll();
+    
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
