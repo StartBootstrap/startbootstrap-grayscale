@@ -63,19 +63,19 @@ a {
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: @dark;
+    .navbar-toggle {
+        padding: 4.6666667px 6px;
+        font-size: 16px;
+        color: @light;
+        &:focus,
+        &:active {
+            outline: none;
+        }
+    }
     .navbar-brand {
         font-weight: 700;
         &:focus {
             outline: none;
-        }
-        .navbar-toggle {
-            padding: 4px 6px;
-            font-size: 16px;
-            color: @light;
-            &:focus,
-            &:active {
-                outline: none;
-            }
         }
     }
     a {
