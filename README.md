@@ -1,26 +1,31 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Grayscale](http://startbootstrap.com/template-overviews/grayscale/)
-
-[Grayscale](http://startbootstrap.com/template-overviews/grayscale/) is a multipurpose, one page HTML theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template features various content sections and a Google Maps section with a custom map marker.
+# [Stan_MD] - [Develop]
 
 ## Getting Started
 
-To use this template, choose one of the following options to get started:
+This template by Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
+
+Under their terms one can choose one of the following options to get started:
 * Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+* Fork the repository on GitHub
 
-## Bugs and Issues
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-grayscale/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/grayscale/).
+## Md's Version
 
-## Creator
+I first used the first option of downloading and editted it to suite my needs for a web profile.
 
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
+Later, after joining [Andela](http://www.andela.com) and understanding the importance of VC (Version Control) I forked the repo and editted it to suit me.
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+Continuous improvements will be made here, then to **staging** branch finally to **master** branch. The gh-pages will maintain the original I forked.
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+
+## MD?
+
+Yap. MD is Stan_MD in short. Get to know more about him at his [web profile](http://www.techkenyans.org/jamii/stanmd) hosted by techKenyans.
+
 
 ## Copyright and License
 
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-grayscale/blob/gh-pages/LICENSE) license.
+Yeah, 'C' word in tech: Copyright.
+
+The template's code is released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-grayscale/blob/gh-pages/LICENSE) license.
+2013-2015 Iron Summit Media Strategies, LLC.
