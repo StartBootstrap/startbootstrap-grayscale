@@ -1,5 +1,5 @@
-@import "variables.less";
-@import "mixins.less";
+@import "variables";
+@import "mixins";
 
 body {
     width: 100%;
@@ -39,14 +39,14 @@ p {
 }
 
 a {
-    color: @primary;
+    color: $primary;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     &:hover,
     &:focus {
         text-decoration: none;
-        color: darken(@primary,20%);
+        color: darken($primary,20%);
     }
 }
 
@@ -56,7 +56,7 @@ a {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid fade(white, 30%);
+    border-bottom: 1px solid rgba(white, 0.3);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: black;
@@ -85,7 +85,7 @@ a {
                 -moz-transition: background .3s ease-in-out;
                 transition: background .3s ease-in-out;
                 &:hover {
-                    color: fade(white, 80%);
+                    color: rgba(white, 0.8);
                     outline: none;
                     background-color: transparent;
                 }
@@ -98,7 +98,7 @@ a {
             &.active {
                 outline: none;
                 a {
-                    background-color: fade(white, 30%);
+                    background-color: rgba(white, 0.3);
                     &:hover {
                         color: white;
                     }
@@ -117,7 +117,7 @@ a {
         &.top-nav-collapse {
             padding: 0;
             background: black;
-            border-bottom: 1px solid fade(white, 30%);
+            border-bottom: 1px solid rgba(white, 0.3);
         }
     }
 }
@@ -176,7 +176,7 @@ a {
     &:focus {
         outline: none;
         color: white;
-        background: fade(white, 10%);
+        background: rgba(white, 0.1);
     }
     i.animated {
         -webkit-transition-property: -webkit-transform;
@@ -199,7 +199,7 @@ a {
 }
 
 @-webkit-keyframes pulse {
-    0 {
+    from {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
@@ -216,7 +216,7 @@ a {
 }
 
 @-moz-keyframes pulse {
-    0 {
+    from {
         -moz-transform: scale(1);
         transform: scale(1);
     }
@@ -280,15 +280,15 @@ a {
 }
 
 .btn-default {
-    border: 1px solid @primary;
-    color: @primary;
+    border: 1px solid $primary;
+    color: $primary;
     background-color: transparent;
     &:hover,
     &:focus {
-        border: 1px solid @primary;
+        border: 1px solid $primary;
         outline: none;
         color: black;
-        background-color: @primary;
+        background-color: $primary;
     }
 }
 
@@ -319,13 +319,13 @@ footer {
 ::-moz-selection {
     text-shadow: none;
     background: #fcfcfc;
-    background: fade(white, 20%);
+    background: rgba(white, 0.2);
 }
 
 ::selection {
     text-shadow: none;
     background: #fcfcfc;
-    background: fade(white, 20%);
+    background: rgba(white, 0.2);
 }
 
 img::selection {
@@ -337,5 +337,5 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: fade(white, 20%);
+    -webkit-tap-highlight-color: rgba(white, 0.2);
 }
