@@ -50,58 +50,40 @@ a {
     }
 }
 
-.light {
-    font-weight: 400;
-}
-
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid fade(white, 30%);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: black;
-    .navbar-toggle {
-        padding: 4px 6px;
-        font-size: 16px;
-        color: white;
-        &:focus,
-        &:active {
-            outline: none;
-        }
-    }
     .navbar-brand {
         font-weight: 700;
-        &:focus {
-            outline: none;
-        }
     }
     a {
         color: white;
     }
     .nav {
-        li {
-            a {
-                -webkit-transition: background .3s ease-in-out;
-                -moz-transition: background .3s ease-in-out;
-                transition: background .3s ease-in-out;
-                &:hover {
-                    color: fade(white, 80%);
-                    outline: none;
-                    background-color: transparent;
-                }
-                &:focus,
-                &:active {
-                    outline: none;
-                    background-color: transparent;
-                }
-            }
-            &.active {
+        a {
+            -webkit-transition: background .3s ease-in-out;
+            -moz-transition: background .3s ease-in-out;
+            transition: background .3s ease-in-out;
+            &:hover {
+                color: fade(white, 80%);
                 outline: none;
-                a {
-                    background-color: fade(white, 30%);
-                    &:hover {
-                        color: white;
-                    }
+                background-color: transparent;
+            }
+            &:focus,
+            &:active {
+                outline: none;
+                background-color: transparent;
+            }
+        }
+        &.active {
+            outline: none;
+            a {
+                background-color: fade(white, 30%);
+                &:hover {
+                    color: white;
                 }
             }
         }
@@ -115,7 +97,7 @@ a {
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
         &.top-nav-collapse {
-            padding: 0;
+            padding: 10px 0;
             background: black;
             border-bottom: 1px solid fade(white, 30%);
         }
