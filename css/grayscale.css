@@ -1,6 +1,6 @@
 /*!
  * Grayscale v2.0.0 (http://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2016 Start Bootstrap
+ * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
 
