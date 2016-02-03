@@ -77,13 +77,14 @@ module.exports = function(grunt) {
                     spawn: false,
                 },
             },
-            less: {
-                files: ['less/*.less'],
-                tasks: ['less'],
-                options: {
-                    spawn: false,
-                }
-            },
+            // Optional watch task for LESS. Activate if you are opting to use LESS
+            // less: {
+            //     files: ['less/*.less'],
+            //     tasks: ['less'],
+            //     options: {
+            //         spawn: false,
+            //     }
+            // },
             sass: {
                 files: ['scss/*.scss'],
                 tasks: ['sass'],
