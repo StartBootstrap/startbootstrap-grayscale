@@ -1,3 +1,10 @@
+/*!
+ * Grayscale's Gruntfile
+ * http://startbootstrap.com/template-overviews/grayscale
+ * Copyright 2013-2016 Blackrock Digital LLC.
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/gh-pages/LICENSE)
+ */
+
 module.exports = function(grunt) {
 
     // Project configuration.
@@ -79,7 +86,7 @@ module.exports = function(grunt) {
             },
             sass: {
                 files: ['scss/*.scss'],
-                tasks: ['scss'],
+                tasks: ['sass'],
                 options: {
                     spawn: false,
                 }
