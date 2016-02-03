@@ -28,6 +28,24 @@ module.exports = function(grunt) {
                 }
             }
         },
+        sass: {
+            expanded: {
+                options: {
+                    style: 'expanded'
+                },
+                files: {
+                    'css/<%= pkg.name %>.css': 'scss/<%= pkg.name %>.scss'
+                }
+            },
+            compressed: {
+                options: {
+                    style: 'compressed'
+                },
+                files: {
+                    'css/<%= pkg.name %>.min.css': 'scss/<%= pkg.name %>.scss'
+                }
+            }
+        },
         banner: '/*!\n' +
             ' * <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
             ' * Copyright 2013-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
@@ -59,16 +77,26 @@ module.exports = function(grunt) {
                     spawn: false,
                 }
             },
+            sass: {
+                files: ['scss/*.scss'],
+                tasks: ['scss'],
+                options: {
+                    spawn: false,
+                }
+            },
         },
     });
 
     // Load the plugins.
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-banner');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    // Default task(s).
-    grunt.registerTask('default', ['uglify', 'less', 'usebanner']);
+    // Default task.
+    grunt.registerTask('default', ['sass', 'uglify', 'usebanner']);
+    // Optional LESS build task.
+    grunt.registerTask('less-build', ['less', 'uglify', 'usebanner']);
 
 };
