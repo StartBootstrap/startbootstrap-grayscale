@@ -5,8 +5,9 @@
 ## Getting Started
 
 To use this template, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/grayscale/)
+* Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
+* Fork the repo
 
 ## Bugs and Issues
 
