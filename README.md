@@ -4,10 +4,12 @@
 
 ## Getting Started
 
-To use this template, choose one of the following options to get started:
+To begin using this template, choose one of the following options to get started:
 * [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/grayscale/)
 * Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-grayscale.git`
 * Fork the repo
+
+### What's Included
 
 ## Bugs and Issues
 
