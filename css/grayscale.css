@@ -196,7 +196,7 @@ a:hover, a:focus {
   }
 
   #map {
-    height: 400px;
+    height: 350px;
     margin-top: 250px;
   }
 }
@@ -245,6 +245,7 @@ footer {
   padding: 50px 0;
 }
 footer p {
+  font-size: 14px;
   margin: 0;
 }
 
