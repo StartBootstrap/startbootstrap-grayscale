@@ -11,6 +11,18 @@ To begin using this template, choose one of the following options to get started
 
 ### What's Included
 
+#### HTML
+
+Since Grayscale is a one page theme, the only HTML file is the `index.html` file.
+
+#### CSS
+
+#### SASS
+
+#### LESS
+
+#### JS
+
 ## Bugs and Issues
 
 Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-grayscale/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/grayscale/).
