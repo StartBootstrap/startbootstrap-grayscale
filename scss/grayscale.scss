@@ -7,6 +7,7 @@ body {
     font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: white;
     background-color: black;
+    position: relative;
 }
 
 html {
@@ -57,6 +58,7 @@ a {
     font-family: "Cabin","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: black;
     .navbar-brand {
+        padding-top: 7px;
         font-weight: 700;
     }
     a {
@@ -64,6 +66,7 @@ a {
     }
     .nav {
         a {
+            padding: 10px;
             -webkit-transition: background .3s ease-in-out;
             -moz-transition: background .3s ease-in-out;
             transition: background .3s ease-in-out;
@@ -77,10 +80,8 @@ a {
                 outline: none;
                 background-color: transparent;
             }
-        }
-        &.active {
-            outline: none;
-            a {
+            &.active {
+                outline: none;
                 background-color: rgba(white, 0.3);
                 &:hover {
                     color: white;
@@ -89,7 +90,7 @@ a {
         }
     }
     @media(min-width:768px) {
-        padding: 20px 0;
+        padding: 10px 0;
         border-bottom: none;
         letter-spacing: 1px;
         background: transparent;
@@ -97,7 +98,7 @@ a {
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
         &.top-nav-collapse {
-            padding: 10px 0;
+            padding: 0;
             background: black;
             border-bottom: 1px solid rgba(white, 0.3);
         }

@@ -10,6 +10,7 @@ body {
   font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
   color: white;
   background-color: black;
+  position: relative;
 }
 
 html {
@@ -62,12 +63,14 @@ a:hover, a:focus {
   background-color: black;
 }
 .navbar-custom .navbar-brand {
+  padding-top: 7px;
   font-weight: 700;
 }
 .navbar-custom a {
   color: white;
 }
 .navbar-custom .nav a {
+  padding: 10px;
   -webkit-transition: background .3s ease-in-out;
   -moz-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out;
@@ -81,18 +84,16 @@ a:hover, a:focus {
   outline: none;
   background-color: transparent;
 }
-.navbar-custom .nav.active {
+.navbar-custom .nav a.active {
   outline: none;
-}
-.navbar-custom .nav.active a {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.navbar-custom .nav.active a:hover {
+.navbar-custom .nav a.active:hover {
   color: white;
 }
 @media (min-width: 768px) {
   .navbar-custom {
-    padding: 20px 0;
+    padding: 10px 0;
     border-bottom: none;
     letter-spacing: 1px;
     background: transparent;
@@ -101,7 +102,7 @@ a:hover, a:focus {
     transition: background .5s ease-in-out,padding .5s ease-in-out;
   }
   .navbar-custom.top-nav-collapse {
-    padding: 10px 0;
+    padding: 0;
     background: black;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
