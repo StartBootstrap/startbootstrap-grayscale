@@ -1,9 +1,3 @@
-/*!
- * Grayscale v2.0.0 (http://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-
 body {
   width: 100%;
   height: 100%;
@@ -63,14 +57,14 @@ a:hover, a:focus {
   background-color: black;
 }
 .navbar-custom .navbar-brand {
-  padding-top: 7px;
   font-weight: 700;
+  padding-top: 11px;
 }
 .navbar-custom a {
   color: white;
 }
 .navbar-custom .nav a {
-  padding: 10px;
+  padding: 15px 10px;
   -webkit-transition: background .3s ease-in-out;
   -moz-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out;
