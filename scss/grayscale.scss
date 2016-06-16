@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import "variables.scss";
+@import "mixins.scss";
 
 body {
     width: 100%;
@@ -7,6 +7,7 @@ body {
     font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: white;
     background-color: black;
+    position: relative;
 }
 
 html {
@@ -22,18 +23,18 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Cabin","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
 p {
     margin: 0 0 25px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     @media(min-width:768px) {
         margin: 0 0 35px;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.6;
     }
 }
@@ -50,64 +51,46 @@ a {
     }
 }
 
-.light {
-    font-weight: 400;
-}
-
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(white, 0.3);
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Cabin","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: black;
-    .navbar-toggle {
-        padding: 4px 6px;
-        font-size: 16px;
-        color: white;
-        &:focus,
-        &:active {
-            outline: none;
-        }
-    }
     .navbar-brand {
         font-weight: 700;
-        &:focus {
-            outline: none;
-        }
+        padding-top: 11px;
     }
     a {
         color: white;
     }
     .nav {
-        li {
-            a {
-                -webkit-transition: background .3s ease-in-out;
-                -moz-transition: background .3s ease-in-out;
-                transition: background .3s ease-in-out;
-                &:hover {
-                    color: rgba(white, 0.8);
-                    outline: none;
-                    background-color: transparent;
-                }
-                &:focus,
-                &:active {
-                    outline: none;
-                    background-color: transparent;
-                }
+        a {
+            padding: 15px 10px;
+            -webkit-transition: background .3s ease-in-out;
+            -moz-transition: background .3s ease-in-out;
+            transition: background .3s ease-in-out;
+            &:hover {
+                color: rgba(white, 0.8);
+                outline: none;
+                background-color: transparent;
+            }
+            &:focus,
+            &:active {
+                outline: none;
+                background-color: transparent;
             }
             &.active {
                 outline: none;
-                a {
-                    background-color: rgba(white, 0.3);
-                    &:hover {
-                        color: white;
-                    }
+                background-color: rgba(white, 0.3);
+                &:hover {
+                    color: white;
                 }
             }
         }
     }
     @media(min-width:768px) {
-        padding: 20px 0;
+        padding: 10px 0;
         border-bottom: none;
         letter-spacing: 1px;
         background: transparent;
@@ -153,20 +136,20 @@ a {
                 font-size: 100px;
             }
             .intro-text {
-                font-size: 26px;
+                font-size: 22px;
             }
         }
     }
 }
 
 .btn-circle {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     margin-top: 15px;
-    padding: 7px 16px;
+    padding: 7px 0;
     border: 2px solid white;
     border-radius: 100% !important;
-    font-size: 40px;
+    font-size: 26px;
     color: white;
     background: transparent;
     -webkit-transition: background .3s ease-in-out;
@@ -177,58 +160,6 @@ a {
         outline: none;
         color: white;
         background: rgba(white, 0.1);
-    }
-    i.animated {
-        -webkit-transition-property: -webkit-transform;
-        -webkit-transition-duration: 1s;
-        -moz-transition-property: -moz-transform;
-        -moz-transition-duration: 1s;
-    }
-    &:hover {
-        i.animated {
-            -webkit-animation-name: pulse;
-            -moz-animation-name: pulse;
-            -webkit-animation-duration: 1.5s;
-            -moz-animation-duration: 1.5s;
-            -webkit-animation-iteration-count: infinite;
-            -moz-animation-iteration-count: infinite;
-            -webkit-animation-timing-function: linear;
-            -moz-animation-timing-function: linear;
-        }
-    }
-}
-
-@-webkit-keyframes pulse {
-    from {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@-moz-keyframes pulse {
-    from {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -moz-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    100% {
-        -moz-transform: scale(1);
-        transform: scale(1);
     }
 }
 
@@ -264,14 +195,14 @@ a {
     }
 
     #map {
-        height: 400px;
+        height: 350px;
         margin-top: 250px;
     }
 }
 
 .btn {
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Cabin","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -312,6 +243,7 @@ ul.banner-social-buttons {
 footer {
     padding: 50px 0;
     p {
+        font-size: 14px;
         margin: 0;
     }
 }
@@ -337,5 +269,5 @@ img::-moz-selection {
 }
 
 body {
-    -webkit-tap-highlight-color: rgba(white, 0.2);
+    webkit-tap-highlight-color: rgba(white, 0.2);
 }
