@@ -31,7 +31,7 @@ h6 {
 }
 
 p {
-    margin: 0 0 25px;
+    margin: 0 0 10px;
     font-size: 18px;
     line-height: 1.5;
 }
@@ -161,7 +161,7 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .intro .intro-body .intro-text {
