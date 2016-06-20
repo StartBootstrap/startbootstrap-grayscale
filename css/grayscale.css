@@ -176,7 +176,7 @@ a:focus {
 
     .intro .intro-body .brand-heading {
         font-size: 100px;
-        margin-bottom: 100px;
+        vertical-align: text-bottom;
     }
 
     .intro .intro-body .intro-text {
