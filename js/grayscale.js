@@ -175,11 +175,25 @@ function init() {
     map = new google.maps.Map(mapElement, mapOptions);
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    var image = 'img/map-marker.png';
     var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
-        icon: image
+        icon: {
+            url: 'img/map-marker.png',
+
+            // base image is 40x66 px
+            size: new google.maps.Size(40, 66),
+
+            // we want to render @ 20x33 logical px (@2x dppx or 'Retina')
+            scaledSize: new google.maps.Size(20, 33),
+
+            // the most top-left point of your marker in the sprite
+            // (based on scaledSize, not original)
+            origin: new google.maps.Point(0, 0),
+
+            // the "pointer"/anchor coordinates of the marker (again based on scaledSize)
+            anchor: new google.maps.Point(10, 31)
+        }
     });
 }
