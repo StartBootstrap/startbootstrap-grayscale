@@ -1,32 +1,50 @@
-// jQuery to collapse the navbar on scroll
-function collapseNavbar() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
-}
+// Freelancer Theme JavaScript
 
-$(window).scroll(collapseNavbar);
-$(document).ready(collapseNavbar);
+(function($) {
+    "use strict"; // Start of use strict
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
+    // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
         event.preventDefault();
     });
-});
 
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-  if ($(this).attr('class') != 'dropdown-toggle active' && $(this).attr('class') != 'dropdown-toggle') {
-    $('.navbar-toggle:visible').click();
-  }
-});
+    // Highlight the top nav as scrolling occurs
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 54
+    });
+
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse>ul>li>a').click(function() {
+        $('.navbar-collapse').collapse('hide');
+    });
+
+    // jQuery to collapse the navbar on scroll
+    $(window).scroll(function() {
+        if ($("#mainNav").offset().top > 100) {
+            $("#mainNav").addClass("navbar-shrink");
+        } else {
+            $("#mainNav").removeClass("navbar-shrink");
+        }
+    });
+
+    // Floating label headings for the contact form
+    $(function() {
+        $("body").on("input propertychange", ".floating-label-form-group", function(e) {
+            $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
+        }).on("focus", ".floating-label-form-group", function() {
+            $(this).addClass("floating-label-form-group-with-focus");
+        }).on("blur", ".floating-label-form-group", function() {
+            $(this).removeClass("floating-label-form-group-with-focus");
+        });
+    });
+
+})(jQuery); // End of use strict
+
 
 // Google Maps Scripts
 var map = null;
