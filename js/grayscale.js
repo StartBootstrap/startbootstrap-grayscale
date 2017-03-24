@@ -34,12 +34,6 @@ $('.navbar-collapse ul li a').click(function() {
 
 // Google Maps Scripts
 var map = null;
-// When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init);
-google.maps.event.addDomListener(window, 'resize', function() {
-    map.setCenter(new google.maps.LatLng(40.6700, -73.9400));
-});
-
 function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
@@ -182,4 +176,11 @@ function init() {
         map: map,
         icon: image
     });
+    
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
+    google.maps.event.addDomListener(window, 'resize', function() {
+        map.setCenter(new google.maps.LatLng(40.6700, -73.9400));
+    });
+
 }
