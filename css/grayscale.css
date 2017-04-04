@@ -1,7 +1,7 @@
 /*!
  * Start Bootstrap - Grayscale v4.0.0-alpha (http://startbootstrap.com/template-overviews/grayscale)
  * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 body {
   width: 100%;
@@ -92,7 +92,7 @@ a {
         background: black;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3); } }
 
-.intro {
+.masthead {
   display: table;
   width: 100%;
   height: auto;
@@ -105,20 +105,20 @@ a {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
-  .intro .intro-body {
+  .masthead .intro-body {
     display: table-cell;
     vertical-align: middle; }
-    .intro .intro-body .brand-heading {
+    .masthead .intro-body .brand-heading {
       font-size: 40px; }
-    .intro .intro-body .intro-text {
+    .masthead .intro-body .intro-text {
       font-size: 18px; }
   @media (min-width: 768px) {
-    .intro {
+    .masthead {
       height: 100%;
       padding: 0; }
-      .intro .intro-body .brand-heading {
+      .masthead .intro-body .brand-heading {
         font-size: 100px; }
-      .intro .intro-body .intro-text {
+      .masthead .intro-body .intro-text {
         font-size: 22px; } }
 
 .btn-circle {
@@ -222,4 +222,4 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
