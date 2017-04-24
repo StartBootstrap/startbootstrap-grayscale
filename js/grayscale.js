@@ -174,12 +174,30 @@ function init() {
     // Create the Google Map using out element and options defined above
     map = new google.maps.Map(mapElement, mapOptions);
 
+
+
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker.png';
     var myLatLng = new google.maps.LatLng(41.14587, -96.22635);
-    var beachMarker = new google.maps.Marker({
+    var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
         icon: image
     });
+
+  var contentString = '<div id="content" class="mapInfoWindow">'+
+    '<div id="siteNotice">'+
+    '</div>'+
+    '<h4 id="firstHeading" class="firstHeading">New Song Church</h4><h6>Meeting at Thomas Elementary</h6>'+
+    '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+  infowindow.open(map,marker);
+
 }
