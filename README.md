@@ -16,6 +16,10 @@ Have a bug or an issue with this template? [Open a new issue](https://github.com
 
 Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
 
+## GPS2FTP - Android App
+
+try the little gps2ftp android app (and widget) to update the map on this website via ftp.
+
 * https://twitter.com/davidmillerskt
 * https://github.com/davidtmiller
 

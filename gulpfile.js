@@ -5,6 +5,9 @@ var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
+var gutil = require('gulp-util');
+var ftp = require( 'vinyl-ftp' );
+var prompt = require('gulp-prompt');
 var pkg = require('./package.json');
 
 // Set the banner content
@@ -69,8 +72,55 @@ gulp.task('copy', function() {
         .pipe(gulp.dest('vendor/font-awesome'))
 })
 
+var pass; 
+
+
+gulp.task('prompt', function() {
+
+return gulp.src('*').pipe(
+    prompt.prompt({
+            type: 'password',
+            name: 'pass',
+            message: 'Please enter ftp password'
+    }, function(res){
+        //value is in res.task (the name option gives the key)
+            pass= res.pass;
+            gulp.tasks['deploy'].fn();
+
+    }
+    ));
+});
+
+gulp.task( 'deploy', function () {
+
+    var conn = ftp.create( {
+            host: 'ftp.yourdomain.com',
+            pass: pass,
+            user: 'yourusername',
+            parallel: 10,
+            secure: true,
+            secureOptions: { rejectUnauthorized: false },
+            log:gutil.log
+    } );
+
+    var globs = [
+        'css/**',
+        'img/**',
+        'js/**',
+        'less/**',
+        'sass/**',
+        'vendor/**',
+        'latlng.json',
+        'index.html'
+    ];
+    return gulp.src( globs, { base: '.', buffer: false } )
+        .pipe( conn.newer( '/home/le-space/public_html' )) // only upload newer files
+        .pipe( conn.dest( '/home/le-space/public_html' ));
+
+} );
+
 // Run everything
-gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy', 'prompt']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
