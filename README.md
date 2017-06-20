@@ -14,7 +14,7 @@ Have a bug or an issue with this template? [Open a new issue](https://github.com
 
 ## GPS2FTP - Android App
 Try the little [gps2ftp android app](https://github.com/Le-Space/gps2ftp) (and widget) to update the google map at the end this template via ftp. Created by Nico Krause (https://twitter.com/inspiraluna)
-![Image of gps2ftp](https://github.com/Le-Space/gps2ftp/raw/master/marketing/ic_launcher/web_hi_res_512.png)
+![Image of gps2ftp](https://github.com/Le-Space/gps2ftp/raw/master/marketing/ic_launcher/web_smaller.png)
 
 
 
