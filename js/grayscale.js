@@ -55,11 +55,13 @@ function init(){
 }
 
 function load() {
+
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
+        
         // How zoomed in you want the map to start at (always required)
-        zoom: currentPosition.zoom,
+        zoom: 15, //we overwrite this, if zoom is in latlng.json! 
         // The latitude and longitude to center the map (always required)
         center: new google.maps.LatLng(currentPosition.lat,currentPosition.lng), 
         // Disables the default Google Maps UI components
@@ -181,6 +183,11 @@ function load() {
         }]
     };
 
+    // overwrite zoom - if in latlng.json //How zoomed in you want the map to start at (always required)
+    if("zoom" in currentPosition) {
+        mapOptions.zoom = currentPosition.zoom;  
+    }
+ 
     // Get the HTML DOM element that will contain your map 
     // We are using a div with id="map" seen below in the <body>
     var mapElement = document.getElementById('map');
