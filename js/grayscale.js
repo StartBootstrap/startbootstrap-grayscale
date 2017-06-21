@@ -29,33 +29,49 @@ $(function() {
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
-    $(".navbar-collapse").collapse('hide');
+    $(this).closest('.collapse').collapse('toggle');
 });
+
+var currentPosition = {lat:11.9296,lng:79.8330, zoom:15}; //Pondicherry default
 
 // Google Maps Scripts
 var map = null;
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 google.maps.event.addDomListener(window, 'resize', function() {
-    map.setCenter(new google.maps.LatLng(40.6700, -73.9400));
+    map.setCenter(new google.maps.LatLng(currentPosition.lat,currentPosition.lng)); 
 });
 
-function init() {
+function init(){
+    $.getJSON("latlng.json", function(json) {
+        if(json){
+            currentPosition = json;
+            load(); 
+        }else{
+            load(); 
+        }
+    });
+
+}
+
+function load() {
+
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
+        
         // How zoomed in you want the map to start at (always required)
-        zoom: 15,
-
+        zoom: 15, //we overwrite this, if zoom is in latlng.json! 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9400), // New York
-
+        center: new google.maps.LatLng(currentPosition.lat,currentPosition.lng), 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
         scrollwheel: false,
         draggable: false,
 
-        // How you would like to style the map.
+        // How you would like to style the map. 
+        // This is where you would paste any style found on Snazzy Maps.
+// How you would like to style the map.
         // This is where you would paste any style found on Snazzy Maps.
         styles: [{
             "featureType": "water",
@@ -167,7 +183,12 @@ function init() {
         }]
     };
 
-    // Get the HTML DOM element that will contain your map
+    // overwrite zoom - if in latlng.json //How zoomed in you want the map to start at (always required)
+    if("zoom" in currentPosition) {
+        mapOptions.zoom = currentPosition.zoom;  
+    }
+ 
+    // Get the HTML DOM element that will contain your map 
     // We are using a div with id="map" seen below in the <body>
     var mapElement = document.getElementById('map');
 
@@ -176,7 +197,9 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
+    var myLatLng = new google.maps.LatLng(currentPosition.lat,currentPosition.lng); 
+    //var myLatLng = new google.maps.LatLng(11.9296,79.8330); //Pondycherry
+  //  var myLatLng = new google.maps.LatLng(40.6700, -73.9400); //NY
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
