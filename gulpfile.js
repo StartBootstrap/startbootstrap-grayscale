@@ -92,11 +92,13 @@ return gulp.src('*').pipe(
 });
 
 gulp.task( 'deploy', function () {
-
+    var hostname = 'ftp.yourdomain.com';
+    var username = 'yourusername';
+    var remoteDir = '/home/le-space/public_html'
     var conn = ftp.create( {
-            host: 'ftp.yourdomain.com',
+            host: hostname,
             pass: pass,
-            user: 'yourusername',
+            user: username,
             parallel: 10,
             secure: true,
             secureOptions: { rejectUnauthorized: false },
@@ -114,8 +116,8 @@ gulp.task( 'deploy', function () {
         'index.html'
     ];
     return gulp.src( globs, { base: '.', buffer: false } )
-        .pipe( conn.newer( '/home/le-space/public_html' )) // only upload newer files
-        .pipe( conn.dest( '/home/le-space/public_html' ));
+        .pipe( conn.newer(remoteDir)) // only upload newer files
+        .pipe( conn.dest(remoteDir));
 
 } );
 

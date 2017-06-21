@@ -13,9 +13,9 @@ To use this template, choose one of the following options to get started:
 Have a bug or an issue with this template? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-grayscale/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/grayscale/).
 
 ## GPS2FTP - Android App
-Try the little [gps2ftp android app](https://github.com/Le-Space/gps2ftp) (and widget) to update the google map at the end this template via ftp. Created by Nico Krause (https://twitter.com/inspiraluna)
+Try the free [gps2ftp android app](https://play.google.com/store/apps/details?id=de.le_space.gps2ftp) (and widget) to update the google map at the end this template via ftp. Created by Nico Krause (https://twitter.com/inspiraluna)
 ![Image of gps2ftp](https://github.com/Le-Space/gps2ftp/raw/master/marketing/ic_launcher/web_smaller.png)
-
+[Contribute to gps2ftp on GitHub](https://github.com/Le-Space/gps2ftp)
 
 
 ## Creator

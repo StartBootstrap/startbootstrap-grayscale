@@ -40,8 +40,6 @@ var map = null;
 google.maps.event.addDomListener(window, 'load', init);
 google.maps.event.addDomListener(window, 'resize', function() {
     map.setCenter(new google.maps.LatLng(currentPostion.lat,currentPostion.lng)); 
-   // map.setCenter(new google.maps.LatLng(11.9296,79.8330)); Pondicherry
-    //map.setCenter(new google.maps.LatLng(40.6700, -73.9400));
 });
 
 function init(){
@@ -66,12 +64,121 @@ function load() {
         center: new google.maps.LatLng(currentPostion.lat,currentPostion.lng), 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
-        scrollwheel: true,
+        scrollwheel: false,
         draggable: false,
 
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
-        styles: [{"featureType":"all","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"lightness":20},{"color":"#f63440"},{"visibility":"on"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2},{"visibility":"off"}]},{"featureType":"administrative","elementType":"labels.text","stylers":[{"color":"#f63440"},{"visibility":"simplified"}]},{"featureType":"administrative","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#121228"},{"lightness":"0"}]},{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21},{"visibility":"off"}]},{"featureType":"poi","elementType":"labels.text","stylers":[{"visibility":"simplified"},{"color":"#8d8db2"}]},{"featureType":"road","elementType":"labels.text","stylers":[{"visibility":"simplified"},{"color":"#8d8db2"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#19192e"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2},{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#19192e"},{"lightness":"0"}]},{"featureType":"road.arterial","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#19192e"},{"lightness":"0"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#282846"},{"lightness":"0"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#121228"},{"lightness":17}]}]
+// How you would like to style the map.
+        // This is where you would paste any style found on Snazzy Maps.
+        styles: [{
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }]
+        }, {
+            "featureType": "landscape",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 20
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 29
+            }, {
+                "weight": 0.2
+            }]
+        }, {
+            "featureType": "road.arterial",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 18
+            }]
+        }, {
+            "featureType": "road.local",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 16
+            }]
+        }, {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 21
+            }]
+        }, {
+            "elementType": "labels.text.stroke",
+            "stylers": [{
+                "visibility": "on"
+            }, {
+                "color": "#000000"
+            }, {
+                "lightness": 16
+            }]
+        }, {
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "saturation": 36
+            }, {
+                "color": "#000000"
+            }, {
+                "lightness": 40
+            }]
+        }, {
+            "elementType": "labels.icon",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "transit",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 19
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 20
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }, {
+                "weight": 1.2
+            }]
+        }]
     };
 
     // Get the HTML DOM element that will contain your map 
@@ -83,8 +190,7 @@ function load() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker.png';
-   
-   var myLatLng = new google.maps.LatLng(currentPostion.lat,currentPostion.lng); 
+    var myLatLng = new google.maps.LatLng(currentPostion.lat,currentPostion.lng); 
     //var myLatLng = new google.maps.LatLng(11.9296,79.8330); //Pondycherry
   //  var myLatLng = new google.maps.LatLng(40.6700, -73.9400); //NY
     var beachMarker = new google.maps.Marker({
