@@ -94,7 +94,7 @@ return gulp.src('*').pipe(
 gulp.task( 'deploy', function () {
     var hostname = 'ftp.yourdomain.com';
     var username = 'yourusername';
-    var remoteDir = '/home/le-space/public_html'
+    var remoteDir = '/home/le-space/public_html';
     var conn = ftp.create( {
             host: hostname,
             pass: pass,
