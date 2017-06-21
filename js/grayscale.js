@@ -32,20 +32,20 @@ $('.navbar-collapse ul li a').click(function() {
     $(this).closest('.collapse').collapse('toggle');
 });
 
-var currentPostion = {lat:11.9296,lng:79.8330}; //Pondicherry default
+var currentPosition = {lat:11.9296,lng:79.8330, zoom:15}; //Pondicherry default
 
 // Google Maps Scripts
 var map = null;
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 google.maps.event.addDomListener(window, 'resize', function() {
-    map.setCenter(new google.maps.LatLng(currentPostion.lat,currentPostion.lng)); 
+    map.setCenter(new google.maps.LatLng(currentPosition.lat,currentPosition.lng)); 
 });
 
 function init(){
     $.getJSON("latlng.json", function(json) {
         if(json){
-            currentPostion = json;
+            currentPosition = json;
             load(); 
         }else{
             load(); 
@@ -59,9 +59,9 @@ function load() {
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 15,
+        zoom: currentPosition.zoom,
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(currentPostion.lat,currentPostion.lng), 
+        center: new google.maps.LatLng(currentPosition.lat,currentPosition.lng), 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
         scrollwheel: false,
@@ -190,7 +190,7 @@ function load() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(currentPostion.lat,currentPostion.lng); 
+    var myLatLng = new google.maps.LatLng(currentPosition.lat,currentPosition.lng); 
     //var myLatLng = new google.maps.LatLng(11.9296,79.8330); //Pondycherry
   //  var myLatLng = new google.maps.LatLng(40.6700, -73.9400); //NY
     var beachMarker = new google.maps.Marker({
