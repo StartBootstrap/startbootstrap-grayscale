@@ -188,8 +188,9 @@ function init() {
   var contentString = '<div id="content" class="mapInfoWindow">'+
     '<div id="siteNotice">'+
     '</div>'+
-    '<h4 id="firstHeading" class="firstHeading">New Song Church</h4><h6>Meeting at Thomas Elementary</h6>'+
-    '</div>';
+    '<h4 id="firstHeading" class="firstHeading">New Song Church</h4>' +
+    '<h6>Meeting at Thomas Elementary</h6>'+
+    '<h6><a href="https://goo.gl/maps/NJaqEok9fJp" target="_blank">Directions</a></h6>';
 
   var infowindow = new google.maps.InfoWindow({
     content: contentString
