@@ -1,2 +1,6 @@
 node_modules
+<<<<<<< HEAD
+.sass-cache
+=======
 bower_components
+>>>>>>> master
