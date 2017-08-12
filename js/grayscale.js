@@ -1,36 +1,41 @@
-/*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+(function($) {
+    "use strict"; // Start of use strict
 
-// jQuery to collapse the navbar on scroll
-function collapseNavbar() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
-}
-
-$(window).scroll(collapseNavbar);
-$(document).ready(collapseNavbar);
-
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
+    // Smooth scrolling using jQuery easing
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: (target.offset().top - 48)
+                }, 1000, "easeInOutExpo");
+                return false;
+            }
+        }
     });
-});
 
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $(".navbar-collapse").collapse('hide');
-});
+    // Activate scrollspy to add active class to navbar items on scroll
+    $('body').scrollspy({
+        target: '#mainNav',
+        offset: 54
+    });
+
+    // Closes responsive menu when a link is clicked
+    $('.navbar-collapse>ul>li>a').click(function() {
+        $('.navbar-collapse').collapse('hide');
+    });
+
+    // Collapse the navbar when page is scrolled
+    $(window).scroll(function() {
+        if ($("#mainNav").offset().top > 100) {
+            $("#mainNav").addClass("navbar-shrink");
+        } else {
+            $("#mainNav").removeClass("navbar-shrink");
+        }
+    });
+
+})(jQuery); // End of use strict
 
 // Google Maps Scripts
 var map = null;
@@ -175,7 +180,7 @@ function init() {
     map = new google.maps.Map(mapElement, mapOptions);
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    var image = 'img/map-marker.png';
+    var image = 'img/map-marker.svg';
     var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
