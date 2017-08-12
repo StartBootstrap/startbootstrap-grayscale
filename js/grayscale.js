@@ -37,7 +37,6 @@
 
 })(jQuery); // End of use strict
 
-
 // Google Maps Scripts
 var map = null;
 // When the window has finished loading create our google map below
@@ -61,7 +60,7 @@ function init() {
         scrollwheel: false,
         draggable: false,
 
-        // How you would like to style the map. 
+        // How you would like to style the map.
         // This is where you would paste any style found on Snazzy Maps.
         styles: [{
             "featureType": "water",
@@ -173,7 +172,7 @@ function init() {
         }]
     };
 
-    // Get the HTML DOM element that will contain your map 
+    // Get the HTML DOM element that will contain your map
     // We are using a div with id="map" seen below in the <body>
     var mapElement = document.getElementById('map');
 
