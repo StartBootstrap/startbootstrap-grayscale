@@ -1,10 +1,11 @@
 body {
-  font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /*font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   position: relative;
   width: 100%;
   height: 100%;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: #f4f4f4;
 }
 
 html {
@@ -18,11 +19,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  /*font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 300;
   margin: 0 0 35px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  letter-spacing: 3px;
+  /*text-transform: uppercase;*/
 }
 
 p {
@@ -39,6 +41,7 @@ p {
   }
 }
 
+/*the below changes color of links in body*/
 a {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -46,17 +49,19 @@ a {
   color: #42DCA3;
 }
 
+/*the below changes color of links in body when you hover over*/
 a:focus, a:hover {
   text-decoration: none;
   color: #1d9b6c;
 }
 
 #mainNav {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /*font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   margin-bottom: 0;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: black;
+  background-color: white;
 }
 
 #mainNav .navbar-toggler {
@@ -67,34 +72,49 @@ a:focus, a:hover {
 }
 
 #mainNav .navbar-brand {
-  font-weight: 700;
+  /*font-weight: 0;*/
+  color: #8400ad;
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  /*font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';*/
+  font-weight: 200;
+  letter-spacing: 10px;
+  font-size: 30px;
+  text-transform: lowercase;
 }
 
 #mainNav a {
   color: white;
+  font-family: 'Catamaran', 'Helvetic',a 'Arial', 'sans-serif';
 }
 
-#mainNav .navbar-nav .nav-item {
+/*#mainNav .navbar-nav .nav-item {
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
+}*/
+#mainNav .navbar-nav > li > a.active {
+  color: #8400ad !important;
+  background-color: transparent;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
-  color: fade(white, 80%);
+  /*color: fade(white, 80%);*/
+  /*color: fade(#8400ad, 80%);*/
+  color: #8400ad;
   outline: none;
   background-color: transparent;
 }
 
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
   outline: none;
+  color: #8400ad;
   background-color: transparent;
 }
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
@@ -105,8 +125,9 @@ a:focus, a:hover {
   #mainNav.navbar-shrink {
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    background: black;
+    border-bottom: 1px solid rgb(196, 196, 196, 0.3);
+    background: #f4f4f4;
+    box-shadow: 0px 0px 1px grey;
   }
   #mainNav .nav-link.active {
     outline: none;
@@ -124,8 +145,8 @@ a:focus, a:hover {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
-  background-color: black;
+  /*background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;*/
+  background-color: #f4f4f4;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -139,6 +160,10 @@ a:focus, a:hover {
 
 .masthead .intro-body .brand-heading {
   font-size: 50px;
+  /*text-transform: lowercase;*/
+  /*color: #2867cc;*/
+  /*color: #730096;*/
+  color: #8400ad;
 }
 
 .masthead .intro-body .intro-text {
@@ -151,10 +176,10 @@ a:focus, a:hover {
     padding: 0;
   }
   .masthead .intro-body .brand-heading {
-    font-size: 100px;
+    font-size: 40px;
   }
   .masthead .intro-body .intro-text {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
@@ -174,9 +199,11 @@ a:focus, a:hover {
 }
 
 .btn-circle:focus, .btn-circle:hover {
-  color: white;
+  color: #8400ad;
   outline: none;
   background: rgba(255, 255, 255, 0.1);
+  /*background: #8400ad;*/
+  border: 2px solid #8400ad;
 }
 
 .content-section {
@@ -185,18 +212,13 @@ a:focus, a:hover {
 }
 
 .download-section {
-  color: white;
-  background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
-  background-color: black;
+  color: black;
+  /*background: url("../img/downloads-bg.jpg") no-repeat center center scroll;*/
+  background-color: #f4f4f4;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-#map {
-  width: 100%;
-  height: 300px;
 }
 
 @media (min-width: 992px) {
@@ -210,26 +232,27 @@ a:focus, a:hover {
 }
 
 .btn {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  /*font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 300;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   border-radius: 0;
 }
 
 .btn-default {
-  color: #42DCA3;
-  border: 1px solid #42DCA3;
+  color: #8400ad;
+  border: 1px solid #8400ad;
   background-color: transparent;
 }
 
 .btn-default:focus, .btn-default:hover {
-  color: black;
-  border: 1px solid #42DCA3;
+  color: #f4f4f4;
+  border: 1px solid #8400ad;
   outline: none;
-  background-color: #42DCA3;
+  background-color: #8400ad;
 }
 
 ul.banner-social-buttons {
@@ -274,10 +297,14 @@ footer p {
   text-shadow: none;
 }
 
-img::selection {
+.special-word {
+  color: #8400ad;
+}
+
+/*img::selection {
   background: transparent;
 }
 
 img::-moz-selection {
   background: transparent;
-}
+}*/
