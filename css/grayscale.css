@@ -319,6 +319,11 @@ footer p {
   margin-top: 130px;
 }
 
+.letsMakeItWhite{
+  background-color:white;
+  width:100% !important; 
+}
+
 /*img::selection {
   background: transparent;
 }
