@@ -315,6 +315,10 @@ footer p {
   color: #F7981C;
 }
 
+.ceneterWithImage{
+  margin-top: 130px;
+}
+
 /*img::selection {
   background: transparent;
 }
