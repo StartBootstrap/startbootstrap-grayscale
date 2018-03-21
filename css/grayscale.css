@@ -132,7 +132,7 @@ a:focus, a:hover {
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid rgb(196, 196, 196, 0.3);
-    background: #f4f4f4;
+    background: #0078FF;
     box-shadow: 0px 0px 1px grey;
   }
   #mainNav .nav-link.active {
