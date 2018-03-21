@@ -218,7 +218,7 @@ a:focus, a:hover {
 
 .content-section {
   /*color: #f4f4f4;*/
-  background-color: #f4f4f4;
+  background-color: white;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -331,11 +331,20 @@ input[type=text] {
   display: inline-block;
   border: none;
   background: #f1f1f1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
 
 input[type=text]:focus {
   background-color: #ddd;
   outline: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
 
 /*img::selection {
