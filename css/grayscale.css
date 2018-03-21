@@ -219,8 +219,8 @@ a:focus, a:hover {
 .content-section {
   /*color: #f4f4f4;*/
   background-color: #f4f4f4;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .download-section {
@@ -235,8 +235,8 @@ a:focus, a:hover {
 
 @media (min-width: 992px) {
   .content-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   #map {
     height: 350px;
@@ -322,6 +322,20 @@ footer p {
 .letsMakeItWhite{
   background-color:white;
   width:100% !important; 
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
 }
 
 /*img::selection {
