@@ -42,12 +42,12 @@ p {
 a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #42DCA3;
+  color: #c0ffee;
 }
 
 a:focus, a:hover {
   text-decoration: none;
-  color: #1d9b6c;
+  color: #5affd2;
 }
 
 #mainNav {
@@ -205,16 +205,16 @@ a:focus, a:hover {
 }
 
 .btn-default {
-  color: #42DCA3;
-  border: 1px solid #42DCA3;
+  color: #c0ffee;
+  border: 1px solid #c0ffee;
   background-color: transparent;
 }
 
 .btn-default:focus, .btn-default:hover {
   color: black;
-  border: 1px solid #42DCA3;
+  border: 1px solid #c0ffee;
   outline: none;
-  background-color: #42DCA3;
+  background-color: #c0ffee;
 }
 
 ul.banner-social-buttons {
