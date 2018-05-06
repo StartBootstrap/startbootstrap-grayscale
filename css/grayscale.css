@@ -21,21 +21,21 @@ h5,
 h6 {
   font-family: serif;
   font-weight: 700;
-  margin: 0 0 35px;
+  margin: 0 0 2rem;
   letter-spacing: 1px;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
-  margin: 0 0 25px;
+  margin: 0 0 1.5rem;
 }
 
 @media (min-width: 768px) {
   p {
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 1.6;
-    margin: 0 0 35px;
+    margin: 0 0 1.5rem;
   }
 }
 
@@ -58,8 +58,8 @@ a:focus, a:hover {
 }
 
 #mainNav .navbar-toggler {
-  font-size: 14px;
-  padding: 11px;
+  font-size: 1rem;
+  padding: 1rem;
   color: white;
   border: 1px solid white;
 }
@@ -90,8 +90,8 @@ a:focus, a:hover {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     letter-spacing: 1px;
@@ -99,8 +99,8 @@ a:focus, a:hover {
     background: transparent;
   }
   #mainNav.navbar-shrink {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     background: black;
   }
@@ -120,7 +120,7 @@ a:focus, a:hover {
   text-align: center;
   color: white;
   background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
-  background-color: black;
+  background-color: #000;
   background-size: cover;
 }
 
@@ -130,11 +130,11 @@ a:focus, a:hover {
 }
 
 .masthead .intro-body .brand-heading {
-  font-size: 50px;
+  font-size: 3rem;
 }
 
 .masthead .intro-body .intro-text {
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -146,15 +146,15 @@ a:focus, a:hover {
     font-size: 100px;
   }
   .masthead .intro-body .intro-text {
-    font-size: 22px;
+    font-size: 1.5rem;
   }
 }
 
 .btn-circle {
   display: initial;
-  font-size: 26px;
-  margin-top: 15px;
-  line-height: 45px;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  line-height: 3rem;
   -webkit-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
   color: white;
@@ -170,8 +170,8 @@ a:focus, a:hover {
 }
 
 .content-section {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .download-section {
@@ -181,18 +181,10 @@ a:focus, a:hover {
   background-size: cover;
 }
 
-#map {
-  width: 100%;
-  height: 300px;
-}
-
 @media (min-width: 992px) {
   .content-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-  #map {
-    height: 350px;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
   }
 }
 
@@ -223,14 +215,14 @@ ul.banner-social-buttons {
 
 @media (max-width: 1199px) {
   ul.banner-social-buttons {
-    margin-top: 15px;
+    margin-top: 1rem;
   }
 }
 
 @media (max-width: 767px) {
   ul.banner-social-buttons li {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
     padding: 0;
   }
   ul.banner-social-buttons li:last-child {
@@ -239,11 +231,11 @@ ul.banner-social-buttons {
 }
 
 footer {
-  padding: 50px 0;
+  padding: 3rem 0;
 }
 
 footer p {
-  font-size: 14px;
+  font-size: 1rem;
   margin: 0;
 }
 

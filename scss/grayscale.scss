@@ -25,18 +25,18 @@ h6 {
   font-family: /* 'Cardo',  */
   serif;
   font-weight: 700;
-  margin: 0 0 35px;
+  margin: 0 0 2rem;
   letter-spacing: 1px; //text-transform: uppercase;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
-  margin: 0 0 25px;
+  margin: 0 0 1.5rem;
   @media(min-width: 768px) {
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 1.6;
-    margin: 0 0 35px;
+    margin: 0 0 1.5rem;
   }
 }
 
@@ -58,8 +58,8 @@ a {
   border-bottom: 1px solid fade-out(white, .7);
   background-color: black;
   .navbar-toggler {
-    font-size: 14px;
-    padding: 11px;
+    font-size: 1rem;
+    padding: 1rem;
     color: white;
     border: 1px solid white;
   }
@@ -86,16 +86,16 @@ a {
     }
   }
   @media(min-width:992px) {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     letter-spacing: 1px;
     border-bottom: none;
     background: transparent;
     &.navbar-shrink {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: .5rem;
+      padding-bottom: .5rem;
       border-bottom: 1px solid fade-out(white, .7);
       background: black;
     }
@@ -116,16 +116,16 @@ a {
   text-align: center;
   color: white;
   background: url('../img/intro-bg.jpg') no-repeat bottom center scroll;
-  background-color: black;
+  background-color: #000;
   background-size: cover;
   .intro-body {
     display: table-cell;
     vertical-align: middle;
     .brand-heading {
-      font-size: 50px;
+      font-size: 3rem;
     }
     .intro-text {
-      font-size: 18px;
+      font-size: 1rem;
     }
   }
   @media(min-width:768px) {
@@ -136,7 +136,7 @@ a {
         font-size: 100px;
       }
       .intro-text {
-        font-size: 22px;
+        font-size: 1.5rem;
       }
     }
   }
@@ -144,10 +144,10 @@ a {
 
 .btn-circle {
   display: initial;
-  font-size: 26px; //width: 55px;
+  font-size: 1.5rem; //width: 55px;
   //height: 55px;
-  margin-top: 15px;
-  line-height: 45px;
+  margin-top: 1rem;
+  line-height: 3rem;
   -webkit-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
   color: white;
@@ -163,8 +163,8 @@ a {
 }
 
 .content-section {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .download-section {
@@ -174,18 +174,10 @@ a {
   background-size: cover;
 }
 
-#map {
-  width: 100%;
-  height: 300px;
-}
-
 @media(min-width:992px) {
   .content-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-  #map {
-    height: 350px;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
   }
 }
 
@@ -214,12 +206,12 @@ a {
 ul.banner-social-buttons {
   margin-top: 0;
   @media(max-width: 1199px) {
-    margin-top: 15px;
+    margin-top: 1rem;
   }
   @media(max-width:767px) {
     li {
       display: block;
-      margin-bottom: 20px;
+      margin-bottom: 1.5rem;
       padding: 0;
       &:last-child {
         margin-bottom: 0;
@@ -229,9 +221,9 @@ ul.banner-social-buttons {
 }
 
 footer {
-  padding: 50px 0;
+  padding: 3rem 0;
   p {
-    font-size: 14px;
+    font-size: 1rem;
     margin: 0;
   }
 }
