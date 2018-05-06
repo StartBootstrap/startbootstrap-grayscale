@@ -114,8 +114,7 @@ a {
   width: 100%;
   height: auto; //padding: 200px 0;
   text-align: center;
-  color: white;
-  background: url('../img/intro-bg.jpg') no-repeat bottom center scroll;
+  color: white; //background: url('../img/intro-bg.jpg') no-repeat bottom center scroll;
   background-color: #000;
   background-size: cover;
   .intro-body {
@@ -168,8 +167,7 @@ a {
 }
 
 .download-section {
-  color: white;
-  background: url('../img/downloads-bg.jpg') no-repeat center center scroll;
+  color: white; //background: url('../img/downloads-bg.jpg') no-repeat center center scroll;
   background-color: black;
   background-size: cover;
 }
