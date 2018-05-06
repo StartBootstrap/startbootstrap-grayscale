@@ -1,7 +1,8 @@
 @import 'variables.scss';
 //@import 'mixins.scss';
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: /* 'Montserrat',  */
+  sans-serif;
   position: relative;
   width: 100%;
   height: 100%;
@@ -21,11 +22,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Cardo', serif;
+  font-family: /* 'Cardo',  */
+  serif;
   font-weight: 700;
   margin: 0 0 35px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  letter-spacing: 1px; //text-transform: uppercase;
 }
 
 p {
@@ -51,7 +52,7 @@ a {
 }
 
 #mainNav {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  //font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-bottom: 0;
   text-transform: uppercase;
   border-bottom: 1px solid fade-out(white, .7);
@@ -111,8 +112,7 @@ a {
 .masthead {
   display: table;
   width: 100%;
-  height: auto;
-  padding: 200px 0;
+  height: auto; //padding: 200px 0;
   text-align: center;
   color: white;
   background: url('../img/intro-bg.jpg') no-repeat bottom center scroll;
@@ -143,9 +143,9 @@ a {
 }
 
 .btn-circle {
-  font-size: 26px;
-  width: 55px;
-  height: 55px;
+  display: initial;
+  font-size: 26px; //width: 55px;
+  //height: 55px;
   margin-top: 15px;
   line-height: 45px;
   -webkit-transition: background 0.3s ease-in-out;
@@ -190,7 +190,7 @@ a {
 }
 
 .btn {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  //font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
