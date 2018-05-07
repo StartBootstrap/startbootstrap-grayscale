@@ -1,3 +1,21 @@
+/*------------------------------------*\
+    CONTENTS
+\*------------------------------------*/
+/*
+IMPORTS
+RESETS
+NAVBAR
+SECTIONS
+BUTTONS
+FOOTER
+SHARED
+*/
+/*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $RESETS
+\*------------------------------------*/
 body {
   font-family: sans-serif;
   position: relative;
@@ -50,6 +68,9 @@ a:focus, a:hover {
   color: #5affd2;
 }
 
+/*------------------------------------*\
+    $NAVBAR
+\*------------------------------------*/
 #mainNav {
   margin-bottom: 0;
   text-transform: uppercase;
@@ -113,6 +134,9 @@ a:focus, a:hover {
   }
 }
 
+/*------------------------------------*\
+    $SECTIONS
+\*------------------------------------*/
 .masthead {
   display: table;
   width: 100%;
@@ -149,6 +173,31 @@ a:focus, a:hover {
   }
 }
 
+.content-section {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.download-section {
+  color: white;
+  background-color: black;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  .content-section {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+}
+
+.subhead {
+  font-size: 1.5rem;
+}
+
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
 .btn-circle {
   display: initial;
   font-size: 1.5rem;
@@ -166,24 +215,6 @@ a:focus, a:hover {
   color: white;
   outline: none;
   background: rgba(255, 255, 255, 0.1);
-}
-
-.content-section {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
-.download-section {
-  color: white;
-  background-color: black;
-  background-size: cover;
-}
-
-@media (min-width: 992px) {
-  .content-section {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
-  }
 }
 
 .btn {
@@ -228,10 +259,9 @@ ul.banner-social-buttons {
   }
 }
 
-.subhead {
-  font-size: 1.5rem;
-}
-
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
 footer {
   padding: 3rem 0;
 }
@@ -241,6 +271,9 @@ footer p {
   margin: 0;
 }
 
+/*------------------------------------*\
+    $SHARED
+\*------------------------------------*/
 ::-moz-selection {
   background: #fcfcfc;
   background: rgba(255, 255, 255, 0.2);

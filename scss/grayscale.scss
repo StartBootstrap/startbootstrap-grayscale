@@ -1,5 +1,27 @@
+/*------------------------------------*\
+    CONTENTS
+\*------------------------------------*/
+
+/*
+IMPORTS
+RESETS
+NAVBAR
+SECTIONS
+BUTTONS
+FOOTER
+SHARED
+*/
+
+/*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+
 @import 'variables.scss';
 //@import 'mixins.scss';
+/*------------------------------------*\
+    $RESETS
+\*------------------------------------*/
+
 body {
   font-family: /* 'Montserrat',  */
   sans-serif;
@@ -50,6 +72,10 @@ a {
     color: darken($primary, 20%);
   }
 }
+
+/*------------------------------------*\
+    $NAVBAR
+\*------------------------------------*/
 
 #mainNav {
   //font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -109,6 +135,10 @@ a {
   }
 }
 
+/*------------------------------------*\
+    $SECTIONS
+\*------------------------------------*/
+
 .masthead {
   display: table;
   width: 100%;
@@ -141,6 +171,32 @@ a {
   }
 }
 
+.content-section {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.download-section {
+  color: white; //background: url('../img/downloads-bg.jpg') no-repeat center center scroll;
+  background-color: black;
+  background-size: cover;
+}
+
+@media(min-width:992px) {
+  .content-section {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+}
+
+.subhead {
+  font-size: 1.5rem;
+}
+
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+
 .btn-circle {
   display: initial;
   font-size: 1.5rem; //width: 55px;
@@ -158,24 +214,6 @@ a {
     color: white;
     outline: none;
     background: fade-out(white, .9);
-  }
-}
-
-.content-section {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
-.download-section {
-  color: white; //background: url('../img/downloads-bg.jpg') no-repeat center center scroll;
-  background-color: black;
-  background-size: cover;
-}
-
-@media(min-width:992px) {
-  .content-section {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
   }
 }
 
@@ -218,9 +256,9 @@ ul.banner-social-buttons {
   }
 }
 
-.subhead {
-  font-size: 1.5rem;
-}
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
 
 footer {
   padding: 3rem 0;
@@ -229,6 +267,10 @@ footer {
     margin: 0;
   }
 }
+
+/*------------------------------------*\
+    $SHARED
+\*------------------------------------*/
 
 ::-moz-selection {
   background: #fcfcfc;
