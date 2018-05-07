@@ -79,44 +79,54 @@
 
 
 
-  <div id="portfolio" class="masthead">
+  <section id="portfolio" class="masthead">
     <div class="intro-body">
       <div class="container">
         <div class="row">
 
-          <header class="col-lg-3 mx-auto">
-            <h1 class="">InPortál</h1>
-            <p class="intro-text">Short description</p>
-            <a href="#modal1" class="btn btn-circle js-scroll-trigger">
-              <i class="fa fa-angle-double-down animated"></i>
-            </a>
-          </header>
+          <div class="col-lg-3 mx-auto">
+            <button type="button" class="btn btn-outline-light btn-lg" data-toggle="modal" data-target=".modal1">
+              <h1>InPortál</h1>
+              <p class="intro-text">Sit officia eiusmod dolor ullamco consectetur qui eiusmod anim.</p>
+              <i class="fa expand-arrows-alt animated"></i>
+            </button>
+          </div>
+          <!-- OPENS MODAL1 -->
 
-          <header class="col-lg-3 mx-auto">
-            <h1 class="">Obrazy bez domova</h1>
-            <p class="intro-text">Short description</p>
-            <a href="#modal2" class="btn btn-circle js-scroll-trigger">
-              <i class="fa fa-angle-double-down animated"></i>
-            </a>
-          </header>
+          <div class="col-lg-3 mx-auto">
+            <button type="button" class="btn btn-outline-light btn-lg" data-toggle="modal" data-target=".modal2">
+              <h1>Obrazy bez domova</h1>
+              <p class="intro-text">Sit officia eiusmod dolor ullamco consectetur qui eiusmod anim.</p>
+              <i class="fa expand-arrows-alt animated"></i>
+            </button>
+          </div>
+          <!-- OPENS MODAL2 -->
 
-          <header class="col-lg-3 mx-auto">
-            <h1 class="">HeO</h1>
-            <p class="intro-text">Short description</p>
-            <a href="#modal3" class="btn btn-circle js-scroll-trigger">
-              <i class="fa fa-angle-double-down animated"></i>
-            </a>
+          <div class="col-lg-3 mx-auto">
+            <button type="button" class="btn btn-outline-light btn-lg" data-toggle="modal" data-target=".modal3">
+              <h1>HeO</h1>
+              <p class="intro-text">Sit officia eiusmod dolor ullamco consectetur qui eiusmod anim.</p>
+              <i class="fa expand-arrows-alt animated"></i>
+            </button>
+          </div>
+          <!-- OPENS MODAL3 -->
+
+
+
+
+
         </div>
-
+        <!--  /.row -->
       </div>
+      <!--  /.container -->
     </div>
-  </div>
+    <!--  /.intro-body  -->
+  </section>
 
 
 
 
 
-  <!-- About Section -->
   <section id="about" class="content-section text-center">
     <div class="container">
       <div class="row">
@@ -149,7 +159,6 @@
 
 
 
-  <!-- Contact Section -->
   <section id="contact" class="content-section text-center">
     <div class="container">
       <div class="row">
@@ -187,13 +196,114 @@
 
 
 
-  <!-- Footer -->
   <footer>
     <div class="container text-center">
       <p>&copy; Ján Dugovič 2018</p>
     </div>
   </footer>
 
+
+
+
+
+  <!--  Modals  -->
+  <div class="modal fade modal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+
+      <div class="modal-content text-dark">
+        <div class="container-fluid">
+
+          <div class="modal-header">
+            <h2 class="modal-title">modal content</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!--  /.modal-header  -->
+
+          <div class="modal-body">
+            <p>Fugiat qui anim est ut commodo. Deserunt ut exercitation fugiat ea dolore dolore laborum proident sunt anim aute
+              officia duis. Proident occaecat non sint proident est occaecat elit do quis deserunt. Cillum cupidatat fugiat
+              voluptate sunt culpa labore culpa nisi dolore incididunt. Velit culpa minim magna incididunt deserunt ut duis
+              irure. Exercitation nostrud veniam veniam laboris sunt cupidatat cupidatat in. Culpa id in in ipsum tempor
+              exercitation sint sunt anim culpa in.</p>
+          </div>
+          <!--  /.modal-body  -->
+
+        </div>
+        <!--  /.container-fluid in modal -->
+      </div>
+    </div>
+  </div>
+  <!--  /.modal1  -->
+
+
+
+
+
+  <div class="modal fade modal2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+
+      <div class="modal-content text-dark">
+        <div class="container-fluid">
+
+          <div class="modal-header">
+            <h2 class="modal-title">modal content</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!--  /.modal-header  -->
+
+          <div class="modal-body">
+            <p>Fugiat qui anim est ut commodo. Deserunt ut exercitation fugiat ea dolore dolore laborum proident sunt anim aute
+              officia duis. Proident occaecat non sint proident est occaecat elit do quis deserunt. Cillum cupidatat fugiat
+              voluptate sunt culpa labore culpa nisi dolore incididunt. Velit culpa minim magna incididunt deserunt ut duis
+              irure. Exercitation nostrud veniam veniam laboris sunt cupidatat cupidatat in. Culpa id in in ipsum tempor
+              exercitation sint sunt anim culpa in.</p>
+          </div>
+          <!--  /.modal-body  -->
+
+        </div>
+        <!--  /.container-fluid in modal -->
+      </div>
+    </div>
+  </div>
+  <!--  /.modal2  -->
+
+
+
+
+
+  <div class="modal fade modal2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+
+      <div class="modal-content text-dark">
+        <div class="container-fluid">
+
+          <div class="modal-header">
+            <h2 class="modal-title">modal content</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!--  /.modal-header  -->
+
+          <div class="modal-body">
+            <p>Fugiat qui anim est ut commodo. Deserunt ut exercitation fugiat ea dolore dolore laborum proident sunt anim aute
+              officia duis. Proident occaecat non sint proident est occaecat elit do quis deserunt. Cillum cupidatat fugiat
+              voluptate sunt culpa labore culpa nisi dolore incididunt. Velit culpa minim magna incididunt deserunt ut duis
+              irure. Exercitation nostrud veniam veniam laboris sunt cupidatat cupidatat in. Culpa id in in ipsum tempor
+              exercitation sint sunt anim culpa in.</p>
+          </div>
+          <!--  /.modal-body  -->
+
+        </div>
+        <!--  /.container-fluid in modal -->
+      </div>
+    </div>
+  </div>
+  <!--  /.modal2  -->
 
 
 

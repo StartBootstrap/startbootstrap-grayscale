@@ -138,13 +138,13 @@ a:focus, a:hover {
     $SECTIONS
 \*------------------------------------*/
 .masthead {
-  display: table;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  color: white;
   background-color: #000;
   background-size: cover;
+  color: white;
+  display: table;
+  height: auto;
+  text-align: center;
+  width: 100%;
 }
 
 .masthead .intro-body {
@@ -166,7 +166,7 @@ a:focus, a:hover {
     padding: 0;
   }
   .masthead .intro-body .brand-heading {
-    font-size: 100px;
+    font-size: 6rem;
   }
   .masthead .intro-body .intro-text {
     font-size: 1.5rem;
@@ -198,6 +198,13 @@ a:focus, a:hover {
 /*------------------------------------*\
     $BUTTONS
 \*------------------------------------*/
+.btn {
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0;
+}
+
 .btn-circle {
   display: initial;
   font-size: 1.5rem;
@@ -215,14 +222,6 @@ a:focus, a:hover {
   color: white;
   outline: none;
   background: rgba(255, 255, 255, 0.1);
-}
-
-.btn {
-  font-weight: 400;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
-  border-radius: 0;
 }
 
 .btn-default {
