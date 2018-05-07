@@ -143,13 +143,18 @@ a {
   background-color: #000;
   background-size: cover;
   color: white; //background: url('../img/intro-bg.jpg') no-repeat bottom center scroll;
-  display: table;
+  display: grid;
+  grid: 1fr / 30% 30% 30%;
+  place-content: space-evenly center;
+  justify-content: space-evenly;
+  align-content: center;
   height: auto; //padding: 200px 0;
   text-align: center;
   width: 100%;
   .intro-body {
-    display: table-cell;
-    vertical-align: middle;
+    place-self: center; //rm align & justify after Edge supports this
+    align-self: center;
+    justify-self: center;
     .brand-heading {
       font-size: 3rem;
     }
@@ -199,6 +204,7 @@ a {
 
 .btn {
   //font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  white-space: normal;
   font-weight: 400;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; //text-transform: uppercase;
@@ -293,4 +299,8 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+.ico-lg {
+  font-size: 3rem;
 }
