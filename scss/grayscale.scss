@@ -148,12 +148,8 @@ section#contact {
 
 section#portfolio {
   padding: 6rem 0;
-}
-
-.masthead {
   background-color: #000;
   color: white;
-  height: auto;
   text-align: center;
   display: grid;
   grid: 1fr 1fr 1fr / 90%;
@@ -174,7 +170,7 @@ section#portfolio {
     width: 100%;
     padding: 0;
     display: grid;
-    grid: 1fr / 30% 30% 30%;
+    grid: 40% / 30% 30% 30%;
     justify-content: space-evenly;
     align-content: center;
     .intro-body {
@@ -293,4 +289,8 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+.small-caps {
+  font-variant: small-caps;
 }

@@ -151,12 +151,8 @@ section#contact {
 
 section#portfolio {
   padding: 6rem 0;
-}
-
-.masthead {
   background-color: #000;
   color: white;
-  height: auto;
   text-align: center;
   display: grid;
   grid: 1fr 1fr 1fr / 90%;
@@ -164,33 +160,33 @@ section#portfolio {
   align-content: space-evenly;
 }
 
-.masthead .intro-body {
+section#portfolio .intro-body {
   align-self: center;
   justify-self: center;
 }
 
-.masthead .intro-body .brand-heading {
+section#portfolio .intro-body .brand-heading {
   font-size: 3rem;
 }
 
-.masthead .intro-body .intro-text {
+section#portfolio .intro-body .intro-text {
   font-size: 1rem;
 }
 
 @media (min-width: 768px) {
-  .masthead {
+  section#portfolio {
     height: 100%;
     width: 100%;
     padding: 0;
     display: grid;
-    grid: 1fr / 30% 30% 30%;
+    grid: 40% / 30% 30% 30%;
     justify-content: space-evenly;
     align-content: center;
   }
-  .masthead .intro-body .brand-heading {
+  section#portfolio .intro-body .brand-heading {
     font-size: 6rem;
   }
-  .masthead .intro-body .intro-text {
+  section#portfolio .intro-body .intro-text {
     font-size: 1.5rem;
   }
 }
@@ -300,4 +296,8 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+.small-caps {
+  font-variant: small-caps;
 }
