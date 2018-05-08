@@ -71,46 +71,46 @@ a:focus, a:hover {
 /*------------------------------------*\
     $NAVBAR
 \*------------------------------------*/
-#mainNav {
+#nav {
   margin-bottom: 0;
   text-transform: uppercase;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   background-color: black;
 }
 
-#mainNav .navbar-toggler {
+#nav .navbar-toggler {
   font-size: 1rem;
   padding: 1rem;
   color: white;
   border: 1px solid white;
 }
 
-#mainNav .navbar-brand {
+#nav .navbar-brand {
   font-weight: 700;
 }
 
-#mainNav a {
+#nav a {
   color: white;
 }
 
-#mainNav .navbar-nav .nav-item {
+#nav .navbar-nav .nav-item {
   -webkit-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
 }
 
-#mainNav .navbar-nav .nav-item:hover {
+#nav .navbar-nav .nav-item:hover {
   color: fade(white, 80%);
   outline: none;
   background-color: transparent;
 }
 
-#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+#nav .navbar-nav .nav-item:active, #nav .navbar-nav .nav-item:focus {
   outline: none;
   background-color: transparent;
 }
 
 @media (min-width: 992px) {
-  #mainNav {
+  #nav {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
@@ -119,17 +119,17 @@ a:focus, a:hover {
     border-bottom: none;
     background: transparent;
   }
-  #mainNav.navbar-shrink {
+  #nav.navbar-shrink {
     padding-top: .5rem;
     padding-bottom: .5rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     background: black;
   }
-  #mainNav .nav-link.active {
+  #nav .nav-link.active {
     outline: none;
     background-color: rgba(255, 255, 255, 0.3);
   }
-  #mainNav .nav-link.active:hover {
+  #nav .nav-link.active:hover {
     color: white;
   }
 }
@@ -137,18 +137,23 @@ a:focus, a:hover {
 /*------------------------------------*\
     $SECTIONS
 \*------------------------------------*/
+section {
+  padding: 10% 0;
+}
+
+@media (min-width: 992px) {
+  section {
+    padding: 20% 0;
+  }
+}
+
 .masthead {
-  background-color: #000;
-  background-size: cover;
-  color: white;
+  height: auto;
   display: grid;
   grid: 1fr / 30% 30% 30%;
   place-content: space-evenly center;
   justify-content: space-evenly;
   align-content: center;
-  height: auto;
-  text-align: center;
-  width: 100%;
 }
 
 .masthead .intro-body {
@@ -167,32 +172,13 @@ a:focus, a:hover {
 
 @media (min-width: 768px) {
   .masthead {
-    height: 100%;
-    padding: 0;
+    height: 90%;
   }
   .masthead .intro-body .brand-heading {
     font-size: 6rem;
   }
   .masthead .intro-body .intro-text {
     font-size: 1.5rem;
-  }
-}
-
-.content-section {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
-.download-section {
-  color: white;
-  background-color: black;
-  background-size: cover;
-}
-
-@media (min-width: 992px) {
-  .content-section {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
   }
 }
 

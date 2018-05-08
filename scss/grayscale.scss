@@ -77,8 +77,7 @@ a {
     $NAVBAR
 \*------------------------------------*/
 
-#mainNav {
-  //font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+#nav {
   margin-bottom: 0;
   text-transform: uppercase;
   border-bottom: 1px solid fade-out(white, .7);
@@ -139,18 +138,23 @@ a {
     $SECTIONS
 \*------------------------------------*/
 
+section {
+  padding: 10% 0;
+}
+
+@media(min-width:992px) {
+  section {
+    padding: 20% 0;
+  }
+}
+
 .masthead {
-  background-color: #000;
-  background-size: cover;
-  color: white; //background: url('../img/intro-bg.jpg') no-repeat bottom center scroll;
+  height: auto;
   display: grid;
   grid: 1fr / 30% 30% 30%;
   place-content: space-evenly center;
   justify-content: space-evenly;
   align-content: center;
-  height: auto; //padding: 200px 0;
-  text-align: center;
-  width: 100%;
   .intro-body {
     place-self: center; //rm align & justify after Edge supports this
     align-self: center;
@@ -163,8 +167,7 @@ a {
     }
   }
   @media(min-width:768px) {
-    height: 100%;
-    padding: 0;
+    height: 90%;
     .intro-body {
       .brand-heading {
         font-size: 6rem;
@@ -173,24 +176,6 @@ a {
         font-size: 1.5rem;
       }
     }
-  }
-}
-
-.content-section {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
-.download-section {
-  color: white; //background: url('../img/downloads-bg.jpg') no-repeat center center scroll;
-  background-color: black;
-  background-size: cover;
-}
-
-@media(min-width:992px) {
-  .content-section {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
   }
 }
 
