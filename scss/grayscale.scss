@@ -146,7 +146,7 @@ section#contact {
   }
 }
 
-section#portfolio {
+section#work {
   padding: 6rem 0;
   background-color: #000;
   color: white;
@@ -293,4 +293,8 @@ img::-moz-selection {
 
 .small-caps {
   font-variant: small-caps;
+}
+
+.text-highlight {
+  color: darken( $primary, 40%);
 }

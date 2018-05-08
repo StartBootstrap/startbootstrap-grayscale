@@ -149,7 +149,7 @@ section#contact {
   }
 }
 
-section#portfolio {
+section#work {
   padding: 6rem 0;
   background-color: #000;
   color: white;
@@ -160,21 +160,21 @@ section#portfolio {
   align-content: space-evenly;
 }
 
-section#portfolio .intro-body {
+section#work .intro-body {
   align-self: center;
   justify-self: center;
 }
 
-section#portfolio .intro-body .brand-heading {
+section#work .intro-body .brand-heading {
   font-size: 3rem;
 }
 
-section#portfolio .intro-body .intro-text {
+section#work .intro-body .intro-text {
   font-size: 1rem;
 }
 
 @media (min-width: 768px) {
-  section#portfolio {
+  section#work {
     height: 100%;
     width: 100%;
     padding: 0;
@@ -183,10 +183,10 @@ section#portfolio .intro-body .intro-text {
     justify-content: space-evenly;
     align-content: center;
   }
-  section#portfolio .intro-body .brand-heading {
+  section#work .intro-body .brand-heading {
     font-size: 6rem;
   }
-  section#portfolio .intro-body .intro-text {
+  section#work .intro-body .intro-text {
     font-size: 1.5rem;
   }
 }
@@ -300,4 +300,8 @@ img::-moz-selection {
 
 .small-caps {
   font-variant: small-caps;
+}
+
+.text-highlight {
+  color: #00f3b1;
 }
