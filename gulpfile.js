@@ -101,7 +101,11 @@ gulp.task('js', ['js:minify']);
 gulp.task('html:minify', function () {
   return gulp.src('./index.dev.html')
     .pipe(htmlmin({
-      collapseWhitespace: true
+      collapseWhitespace: true,
+      minifyCSS: true,
+      removeComments: true,
+      removeEmptyAttributes: true,
+      removeRedundantAttributes: true
     }))
     .pipe(rename(('./index.html')))
     .pipe(gulp.dest('.'));
