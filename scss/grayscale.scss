@@ -138,15 +138,19 @@ a {
 \*------------------------------------*/
 
 section#work {
-  padding: 6rem 0;
+  align-content: space-evenly;
   background-color: #000;
   color: white;
-  text-align: center;
   display: grid;
   grid: 1fr 1fr 1fr / 90%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -ms-flex-line-pack: space-evenly;
   justify-content: center;
-  align-content: space-evenly;
+  padding: 6rem 0;
+  text-align: center;
   .intro-body {
+    -ms-flex-item-align: center;
     align-self: center;
     justify-self: center;
     .brand-heading {
@@ -157,13 +161,16 @@ section#work {
     }
   }
   @media(min-width:768px) {
-    height: 100%;
-    width: 100%;
-    padding: 0;
+    -ms-flex-line-pack: center;
+    align-content: center;
     display: grid;
     grid: 50% / 30% 30% 30%;
+    height: 100%;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
-    align-content: center;
+    padding: 0;
+    width: 100%;
     .intro-body {
       .brand-heading {
         font-size: 6rem;
@@ -201,17 +208,16 @@ section#contact {
 }
 
 .btn-circle {
-  display: initial;
-  font-size: 1.5rem; //width: 55px;
-  //height: 55px;
-  margin-top: 1rem;
-  line-height: 3rem;
-  -webkit-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-  color: white;
-  border: 2px solid white;
-  border-radius: 100% !important;
   background: transparent;
+  border-radius: 100% !important;
+  border: 2px solid white;
+  color: white;
+  display: initial;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin-top: 1rem;
+  transition: background 0.3s ease-in-out;
+  -webkit-transition: background 0.3s ease-in-out;
   &:focus,
   &:hover {
     color: white;
