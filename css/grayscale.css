@@ -136,18 +136,6 @@ a:focus, a:hover {
 /*------------------------------------*\
     $SECTIONS
 \*------------------------------------*/
-section#about,
-section#contact {
-  padding: 10rem 0;
-}
-
-@media (min-width: 992px) {
-  section#about,
-  section#contact {
-    padding: 16rem 0;
-  }
-}
-
 section#work {
   padding: 6rem 0;
   background-color: #000;
@@ -178,7 +166,7 @@ section#work .intro-body .intro-text {
     width: 100%;
     padding: 0;
     display: grid;
-    grid: 40% / 30% 30% 30%;
+    grid: 50% / 30% 30% 30%;
     justify-content: space-evenly;
     align-content: center;
   }
@@ -187,6 +175,18 @@ section#work .intro-body .intro-text {
   }
   section#work .intro-body .intro-text {
     font-size: 1.5rem;
+  }
+}
+
+section#about,
+section#contact {
+  padding: 10rem 0;
+}
+
+@media (min-width: 992px) {
+  section#about,
+  section#contact {
+    padding: 16rem 0;
   }
 }
 
