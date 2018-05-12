@@ -142,6 +142,7 @@ section#work {
   color: white;
   display: grid;
   grid: 1fr 1fr 1fr / 90%;
+  grid-row-gap: 1rem;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -ms-flex-line-pack: space-evenly;
@@ -310,4 +311,8 @@ img::-moz-selection {
 
 .text-highlight {
   color: #00f3b1;
+}
+
+.fa-1x {
+  font-size: 1rem;
 }
