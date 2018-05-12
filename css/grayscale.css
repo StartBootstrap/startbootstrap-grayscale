@@ -17,13 +17,14 @@ SHARED
     $RESETS
 \*------------------------------------*/
 body {
-  font-family: sans-serif;
+  background-color: black;
+  color: white;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 500;
+  height: 100%;
   position: relative;
   width: 100%;
-  height: 100%;
-  color: white;
-  background-color: black;
-  font-size: 16px;
 }
 
 html {
@@ -37,7 +38,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: serif;
+  font-family: 'Cardo', 'Georgia', serif;
   font-weight: 700;
   margin: 0 0 2rem;
 }
