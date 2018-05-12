@@ -85,10 +85,6 @@ a:focus, a:hover {
   border: 1px solid white;
 }
 
-#mainNav .navbar-brand {
-  font-weight: 700;
-}
-
 #mainNav a {
   color: white;
 }
