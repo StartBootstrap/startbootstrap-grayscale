@@ -300,3 +300,14 @@ img::-moz-selection {
 .fa-1x {
   font-size: 1rem;
 }
+
+.tooltip {
+  .tooltip-inner {
+    background-color: $primary;
+    color: #000;
+    font-weight: 700;
+  }
+  .arrow {
+    border: $primary;
+  }
+}

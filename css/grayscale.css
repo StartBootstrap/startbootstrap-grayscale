@@ -307,3 +307,13 @@ img::-moz-selection {
 .fa-1x {
   font-size: 1rem;
 }
+
+.tooltip .tooltip-inner {
+  background-color: #c0ffee;
+  color: #000;
+  font-weight: 700;
+}
+
+.tooltip .arrow {
+  border: #c0ffee;
+}

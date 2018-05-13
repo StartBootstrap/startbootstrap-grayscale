@@ -214,26 +214,26 @@
   <section id="contact" class="text-center">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-10 mx-auto">
           <h2>Let's talk design</h2>
 
           <ul class="list-inline banner-social-buttons">
             <li class="list-inline-item">
-              <a href="mailto:dugovicjan@gmail.com" class="btn btn-default btn-lg">
+              <button class="btn btn-default btn-lg" data-clipboard-text="dugovicjan@gmail.com">
                 <i class="fa fa-envelope fa-fw"></i>
-                <span class="network-name">E&ndash;mail</span>
-              </a>
+                <span class="network-name">dugovicjan@gmail.com</span>
+              </button>
             </li>
 
             <li class="list-inline-item">
-              <a href="tel:00420777663976" class="btn btn-default btn-lg">
+              <button class="btn btn-default btn-lg" data-clipboard-text="00420777663976">
                 <i class="fa fa-phone fa-fw"></i>
-                <span class="network-name">Call</span>
-              </a>
+                <span class="network-name">+420 777&thinsp;663&thinsp;976</span>
+              </button>
             </li>
 
             <li class="list-inline-item">
-              <a href="https://m.me/jandugovic" class="btn btn-default btn-lg">
+              <a href="https://m.me/jandugovic" target="_blank" class="btn btn-default btn-lg">
                 <i class="fa fa-comment fa-fw"></i>
                 <span class="network-name">Messenger</span>
               </a>
@@ -877,6 +877,45 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/grayscale.min.js"></script>
+
+  <!--  Clipboard.js  -->
+  <script src="js/clipboard.min.js"></script>
+
+  <!--  We initiate it and add tooltips from jQuery and Bootstrap-->
+  <script>
+    $('button').tooltip({
+      trigger: 'click',
+      placement: 'bottom'
+    });
+
+    function setTooltip(btn, message) {
+      $(btn).tooltip('hide')
+        .attr('data-original-title', message)
+        .tooltip('show');
+    }
+
+    function hideTooltip(btn) {
+      setTimeout(function () {
+        $(btn).tooltip('hide');
+      }, 1000);
+    }
+
+    // Clipboard
+
+    var clipboard = new ClipboardJS('.btn');
+
+    clipboard.on('success', function (e) {
+      setTooltip(e.trigger, 'Copied to clipboard!');
+      hideTooltip(e.trigger);
+    });
+
+    clipboard.on('error', function (e) {
+      setTooltip(e.trigger, 'Failed! Refresh and try again?');
+      hideTooltip(e.trigger);
+    });
+
+  </script>
+
 
 </body>
 
