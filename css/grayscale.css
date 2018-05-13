@@ -278,18 +278,13 @@ footer p {
 /*------------------------------------*\
     $SHARED
 \*------------------------------------*/
-::-moz-selection {
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
-  text-shadow: none;
-}
-
+/* 
 ::selection {
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
+  background: $secondary;
+  color: #fff;
   text-shadow: none;
-}
-
+} */
+/*
 img::-moz-selection {
   background: transparent;
 }
@@ -300,8 +295,7 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
-}
-
+} */
 .small-caps {
   font-variant: small-caps;
 }

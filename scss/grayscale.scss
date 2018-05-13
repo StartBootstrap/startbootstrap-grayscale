@@ -269,18 +269,14 @@ footer {
     $SHARED
 \*------------------------------------*/
 
-::-moz-selection {
-  background: #fcfcfc;
-  background: fade-out(white, .8);
-  text-shadow: none;
-}
-
+/* 
 ::selection {
-  background: #fcfcfc;
-  background: fade-out(white, .8);
+  background: $secondary;
+  color: #fff;
   text-shadow: none;
-}
+} */
 
+/*
 img::-moz-selection {
   background: transparent;
 }
@@ -291,7 +287,7 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
-}
+} */
 
 .small-caps {
   font-variant: small-caps;
