@@ -27,6 +27,7 @@
     },
     "dependencies": {
         "bootstrap": "4.1.1",
+        "clipboard": "^2.0.1",
         "font-awesome": "4.7.0",
         "gulp-htmlmin": "^4.0.0",
         "jquery": "3.3.1",
