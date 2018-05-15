@@ -844,7 +844,8 @@
     function init() {
       var imgDefer = document.getElementsByTagName('img');
       for (var i = 0; i < imgDefer.length; i++) {
-        if (imgDefer[i].getAttribute('data-src')) {
+        if (imgDefer[i].getAttribute(
+            'data-src')) {
           imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
         }
       }
@@ -854,56 +855,45 @@
   </script>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js" async></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" async></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js" async></script>
 
   <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false" async></script> -->
 
   <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script>
+  <script src="js/grayscale.min.js" async></script>
 
   <!--  Clipboard.js  -->
-  <script src="js/clipboard.min.js"></script>
+  <script src="js/clipboard.min.js" async></script>
 
   <!--  We initiate it and add tooltips from jQuery and Bootstrap-->
   <script>
-    $('button').tooltip({
-      trigger: 'click',
-      placement: 'bottom'
-    });
-
-    function setTooltip(btn, message) {
-      $(btn).tooltip('hide')
-        .attr('data-original-title', message)
-        .tooltip('show');
+    function setTooltip(t, o) {
+      $(t).tooltip("hide").attr("data-original-title", o).tooltip("show")
     }
 
-    function hideTooltip(btn) {
+    function hideTooltip(t) {
       setTimeout(function () {
-        $(btn).tooltip('hide');
-      }, 1000);
+        $(t).tooltip("hide")
+      }, 1e3)
     }
-
-    // Clipboard
-
-    var clipboard = new ClipboardJS('.btn');
-
-    clipboard.on('success', function (e) {
-      setTooltip(e.trigger, 'Copied to clipboard!');
-      hideTooltip(e.trigger);
+    $("button").tooltip({
+      trigger: "click",
+      placement: "bottom"
     });
-
-    clipboard.on('error', function (e) {
-      setTooltip(e.trigger, 'Failed! Refresh and try again?');
-      hideTooltip(e.trigger);
+    var
+      clipboard = new ClipboardJS(".btn");
+    clipboard.on("success", function (t) {
+      setTooltip(t.trigger, "Copied to clipboard!"), hideTooltip(t.trigger)
+    }), clipboard.on("error", function (t) {
+      setTooltip(t.trigger, "Failed! Refresh and try again?"), hideTooltip(t.trigger)
     });
 
   </script>
-
 
 </body>
 

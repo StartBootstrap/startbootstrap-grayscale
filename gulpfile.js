@@ -103,6 +103,7 @@ gulp.task('html:minify', function () {
     .pipe(htmlmin({
       collapseWhitespace: true,
       minifyCSS: true,
+      minifyJS: true,
       removeComments: true,
       removeEmptyAttributes: true,
       removeRedundantAttributes: true
