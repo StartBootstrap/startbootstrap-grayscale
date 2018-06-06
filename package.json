@@ -39,7 +39,7 @@
         "gulp": "^3.9.1",
         "gulp-clean-css": "3.9.4",
         "gulp-header": "2.0.5",
-        "gulp-rename": "^1.2.2",
+        "gulp-rename": "^1.2.3",
         "gulp-sass": "4.0.1",
         "gulp-uglify": "3.0.0"
     }
