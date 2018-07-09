@@ -1,0 +1,82 @@
+{
+  "_from": "@fortawesome/fontawesome-free",
+  "_id": "@fortawesome/fontawesome-free@5.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-0XHj3cIq7OiG2v79UldqDHLFndLXxq0hbNTvsi7zDbLXiBtMkX+exuVUX466cajlSV8rkLiwa7GhTcMIKR1ajQ==",
+  "_location": "/@fortawesome/fontawesome-free",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@fortawesome/fontawesome-free",
+    "name": "@fortawesome/fontawesome-free",
+    "escapedName": "@fortawesome%2ffontawesome-free",
+    "scope": "@fortawesome",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.1.0.tgz",
+  "_shasum": "f35f5ba91366b7a58b0b6a4f22ff0907fe002219",
+  "_spec": "@fortawesome/fontawesome-free",
+  "_where": "/Users/DANGER_DAVID/Sites/development-projects/grayscale-redesign",
+  "author": {
+    "name": "Dave Gandy",
+    "email": "dave@fontawesome.com",
+    "url": "http://twitter.com/davegandy"
+  },
+  "bugs": {
+    "url": "http://github.com/FortAwesome/Font-Awesome/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Brian Talbot",
+      "url": "http://twitter.com/talbs"
+    },
+    {
+      "name": "Travis Chase",
+      "url": "http://twitter.com/supercodepoet"
+    },
+    {
+      "name": "Rob Madole",
+      "url": "http://twitter.com/robmadole"
+    },
+    {
+      "name": "Geremia Taglialatela",
+      "url": "http://twitter.com/gtagliala"
+    },
+    {
+      "name": "Mike Wilkerson",
+      "url": "http://twitter.com/mw77"
+    }
+  ],
+  "dependencies": {},
+  "deprecated": false,
+  "description": "The iconic font, CSS, and SVG framework",
+  "engines": {
+    "node": ">=6"
+  },
+  "homepage": "https://fontawesome.com",
+  "keywords": [
+    "font",
+    "awesome",
+    "fontawesome",
+    "icon",
+    "svg",
+    "bootstrap"
+  ],
+  "license": "(CC-BY-4.0 AND OFL-1.1 AND MIT)",
+  "main": "js/fontawesome.js",
+  "name": "@fortawesome/fontawesome-free",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FortAwesome/Font-Awesome.git"
+  },
+  "style": "css/fontawesome.css",
+  "version": "5.1.0"
+}
