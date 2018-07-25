@@ -1,3 +1,8 @@
+/*!
+ * Start Bootstrap - Grayscale v5.0.0 (https://startbootstrap.com/template-overviews/grayscale)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
+ */
 #mainNav {
   min-height: 56px;
   background-color: #fff;
@@ -208,6 +213,7 @@
 .signup-section .form-inline input {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
+  height: auto;
   font-family: 'Varela Round';
   font-size: 80%;
   text-transform: uppercase;
