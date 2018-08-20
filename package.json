@@ -32,12 +32,12 @@
         "gulp-htmlmin": "^4.0.0",
         "jquery": "3.3.1",
         "jquery.easing": "^1.4.1",
-        "popper.js": "^1.14.3"
+        "popper.js": "^1.14.4"
     },
     "devDependencies": {
         "browser-sync": "^2.24.6",
         "gulp": "^3.9.1",
-        "gulp-clean-css": "3.9.4",
+        "gulp-clean-css": "^3.10.0",
         "gulp-header": "2.0.5",
         "gulp-rename": "^1.4.0",
         "gulp-sass": "4.0.1",
