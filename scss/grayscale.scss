@@ -187,8 +187,8 @@ section#work {
   }
 }
 
-section#about,
-section#contact {
+#about,
+#contact {
   padding: 10rem 0;
   @media (min-width: 992px) {
     padding: 16rem 0;
@@ -212,24 +212,24 @@ section#contact {
   border-radius: 0;
 }
 
-.btn-circle {
-  background: transparent;
-  border-radius: 100% !important;
-  border: 2px solid $white;
-  color: $white;
-  display: initial;
-  font-size: 1.5rem;
-  line-height: 3rem;
-  margin-top: 1rem;
-  transition: background 0.3s ease-in-out;
-  -webkit-transition: background 0.3s ease-in-out;
-  &:focus,
-  &:hover {
-    color: $white;
-    outline: none;
-    background: fade-out($white, 0.9);
-  }
-}
+// .btn-circle {
+//   background: transparent;
+//   border-radius: 100% !important;
+//   border: 2px solid $white;
+//   color: $white;
+//   display: initial;
+//   font-size: 1.5rem;
+//   line-height: 3rem;
+//   margin-top: 1rem;
+//   transition: background 0.3s ease-in-out;
+//   -webkit-transition: background 0.3s ease-in-out;
+//   &:focus,
+//   &:hover {
+//     color: $white;
+//     outline: none;
+//     background: fade-out($white, 0.9);
+//   }
+// }
 
 .btn-default {
   color: $primary;
@@ -254,9 +254,9 @@ ul.banner-social-buttons {
       display: block;
       margin-bottom: 1.5rem;
       padding: 0;
-      &:last-child {
-        margin-bottom: 0;
-      }
+      // &:last-child {
+      //   margin-bottom: 0;
+      // }
     }
   }
 }

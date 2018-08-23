@@ -185,14 +185,14 @@ section#work .intro-body .intro-text {
   font-size: 1rem;
 }
 
-section#about,
-section#contact {
+#about,
+#contact {
   padding: 10rem 0;
 }
 
 @media (min-width: 992px) {
-  section#about,
-  section#contact {
+  #about,
+  #contact {
     padding: 16rem 0;
   }
 }
@@ -210,25 +210,6 @@ section#contact {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   border-radius: 0;
-}
-
-.btn-circle {
-  background: transparent;
-  border-radius: 100% !important;
-  border: 2px solid #f2f3f4;
-  color: #f2f3f4;
-  display: initial;
-  font-size: 1.5rem;
-  line-height: 3rem;
-  margin-top: 1rem;
-  transition: background 0.3s ease-in-out;
-  -webkit-transition: background 0.3s ease-in-out;
-}
-
-.btn-circle:focus, .btn-circle:hover {
-  color: #f2f3f4;
-  outline: none;
-  background: rgba(242, 243, 244, 0.1);
 }
 
 .btn-default {
@@ -259,9 +240,6 @@ ul.banner-social-buttons {
     display: block;
     margin-bottom: 1.5rem;
     padding: 0;
-  }
-  ul.banner-social-buttons li:last-child {
-    margin-bottom: 0;
   }
 }
 
