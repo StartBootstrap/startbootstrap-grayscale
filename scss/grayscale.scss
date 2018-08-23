@@ -16,7 +16,7 @@ SHARED
     $IMPORTS
 \*------------------------------------*/
 
-@import 'variables.scss';
+@import "variables.scss";
 //@import 'mixins.scss';
 /*------------------------------------*\
     $RESETS
@@ -25,7 +25,8 @@ SHARED
 body {
   background-color: $black;
   color: $white;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   font-weight: 500;
   height: 100%;
@@ -44,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-weight: 700;
   margin: 0 0 2rem; //letter-spacing: 1px;
 }
@@ -53,7 +54,7 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   margin: 0 0 1.5rem;
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     font-size: 1rem;
     line-height: 1.6;
     margin: 0 0 1.5rem;
@@ -78,7 +79,7 @@ a {
 #mainNav {
   margin-bottom: 0;
   text-transform: uppercase;
-  border-bottom: 1px solid fade-out($white, .7);
+  border-bottom: 1px solid fade-out($white, 0.7);
   background-color: $black;
   .navbar-toggler {
     font-size: 1rem;
@@ -105,23 +106,29 @@ a {
       }
     }
   }
-  @media(min-width:992px) {
+  @media (min-width: 992px) {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -webkit-transition: background 0.3s ease-in-out,
+      padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -webkit-transition: background 0.3s ease-in-out,
+      padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -webkit-transition: background 0.3s ease-in-out,
+      padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out,
+      padding-bottom 0.3s;
     letter-spacing: 1px;
     border-bottom: none;
     background: transparent;
     &.navbar-shrink {
-      padding-top: .5rem;
-      padding-bottom: .5rem;
-      border-bottom: 1px solid fade-out($white, .7);
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid fade-out($white, 0.7);
       background: $black;
     }
     .nav-link.active {
       outline: none;
-      background-color: rgba($white, .3);
+      background-color: rgba($white, 0.3);
       &:hover {
         color: $white;
       }
@@ -134,15 +141,36 @@ a {
 \*------------------------------------*/
 
 section#work {
-  align-content: space-evenly;
+  @media (min-width: 768px) {
+    -ms-flex-line-pack: center;
+    align-content: center;
+    grid: 10% 50% / 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+    height: 100%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 0 1rem;
+    width: 100%;
+    .span-col-3 {
+      grid-column: span 3 / auto;
+    }
+    .intro-body {
+      .brand-heading {
+        font-size: 6rem;
+      }
+      .intro-text {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
   background-color: $black;
   color: $white;
   display: grid;
-  grid: 1fr 1fr 1fr / 90%;
   grid-row-gap: 1rem;
+  grid: 5rem 1fr 1fr 1fr / 90%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  -ms-flex-line-pack: space-evenly;
   justify-content: center;
   padding: 6rem 0;
   text-align: center;
@@ -157,32 +185,12 @@ section#work {
       font-size: 1rem;
     }
   }
-  @media(min-width:768px) {
-    -ms-flex-line-pack: center;
-    align-content: center;
-    display: grid;
-    grid: 50% / 30% 30% 30%;
-    height: 100%;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-    padding: 0;
-    width: 100%;
-    .intro-body {
-      .brand-heading {
-        font-size: 6rem;
-      }
-      .intro-text {
-        font-size: 1.5rem;
-      }
-    }
-  }
 }
 
 section#about,
 section#contact {
   padding: 10rem 0;
-  @media(min-width: 992px) {
+  @media (min-width: 992px) {
     padding: 16rem 0;
   }
 }
@@ -219,7 +227,7 @@ section#contact {
   &:hover {
     color: $white;
     outline: none;
-    background: fade-out($white, .9);
+    background: fade-out($white, 0.9);
   }
 }
 
@@ -238,10 +246,10 @@ section#contact {
 
 ul.banner-social-buttons {
   margin-top: 0;
-  @media(max-width: 1199px) {
+  @media (max-width: 1199px) {
     margin-top: 1rem;
   }
-  @media(max-width:767px) {
+  @media (max-width: 767px) {
     li {
       display: block;
       margin-bottom: 1.5rem;
@@ -294,7 +302,7 @@ img::-moz-selection {
 }
 
 .text-highlight {
-  color: darken( $primary, 40%);
+  color: darken($primary, 40%);
 }
 
 .fa-1x {
