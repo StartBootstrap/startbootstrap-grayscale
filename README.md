@@ -9,6 +9,22 @@
 
 This is a personal presentation site. Any fixes or requests are welcome to be filed as issues.
 
+### Installation
+
+1. Clone this repo
+2. Run `npm i` in its root folder _eg. C:\\jandu\\_
+3. `gulp dev` should start a live server with auto-updating website, opened in your default browser.
+
+If not: check if you have updated npm, if gulp's tasks work and then check the browser's console for errors. Upstream issues have some hints too.
+
+### Usage
+
+You could use this as your own portfolio site too, it's easy! Just change some colors, text and images. But would be nice from you to not use it in the same area or in the same professional field, as this repo (ie. UX in Central Europe).
+
+### Dev setup
+
+This runs on GitHub Pages and is built by TravisCI, which activates with every commit to the master branch. It was forked from a free template based on Bootstrap 4 and modified using VS Code. It will forever be a WIP with irregular upgrades & changes. To setup the dev environment, you just need to download and install [VS Code](https://code.visualstudio.com/) and [Node.JS](https://nodejs.org/en/), then follow instructions in Installation section (`git clone https://github.com/demoklion/jandu.git && npm i && gulp dev`).
+
 ## Copyright and License
 
 Copyright 2018 Ján Dugovič, based on a template provided by Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/gh-pages/LICENSE) license.
