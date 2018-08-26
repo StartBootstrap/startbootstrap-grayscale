@@ -15,11 +15,11 @@ This is a personal presentation site. Any fixes or requests are welcome to be fi
 2. Run `npm i` in its root folder _eg. C:\\jandu\\_
 3. `gulp dev` should start a live server with auto-updating website, opened in your default browser.
 
-If not: check if you have updated npm, if gulp's tasks work and then check the browser's console for errors. Upstream issues have some hints too.
+If not: check if you have updated **npm**, if **gulp**'s tasks work and then check the browser's **console** for errors. Upstream issues have some hints too.
 
 ### Usage
 
-You could use this as your own portfolio site too, it's easy! Just change some colors, text and images. But would be nice from you to not use it in the same area or in the same professional field, as this repo (ie. UX in Central Europe).
+You could use this as your own portfolio site too, it's easy! Just change some colors, text and images. It would be nice from you to **not** target the same area or field, as this repo does (ie. UX in Central Europe).
 
 ### Dev setup
 
