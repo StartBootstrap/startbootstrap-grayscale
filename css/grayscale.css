@@ -153,7 +153,7 @@ section#work {
     -ms-flex-line-pack: center;
     align-content: center;
     grid: 10% 50% / 1fr 1fr 1fr;
-    grid-column-gap: 1rem;
+    grid-column-gap: 2rem;
     height: 100%;
     -ms-flex-pack: distribute;
     justify-content: space-around;

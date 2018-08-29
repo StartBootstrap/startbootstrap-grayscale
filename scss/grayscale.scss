@@ -145,7 +145,7 @@ section#work {
     -ms-flex-line-pack: center;
     align-content: center;
     grid: 10% 50% / 1fr 1fr 1fr;
-    grid-column-gap: 1rem;
+    grid-column-gap: 2rem;
     height: 100%;
     -ms-flex-pack: distribute;
     justify-content: space-around;
@@ -204,32 +204,12 @@ section#work {
 \*------------------------------------*/
 
 .btn {
-  //font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   white-space: normal;
   font-weight: 400;
   -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; //text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
   border-radius: 0;
 }
-
-// .btn-circle {
-//   background: transparent;
-//   border-radius: 100% !important;
-//   border: 2px solid $white;
-//   color: $white;
-//   display: initial;
-//   font-size: 1.5rem;
-//   line-height: 3rem;
-//   margin-top: 1rem;
-//   transition: background 0.3s ease-in-out;
-//   -webkit-transition: background 0.3s ease-in-out;
-//   &:focus,
-//   &:hover {
-//     color: $white;
-//     outline: none;
-//     background: fade-out($white, 0.9);
-//   }
-// }
 
 .btn-default {
   color: $primary;
