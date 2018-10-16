@@ -1,13 +1,13 @@
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, .5)} 75%,$black 100%), url('../img/bg-signup.jpg');
+  background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%, #{fade-out($black, .5)} 75%, $black 100%), url('../img/bg-signup.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   .form-inline {
     input {
-      box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0,0,0,.1) !important;
+      box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, .1) !important;
       padding: 1.25rem 2rem;
       height: auto;
       font-family: 'Varela Round';
@@ -17,4 +17,40 @@
       border: 0;
     }
   }
+}
+
+.linkedin-section {
+  padding: 10rem 0;
+  background: url('../img/demo-image-01.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.github-section {
+  padding: 10rem 0;
+  background: url('../img/demo-image-02.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.twitter-section {
+  padding: 10rem 0;
+  background: url('../img/demo-image-03.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.stackoverflow-section {
+  padding: 10rem 0;
+  background: url('../img/demo-image-04.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }

@@ -229,6 +229,42 @@
   border: 0;
 }
 
+.linkedin-section {
+  padding: 10rem 0;
+  background: url("../img/demo-image-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.github-section {
+  padding: 10rem 0;
+  background: url("../img/demo-image-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.twitter-section {
+  padding: 10rem 0;
+  background: url("../img/demo-image-03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.stackoverflow-section {
+  padding: 10rem 0;
+  background: url("../img/demo-image-04.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
 .contact-section {
   padding: 5rem 0 0;
 }
