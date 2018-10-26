@@ -14,6 +14,13 @@
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "type": "gulp",
+      "task": "html",
+      "problemMatcher": [
+        "$gulp-tsc"
+      ]
     }
   ]
 }
