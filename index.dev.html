@@ -98,7 +98,6 @@
   </style>
 
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
   </noscript>
 
 
@@ -899,7 +898,7 @@
 
   <!--  SCRIPTS   -->
   <!-- Deferred Styles Script -->
-  <script>
+  <script defer>
     var loadDeferredStyles = function () {
       var addStylesNode = document.getElementById("deferred-styles");
       var replacement = document.createElement("div");
@@ -920,7 +919,7 @@
         this bit does it:
         <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="original.png"> -->
 
-  <script>
+  <script defer>
     function init() {
       var imgDefer = document.getElementsByTagName('img');
       for (var i = 0; i < imgDefer.length; i++) {
@@ -935,22 +934,22 @@
   </script>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script defer src="vendor/jquery/jquery.min.js"></script>
+  <script defer src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script defer src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false" async></script> -->
 
   <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script>
+  <script defer src="js/grayscale.min.js"></script>
 
   <!--  Clipboard.js  -->
-  <script src="js/clipboard.min.js"></script>
+  <script defer src="js/clipboard.min.js"></script>
   <!--  We initiate it and add tooltips from jQuery and Bootstrap-->
-  <script>
+  <script defer>
     function setTooltip(t, o) {
       $(t).tooltip("hide").attr("data-original-title", o).tooltip("show")
     }
