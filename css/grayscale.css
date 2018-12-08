@@ -170,10 +170,18 @@
   padding-top: 10rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
-}
+} 
 
 .about-section p {
   margin-bottom: 5rem;
+} 
+
+h6 {
+  margin-left: 1px;
+  float: left;
+}
+.projects-section {
+  background-color: aquamarine;
 }
 
 .projects-section {
