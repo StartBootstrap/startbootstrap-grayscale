@@ -2,7 +2,9 @@ sudo: false
 language: node_js
 node_js:
   - "10"
-install: npm ci
+install:
+  - npm ci
+  - npm i gulp@3.9.1
 script:
   - npm test
   - gulp
