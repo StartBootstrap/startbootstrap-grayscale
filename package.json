@@ -38,7 +38,7 @@
     "browser-sync": "^2.24.7",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^4.0.0",
-    "gulp-header": "^2.0.5",
+    "gulp-header": "^2.0.7",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "4.0.2",
     "gulp-uglify": "^3.0.1"
