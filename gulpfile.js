@@ -23,33 +23,44 @@ gulp.task('vendor', function () {
 
   // Bootstrap
   gulp.src([
-      './node_modules/bootstrap/dist/**/*',
-      '!./node_modules/bootstrap/dist/css/bootstrap-grid*',
-      '!./node_modules/bootstrap/dist/css/bootstrap-reboot*'
-    ])
+    './node_modules/bootstrap/dist/**/*',
+    '!./node_modules/bootstrap/dist/css/bootstrap-grid*',
+    '!./node_modules/bootstrap/dist/css/bootstrap-reboot*'
+  ])
     .pipe(gulp.dest('./vendor/bootstrap'))
 
-  // Font Awesome
+  // Font Awesome (v4)
+  // gulp.src([
+  //     './node_modules/font-awesome/**/*',
+  //     '!./node_modules/font-awesome/{less,less/*}',
+  //     '!./node_modules/font-awesome/{scss,scss/*}',
+  //     '!./node_modules/font-awesome/.*',
+  //     '!./node_modules/font-awesome/*.{txt,json,md}'
+  //   ])
+  //   .pipe(gulp.dest('./vendor/font-awesome'))
+
+  // Font Awesome v5
   gulp.src([
-      './node_modules/font-awesome/**/*',
-      '!./node_modules/font-awesome/{less,less/*}',
-      '!./node_modules/font-awesome/{scss,scss/*}',
-      '!./node_modules/font-awesome/.*',
-      '!./node_modules/font-awesome/*.{txt,json,md}'
-    ])
+    './node_modules/@fortawesome/fontawesome-free/**/*',
+    '!./node_modules/@fortawesome/fontawesome-free/{less,less/*}',
+    '!./node_modules/@fortawesome/fontawesome-free/{scss,scss/*}',
+    '!./node_modules/@fortawesome/fontawesome-free/.*',
+    '!./node_modules/@fortawesome/fontawesome-free/*.{txt,json,md}'
+  ])
     .pipe(gulp.dest('./vendor/font-awesome'))
+
 
   // jQuery
   gulp.src([
-      './node_modules/jquery/dist/*',
-      '!./node_modules/jquery/dist/core.js'
-    ])
+    './node_modules/jquery/dist/*',
+    '!./node_modules/jquery/dist/core.js'
+  ])
     .pipe(gulp.dest('./vendor/jquery'))
 
   // jQuery Easing
   gulp.src([
-      './node_modules/jquery.easing/*.js'
-    ])
+    './node_modules/jquery.easing/*.js'
+  ])
     .pipe(gulp.dest('./vendor/jquery-easing'))
 
 });
@@ -66,9 +77,9 @@ gulp.task('css:compile', function () {
 // Minify CSS
 gulp.task('css:minify', ['css:compile'], function () {
   return gulp.src([
-      './css/*.css',
-      '!./css/*.min.css'
-    ])
+    './css/*.css',
+    '!./css/*.min.css'
+  ])
     .pipe(cleanCSS())
     .pipe(rename({
       suffix: '.min'
@@ -83,9 +94,9 @@ gulp.task('css', ['css:compile', 'css:minify']);
 // Minify JavaScript
 gulp.task('js:minify', function () {
   return gulp.src([
-      './js/*.js',
-      '!./js/*.min.js'
-    ])
+    './js/*.js',
+    '!./js/*.min.js'
+  ])
     .pipe(uglify())
     .pipe(rename({
       suffix: '.min'
