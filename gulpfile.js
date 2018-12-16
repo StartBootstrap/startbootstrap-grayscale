@@ -29,7 +29,7 @@ gulp.task('vendor', function () {
   ])
     .pipe(gulp.dest('./vendor/bootstrap'))
 
-  // Font Awesome (upgraded to 5)
+  // Font Awesome (v4)
   // gulp.src([
   //     './node_modules/font-awesome/**/*',
   //     '!./node_modules/font-awesome/{less,less/*}',
@@ -38,6 +38,17 @@ gulp.task('vendor', function () {
   //     '!./node_modules/font-awesome/*.{txt,json,md}'
   //   ])
   //   .pipe(gulp.dest('./vendor/font-awesome'))
+
+  // Font Awesome v5
+  gulp.src([
+    './node_modules/@fortawesome/fontawesome-free/**/*',
+    '!./node_modules/@fortawesome/fontawesome-free/{less,less/*}',
+    '!./node_modules/@fortawesome/fontawesome-free/{scss,scss/*}',
+    '!./node_modules/@fortawesome/fontawesome-free/.*',
+    '!./node_modules/@fortawesome/fontawesome-free/*.{txt,json,md}'
+  ])
+    .pipe(gulp.dest('./vendor/font-awesome'))
+
 
   // jQuery
   gulp.src([
