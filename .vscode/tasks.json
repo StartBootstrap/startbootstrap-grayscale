@@ -16,7 +16,10 @@
       "group": {
         "kind": "build",
         "isDefault": true
-      }
+      },
+      "problemMatcher": [
+        "$gulp-tsc"
+      ]
     }
   ]
 }
