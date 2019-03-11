@@ -1,0 +1,21 @@
+{
+  "name": "Ján Dugovič | UX Designer",
+  "short_name": "JD",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "https://jandu.top/",
+  "lang": "en",
+  "orientation": "undefined",
+  "generated": "undefined",
+  "icons": [
+    {
+      "src": "https://jandu.top/android-chrome-192x192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://jandu.top/android-chrome-512x512.png",
+      "sizes": "512x512"
+    }
+  ]
+}
