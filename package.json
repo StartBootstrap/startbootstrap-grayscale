@@ -26,21 +26,21 @@
     "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
   },
   "dependencies": {
-    "bootstrap": "^4.2.1",
+    "bootstrap": "^4.3.1",
     "clipboard": "^2.0.1",
+    "gulp": "^3.9.1",
     "gulp-htmlmin": "^5.0.1",
     "jquery": "3.3.1",
     "jquery.easing": "^1.4.1",
     "popper.js": "^1.14.7"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.7.0",
+    "@fortawesome/fontawesome-free": "^5.7.2",
     "browser-sync": "^2.24.7",
-    "gulp": "^3.9.1",
     "gulp-clean-css": "^4.0.0",
     "gulp-header": "^2.0.7",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "4.0.2",
-    "gulp-uglify": "^3.0.1"
+    "gulp-uglify": "^3.0.2"
   }
 }
