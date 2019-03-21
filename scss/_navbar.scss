@@ -1,6 +1,6 @@
 #mainNav {
   min-height: 56px;
-  background-color: $white;
+  background-color: fade-out(white, .1);
   .navbar-toggler {
     font-size: 80%;
     padding: 0.75rem;
@@ -33,25 +33,25 @@
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: transparent;
+    background-color: fade-out(black, .9);
     transition: background-color 0.3s ease-in-out;
     .navbar-brand {
       padding: .5rem 0;
-      color: fade-out($white, .5);
+      color: fade-out($white, .2);
     }
     .nav-link {
       transition: none;
       padding: 2rem 1.5rem;
-      color: fade-out($white, .5);
+      color: fade-out($white, .2);
       &:hover {
-        color: fade-out($white, .25);
+        color: fade-out($white, .05);
       }
       &:active {
         color: white;
       }
     }
     &.navbar-shrink {
-      background-color: $white;
+      background-color: fade-out(white, .1);
       .navbar-brand {
         color: $black;
       }
