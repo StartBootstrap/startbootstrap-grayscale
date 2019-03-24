@@ -4,13 +4,15 @@
 @import 'masthead.scss';
 @import 'buttons.scss';
 @import 'about.scss';
-@import 'projects.scss';
+@import 'issues.scss';
 @import 'signup.scss';
 @import 'contact.scss';
 
 body {
-  font-family: 'Nunito';
-  letter-spacing: 0.0625em;
+  font-family: 'Work Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Antic Slab';
 }
 
 a {
@@ -35,5 +37,12 @@ a {
 }
 
 footer {
-  padding: 5rem 0;
+  border-top: solid 1px rgba(white,.25);
+  padding: 3rem 0;
+  a {
+    color: rgba(white,.5);
+    &:hover {
+     color: rgba(white,.75); 
+    }
+  }
 }

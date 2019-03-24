@@ -1,10 +1,25 @@
 .signup-section {
-  padding: 10rem 0;
-  background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, .5)} 75%,$black 100%), url('../img/bg-signup.jpg');
-  background-position: center;
+  padding: 10rem 0 5rem;
+  background: linear-gradient(to bottom, $primary 0%, $black 100%);
+  background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: contain;
+  hr {
+    border-top-color: rgba(white,.5);
+    margin-bottom: 3rem;
+  }
+  p {
+    color: rgba(white,.75);
+    &:last-child {
+      border: solid 1px rgba(white,.75);
+      padding: .5rem 1rem;
+      display: inline-block;
+      border-radius: .25rem;
+      margin-top: 1rem;
+      background: rgba(white,.25);
+    }
+  }
   .form-inline {
     input {
       box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0,0,0,.1) !important;

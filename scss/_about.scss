@@ -1,7 +1,13 @@
 .about-section {
   padding-top: 10rem;
   background: linear-gradient(to bottom, $black 0%,#{fade-out($black, .1)} 75%,#{fade-out($black, .2)} 100%);
+  h2 {
+    font-family: 'Antic Slab';
+  }
   p {
-    margin-bottom: 5rem;
+    &:last-of-type {
+      margin-bottom: 5rem;
+    }
+    color: rgba(white,.9);
   }
 }

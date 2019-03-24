@@ -13,14 +13,19 @@
   .navbar-brand {
     color: $black;
     font-weight: 700;
-    padding: .9rem 0;
+    padding: .5rem 0;
   }
   .navbar-nav {
-    .nav-item {
+    .nav-link {
+      transition: all 300ms ease;
+      border: 2px solid transparent;
       &:hover {
         color: fade(white, 80%);
         outline: none;
         background-color: transparent;
+      }
+      &.donate {
+        color: $primary;
       }
       &:active,
       &:focus {
@@ -36,15 +41,15 @@
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
     .navbar-brand {
-      padding: .5rem 0;
+      padding: 1rem 0;
       color: fade-out($white, .5);
     }
     .nav-link {
       transition: none;
       padding: 2rem 1.5rem;
-      color: fade-out($white, .5);
+      color: fade-out($black, .15);
       &:hover {
-        color: fade-out($white, .25);
+        color: fade-out($black, .5);
       }
       &:active {
         color: white;
@@ -57,8 +62,8 @@
       }
       .nav-link {
         color: $black;
-        padding: 1.5rem 1.5rem 1.25rem;
-        border-bottom: 0.25rem solid transparent;
+        padding: .5rem 1.5rem;
+        border-radius: .25rem;
         &:hover {
           color: $primary;
         }
@@ -68,7 +73,7 @@
         &.active {
           color: $primary;
           outline: none;
-          border-bottom: 0.25rem solid $primary;
+          border: 2px solid $primary;
         }
       }
     }
