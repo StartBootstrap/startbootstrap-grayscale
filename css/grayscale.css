@@ -115,33 +115,40 @@
     margin-top: 54vw;
     padding-top: 1rem;
   }
+  .masthead .intro h1,
+  .masthead .intro p {
+    color: #0D6A94;
+  }
+  .masthead .intro h1 {
+    font-family: "Antic Slab";
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 }
 
-.masthead h1, .masthead p {
-  color: #0D6A94;
-}
-
-.masthead h1 {
-  font-family: 'Antic Slab';
-  font-size: 2rem;
-  line-height: 2rem;
-}
-
-@media (min-width: 768px) {
-  .masthead h1 {
+@media (max-width: 768px) and (min-width: 768px) {
+  .masthead .intro h1 {
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.15), 0 0 6rem rgba(0, 0, 0, 0.25);
   }
 }
 
-.masthead p {
-  font-size: 1rem;
-  margin: 2rem 0;
-  font-weight: 300;
+@media (max-width: 768px) {
+  .masthead .intro p {
+    font-size: 1rem;
+    margin: 2rem 0;
+    font-weight: 300;
+  }
 }
 
-@media (min-width: 768px) {
-  .masthead p {
+@media (max-width: 768px) and (min-width: 768px) {
+  .masthead .intro p {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.05), 0 0 1rem rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media (min-width: 992px) and (-ms-high-contrast: none) {
+  .masthead .intro {
+    width: 50%;
   }
 }
 
@@ -157,7 +164,8 @@
   .masthead .intro {
     margin-top: 6rem;
   }
-  .masthead h1, .masthead p {
+  .masthead h1,
+  .masthead p {
     color: rgba(255, 255, 255, 0.9);
   }
   .masthead h1 {
