@@ -100,19 +100,21 @@
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 35rem;
+  min-height: 30rem;
   margin-top: 7rem;
-  padding: 2rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #E5E0C9), color-stop(58%, rgba(229, 224, 201, 0.75)), color-stop(70%, rgba(229, 224, 201, 0.1))), url(../img/bg-masthead.jpg);
-  background: linear-gradient(to bottom, #E5E0C9 50%, rgba(229, 224, 201, 0.75) 58%, rgba(229, 224, 201, 0.1) 70%), url(../img/bg-masthead.jpg);
-  background-position: center bottom;
+  padding: 2rem 0 4rem;
+  background: url(../img/bg-masthead-alt.jpg);
+  background-position: center top;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: contain;
 }
 
-.masthead .intro {
-  margin-top: 0;
+@media (max-width: 768px) {
+  .masthead .intro {
+    margin-top: 54vw;
+    padding-top: 1rem;
+  }
 }
 
 .masthead h1, .masthead p {
@@ -125,20 +127,35 @@
   line-height: 2rem;
 }
 
+@media (min-width: 768px) {
+  .masthead h1 {
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.15), 0 0 6rem rgba(0, 0, 0, 0.25);
+  }
+}
+
 .masthead p {
   font-size: 1rem;
   margin: 2rem 0;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .masthead p {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.05), 0 0 1rem rgba(0, 0, 0, 0.25);
+  }
 }
 
 @media (min-width: 768px) {
   .masthead {
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), color-stop(30%, rgba(0, 0, 0, 0))), url(../img/bg-masthead.jpg);
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%), url(../img/bg-masthead.jpg);
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), color-stop(30%, rgba(0, 0, 0, 0))), url(../img/bg-masthead-alt.jpg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%), url(../img/bg-masthead-alt.jpg);
     background-size: cover;
-    margin-top: 0;
+    background-position: center top;
+    margin-top: 5rem;
+    min-height: 35rem;
   }
   .masthead .intro {
-    margin-top: 0;
+    margin-top: 6rem;
   }
   .masthead h1, .masthead p {
     color: rgba(255, 255, 255, 0.9);
@@ -151,8 +168,12 @@
 
 @media (min-width: 992px) {
   .masthead {
+    margin-top: 0;
     height: 100vh;
     padding: 0;
+  }
+  .masthead .intro {
+    margin-top: 0;
   }
   .masthead h1 {
     font-size: 3.45rem;
@@ -210,17 +231,38 @@
 }
 
 .issues-section {
-  padding: 10rem 0;
+  padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+  .issues-section {
+    padding: 6rem 0;
+  }
 }
 
 .issues-section .featured-text {
-  padding: 2rem;
+  padding: 4rem 2rem 0;
+  border-top: 0.25rem solid #46AC4E;
 }
 
 @media (min-width: 992px) {
   .issues-section .featured-text {
-    padding: 0 0 0 2rem;
+    padding: 1rem 0 1rem 4rem;
+    border-top: none;
     border-left: 0.5rem solid #46AC4E;
+  }
+  .issues-section .featured-text p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .issues-section .family-image {
+    margin-left: -15%;
+    max-width: 55%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 55%;
+    flex: 0 0 55%;
   }
 }
 
@@ -235,19 +277,25 @@
   }
   .issues-section .issue-text hr {
     border-color: #46AC4E;
-    border-width: .25rem;
+    border-width: 0.25rem;
     width: 30%;
   }
 }
 
 .signup-section {
-  padding: 10rem 0 5rem;
+  padding: 4rem 0 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#46AC4E), to(#0D6A94));
   background: linear-gradient(to bottom, #46AC4E 0%, #0D6A94 100%);
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: contain;
+}
+
+@media (min-width: 768px) {
+  .signup-section {
+    padding: 6rem 0 0;
+  }
 }
 
 .signup-section hr {

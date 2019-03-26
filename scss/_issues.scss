@@ -1,10 +1,25 @@
 .issues-section {
-  padding: 10rem 0;
+  padding: 4rem 0;
+  @media (min-width: 768px) {
+    padding: 6rem 0;
+  }
   .featured-text {
-    padding: 2rem;
+    padding: 4rem 2rem 0;
+    border-top: 0.25rem solid $primary;
     @media (min-width: 992px) {
-      padding: 0 0 0 2rem;
+      padding: 1rem 0 1rem 4rem;
+      border-top: none;
       border-left: 0.5rem solid $primary;
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .family-image {
+    @media (min-width: 992px) {
+      margin-left: -15%;
+      max-width: 55%;
+      flex: 0 0 55%;
     }
   }
   .issue-text {
@@ -14,7 +29,7 @@
       padding: 5rem;
       hr {
         border-color: $primary;
-        border-width: .25rem;
+        border-width: 0.25rem;
         width: 30%;
       }
     }

@@ -1,5 +1,8 @@
 .signup-section {
-  padding: 10rem 0 5rem;
+  padding: 4rem 0 0;
+  @media (min-width: 768px) {
+    padding: 6rem 0 0;
+  }
   background: linear-gradient(to bottom, $primary 0%, $black 100%);
   background-position: top;
   background-repeat: no-repeat;

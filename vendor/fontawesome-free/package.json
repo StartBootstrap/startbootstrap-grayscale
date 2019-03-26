@@ -2,7 +2,7 @@
   "_args": [
     [
       "@fortawesome/fontawesome-free@5.7.2",
-      "/Users/josephl/Sites/startbootstrap-grayscale"
+      "/Users/josephl/Sites/davidchen"
     ]
   ],
   "_from": "@fortawesome/fontawesome-free@5.7.2",
@@ -27,7 +27,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.7.2.tgz",
   "_spec": "5.7.2",
-  "_where": "/Users/josephl/Sites/startbootstrap-grayscale",
+  "_where": "/Users/josephl/Sites/davidchen",
   "author": {
     "name": "Dave Gandy",
     "email": "dave@fontawesome.com",

@@ -2,16 +2,19 @@
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 35rem;
+  min-height: 30rem;
   margin-top: 7rem;
-  padding: 2rem 0;
-  background: linear-gradient(to bottom, #E5E0C9 50%, rgba(#E5E0C9,.75) 58%, rgba(#E5E0C9,.1) 70%), url(../img/bg-masthead.jpg);
-  background-position: center bottom;
+  padding: 2rem 0 4rem;
+  background:  url(../img/bg-masthead-alt.jpg);
+  background-position: center top;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: contain;
   .intro {
-    margin-top: 0;
+    @media(max-width: 768px) {
+      margin-top: 54vw;
+      padding-top: 1rem;
+    }
   }
   h1, p {
     color: $black;
@@ -20,18 +23,27 @@
     font-family: 'Antic Slab';
     font-size: 2rem;
     line-height: 2rem;
+    @media(min-width: 768px) {
+      text-shadow: 1px 1px 0 rgba(black,.15), 0 0 6rem rgba(black,.25);
+    }
   }
   p {
     font-size: 1rem;
     margin: 2rem 0;
+    font-weight: 300;
+    @media(min-width: 768px) {
+      text-shadow:  0 -1px 0 rgba(black,.05), 0 0 1rem rgba(black,.25);
+    }
   }
   @media(min-width: 768px) {
-    background: linear-gradient(to top, rgba(black,.5) 0%, rgba(black,0) 30%), url(../img/bg-masthead.jpg);
+    background: linear-gradient(to top, rgba(black,.5) 0%, rgba(black,0) 30%), url(../img/bg-masthead-alt.jpg);
     background-size: cover;
+    background-position: center top;
+    margin-top: 5rem;
+    min-height: 35rem;
     .intro {
-      margin-top: 0;
+      margin-top: 6rem;
     }
-    margin-top: 0;
     h1,p {
       color: rgba(white,.9);
     }
@@ -41,8 +53,12 @@
     }
   }
   @media(min-width: 992px) {
+    margin-top: 0;
     height: 100vh;
     padding: 0;
+    .intro {
+      margin-top: 0;
+    }
     h1 {
       font-size: 3.45rem;
       line-height: 3.45rem;
