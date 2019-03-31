@@ -3,6 +3,9 @@
   @media (min-width: 768px) {
     padding: 6rem 0;
   }
+  .bio {
+    margin-bottom: 2rem;
+  }
   .featured-text {
     padding: 4rem 2rem 0;
     border-top: 0.25rem solid $primary;
@@ -22,16 +25,17 @@
       flex: 0 0 55%;
     }
   }
+  .bg-primary {
+    background: $primary;
+  }
+
   .issue-text {
     padding: 3rem;
-    font-size: 90%;
+    p {
+      color: white;
+    }
     @media (min-width: 992px) {
       padding: 5rem;
-      hr {
-        border-color: $primary;
-        border-width: 0.25rem;
-        width: 30%;
-      }
     }
   }
 }

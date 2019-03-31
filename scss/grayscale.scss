@@ -8,6 +8,7 @@
 @import 'signup.scss';
 @import 'contact.scss';
 
+
 body {
   font-family: 'Work Sans', sans-serif;
 }
@@ -39,6 +40,15 @@ a {
 footer {
   border-top: solid 1px rgba(white,.25);
   padding: 3rem 0;
+  .paid-for-notice {
+    border: solid 1px rgba(white,.75);
+    padding: .5rem 1rem;
+    display: inline-block;
+    border-radius: .25rem;
+    margin-top: 1rem;
+    background: rgba(white,.25);
+    margin-bottom: 1.5rem;
+  }
   a {
     color: rgba(white,.5);
     &:hover {

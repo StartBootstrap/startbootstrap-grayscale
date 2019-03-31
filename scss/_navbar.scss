@@ -19,6 +19,8 @@
     .nav-link {
       transition: all 300ms ease;
       border: 2px solid transparent;
+      font-size: larger;
+      font-weight: 500;
       &:hover {
         color: fade(white, 80%);
         outline: none;

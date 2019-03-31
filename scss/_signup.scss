@@ -1,4 +1,4 @@
-.signup-section {
+.donate-section {
   padding: 4rem 0 0;
   @media (min-width: 768px) {
     padding: 6rem 0 0;
@@ -12,17 +12,13 @@
     border-top-color: rgba(white,.5);
     margin-bottom: 3rem;
   }
-  p {
+  p, li {
     color: rgba(white,.75);
-    &:last-child {
-      border: solid 1px rgba(white,.75);
-      padding: .5rem 1rem;
-      display: inline-block;
-      border-radius: .25rem;
-      margin-top: 1rem;
-      background: rgba(white,.25);
+    &.ask {
+      color: white;
     }
   }
+
   .form-inline {
     input {
       box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0,0,0,.1) !important;
