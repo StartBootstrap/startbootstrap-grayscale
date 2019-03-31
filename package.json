@@ -1,11 +1,11 @@
 {
-    "title": "Grayscale",
-    "name": "startbootstrap-grayscale",
-    "version": "5.0.5",
+    "title": "Elect David Chen",
+    "name": "electdavidchen",
+    "version": "1.0",
     "scripts": {
         "start": "gulp watch"
     },
-    "description": "A grayscale one page HTML theme for Bootstrap.",
+    "description": "Campaign Website for David Chen.",
     "keywords": [
         "css",
         "sass",
@@ -14,19 +14,19 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/grayscale",
+    "homepage": "https://electdavichen.com",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://github.com/josephrlee/davidchen/issues",
+        "email": "joseph@electdavidchen.com"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "Elect David Chen",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "Joseph Lee (http://josephrlee.com/)"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
+        "url": "https://github.com/josephrlee/davidchen.git"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.7.2",
