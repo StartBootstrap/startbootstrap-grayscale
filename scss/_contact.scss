@@ -1,5 +1,8 @@
 .contact-section {
-  padding: 5rem 0 0;
+  padding: 5rem 0 5em;
+  .button {
+    width: 100%;
+  }
   .card {
     border: 0;
     border-bottom: 0.25rem solid $primary;

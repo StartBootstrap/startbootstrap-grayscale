@@ -25,17 +25,30 @@
       flex: 0 0 55%;
     }
   }
-  .bg-primary {
+  .issue {
     background: $primary;
-  }
+    margin-bottom: 2rem;
+    &:nth-of-type(odd) {
+      background: $black;
+    }
 
+    @media (min-width: 992px) {
+      margin-bottom: 0;
+      &:nth-of-type(3) {
+        background: $primary;
+      }
+      &:nth-of-type(4) {
+        background: $black;
+      }
+    }
+  }
   .issue-text {
     padding: 3rem;
     p {
       color: white;
     }
     @media (min-width: 992px) {
-      padding: 5rem;
+      padding: 4rem;
     }
   }
 }

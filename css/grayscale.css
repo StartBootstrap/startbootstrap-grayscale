@@ -112,6 +112,10 @@
   background-size: contain;
 }
 
+.masthead .intro .btn {
+  margin-right: 1rem;
+}
+
 @media (max-width: 768px) {
   .masthead .intro {
     margin-top: 54vw;
@@ -216,6 +220,23 @@
   background-color: #307635 !important;
 }
 
+.btn-secondary {
+  background-color: #0D6A94;
+}
+
+.btn-secondary:hover {
+  background-color: #094865;
+}
+
+.btn-secondary:focus {
+  background-color: #094865;
+  color: white;
+}
+
+.btn-secondary:active {
+  background-color: #07384e !important;
+}
+
 .about-section {
   padding-top: 5rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#0D6A94), color-stop(75%, rgba(13, 106, 148, 0.9)), to(rgba(13, 106, 148, 0.8)));
@@ -274,8 +295,25 @@
   }
 }
 
-.issues-section .bg-primary {
+.issues-section .issue {
   background: #46AC4E;
+  margin-bottom: 2rem;
+}
+
+.issues-section .issue:nth-of-type(odd) {
+  background: #0D6A94;
+}
+
+@media (min-width: 992px) {
+  .issues-section .issue {
+    margin-bottom: 0;
+  }
+  .issues-section .issue:nth-of-type(3) {
+    background: #46AC4E;
+  }
+  .issues-section .issue:nth-of-type(4) {
+    background: #0D6A94;
+  }
 }
 
 .issues-section .issue-text {
@@ -288,7 +326,7 @@
 
 @media (min-width: 992px) {
   .issues-section .issue-text {
-    padding: 5rem;
+    padding: 4rem;
   }
 }
 
@@ -334,7 +372,11 @@
 }
 
 .contact-section {
-  padding: 5rem 0 0;
+  padding: 5rem 0 5em;
+}
+
+.contact-section .button {
+  width: 100%;
 }
 
 .contact-section .card {
@@ -396,10 +438,6 @@ a:focus, a:hover {
 
 .bg-black {
   background-color: #0D6A94 !important;
-}
-
-.bg-primary {
-  background-color: #46AC4E !important;
 }
 
 .text-primary {

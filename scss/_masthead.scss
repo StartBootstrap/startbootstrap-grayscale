@@ -11,6 +11,9 @@
   background-attachment: scroll;
   background-size: contain;
   .intro {
+    .btn {
+      margin-right: 1rem;
+    }
     @media (max-width: 768px) {
       margin-top: 54vw;
       padding-top: 1rem;

@@ -22,3 +22,18 @@
     background-color: darken($primary, 15%) !important;
   }
 }
+
+
+.btn-secondary {
+  background-color: $black;
+  &:hover {
+    background-color: darken($black, 10%);
+  }
+  &:focus {
+    background-color: darken($black, 10%);
+    color: white;
+  }
+  &:active {
+    background-color: darken($black, 15%) !important;
+  }
+}
