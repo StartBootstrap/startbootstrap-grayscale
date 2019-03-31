@@ -1,3 +1,4 @@
 # Campaign website for David Chen's Shoreline City Council Race
 
-Based on [Grayscale](http://startbootstrap.com/template-overviews/grayscale/)
+Run `npm-install` to install the theme
+Run `npm-start` to develop the theme

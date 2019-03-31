@@ -17,6 +17,9 @@
     padding: 0.5rem 0;
     img {
       width: 120px;
+      @media (min-width: 992px) {
+        width: 150px;
+      }
     }
   }
   .navbar-nav {
