@@ -1,4 +1,5 @@
-# Campaign website for David Chen's Shoreline City Council Race
+# David Chen's Campaign Website
 
 Run `npm-install` to install the theme
+
 Run `npm-start` to develop the theme
