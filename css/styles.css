@@ -23,7 +23,11 @@
 #mainNav .navbar-brand {
   color: #0D6A94;
   font-weight: 700;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
+}
+
+#mainNav .navbar-brand img {
+  width: 120px;
 }
 
 #mainNav .navbar-nav .nav-link {
@@ -82,8 +86,8 @@
   }
   #mainNav.navbar-shrink .nav-link {
     color: #0D6A94;
-    padding: .5rem 1.5rem;
-    border-radius: .25rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.25rem;
   }
   #mainNav.navbar-shrink .nav-link:hover {
     color: #46AC4E;
@@ -103,7 +107,7 @@
   width: 100%;
   height: auto;
   min-height: 30rem;
-  margin-top: 7rem;
+  margin-top: 120px;
   padding: 2rem 0 4rem;
   background: url(../img/bg-masthead-alt.jpg);
   background-position: center top;
@@ -442,6 +446,15 @@ a:focus, a:hover {
 
 .text-primary {
   color: #46AC4E !important;
+}
+
+.css-srkagk.e4550h40 {
+  top: 120px !important;
+}
+
+.css-srkagk.e4550h40 .css-141sqqa.e1m9xwad0 {
+  right: 20px !important;
+  top: 20px !important;
 }
 
 .css-1x7v7yu {
