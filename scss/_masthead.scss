@@ -17,7 +17,9 @@
     @media (max-width: 768px) {
       margin-top: 54vw;
       padding-top: 1rem;
-
+      .btn {
+        margin-bottom: 1rem;
+      }
       h1,
       p {
         color: $black;
