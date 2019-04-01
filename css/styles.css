@@ -283,7 +283,7 @@
 }
 
 .issues-section .featured-text {
-  padding: 4rem 1rem 0;
+  padding: 4rem 0 0;
   border-top: 0.25rem solid #46AC4E;
 }
 
@@ -434,6 +434,11 @@
 
 body {
   font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
