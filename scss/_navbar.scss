@@ -1,6 +1,6 @@
 #mainNav {
-  min-height: 56px;
-  background-color: $white;
+  background-color: $gray-100;
+  padding: .5rem 1.5rem;
 
   .navbar-toggler {
     font-size: 80%;
@@ -17,6 +17,7 @@
     padding: 0.5rem 0;
     img {
       width: 120px;
+      transition: all ease 300ms;
       @media (min-width: 992px) {
         width: 150px;
       }
@@ -65,14 +66,19 @@
       }
     }
     &.navbar-shrink {
-      background-color: $white;
+      background-color: rgba($white,.95);
       .navbar-brand {
         color: $black;
+        img {
+          width: 120px;
+        }
+        padding: 1rem 0;
       }
       .nav-link {
         color: $black;
         padding: 0.5rem 1.5rem;
         border-radius: 0.25rem;
+        font-size: 1.125rem;
         &:hover {
           color: $primary;
         }

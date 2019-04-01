@@ -5,8 +5,8 @@
  */
 
 #mainNav {
-  min-height: 56px;
-  background-color: #fff;
+  background-color: #f8f9fa;
+  padding: .5rem 1.5rem;
 }
 
 #mainNav .navbar-toggler {
@@ -28,6 +28,8 @@
 
 #mainNav .navbar-brand img {
   width: 120px;
+  -webkit-transition: all ease 300ms;
+  transition: all ease 300ms;
 }
 
 @media (min-width: 992px) {
@@ -85,15 +87,20 @@
     color: white;
   }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.95);
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #0D6A94;
+    padding: 1rem 0;
+  }
+  #mainNav.navbar-shrink .navbar-brand img {
+    width: 120px;
   }
   #mainNav.navbar-shrink .nav-link {
     color: #0D6A94;
     padding: 0.5rem 1.5rem;
     border-radius: 0.25rem;
+    font-size: 1.125rem;
   }
   #mainNav.navbar-shrink .nav-link:hover {
     color: #46AC4E;
@@ -113,7 +120,7 @@
   width: 100%;
   height: auto;
   min-height: 30rem;
-  margin-top: 120px;
+  margin-top: 119px;
   padding: 2rem 0 4rem;
   background: url(../img/bg-masthead-alt.jpg);
   background-position: center top;
