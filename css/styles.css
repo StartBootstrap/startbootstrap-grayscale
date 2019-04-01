@@ -283,7 +283,7 @@
 }
 
 .issues-section .featured-text {
-  padding: 4rem 2rem 0;
+  padding: 4rem 1rem 0;
   border-top: 0.25rem solid #46AC4E;
 }
 
@@ -330,7 +330,7 @@
 }
 
 .issues-section .issue-text {
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .issues-section .issue-text p {
@@ -438,6 +438,78 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Antic Slab';
+}
+
+.display-1 {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+@media (min-width: 769px) {
+  .display-1 {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .display-1 {
+    font-size: 6rem;
+  }
+}
+
+.display-2 {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+@media (min-width: 769px) {
+  .display-2 {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .display-2 {
+    font-size: 5.5rem;
+  }
+}
+
+.display-3 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+@media (min-width: 769px) {
+  .display-3 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .display-3 {
+    font-size: 4.5rem;
+  }
+}
+
+.display-4 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+@media (min-width: 769px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .display-4 {
+    font-size: 3.5rem;
+  }
 }
 
 a {
