@@ -159,14 +159,22 @@
               manufacturer 2N</a>.
           </p>
 
-          <h3>
+          <h4>
             Check out slides from my conference talk <i>Intro to Figma</i>
-          </h3>
+          </h4>
 
           <p class="text-left">In Czech, sorry</p>
 
           <div class="iframe-wrapper">
-            <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FfqrVbqPYfqaQBjw0Ifbs2u0f%2FUXZ-figma-prez-19%3Fnode-id%3D0%253A1%26scaling%3Dcontain"
+            <!-- Defers iframe load -->
+            <script>
+              $(document).ready(function () {
+                $('iframe#figmaTalk').attr('src', 'iframe_url');
+              });
+            </script>
+
+            <iframe id="figmaTalk"
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FfqrVbqPYfqaQBjw0Ifbs2u0f%2FUXZ-figma-prez-19%3Fnode-id%3D0%253A1%26scaling%3Dcontain"
                     allowfullscreen></iframe>
           </div>
 
@@ -234,7 +242,7 @@
           <div class="subhead">
             <p>I'm a User Experience Designer based in Prague focused on building meaningful experiences
               through&nbsp;design.
-              So far mostly in complex webapps, full of tables and charts.
+              Mostly in complex webapps so far, full of tables and charts.
             </p>
           </div>
 
@@ -260,18 +268,25 @@
           </ul>
 
           <div class="row mt-5">
-            <figure class="col-12 col-md-6 p-2">
+            <figure class="col-12 col-md-4 p-2">
               <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                    data-src="https://res.cloudinary.com/jandu-top/image/upload/q_auto,f_auto,dpr_auto/v1526113257/myphoto1.jpg"
                    class="img-fluid"
                    alt="at work">
             </figure>
 
-            <figure class="col-12 col-md-6 p-2">
+            <figure class="col-12 col-md-4 p-2">
               <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                    data-src="https://res.cloudinary.com/jandu-top/image/upload/q_auto,f_auto,dpr_auto/v1526113258/myphoto2.jpg"
                    class="img-fluid"
                    alt="at play">
+            </figure>
+
+            <figure class="col-12 col-md-4 p-2">
+              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                   data-src="https://res.cloudinary.com/jandu-top/image/upload/q_auto,f_auto,dpr_auto,g_auto,w_1000,ar_1:1,c_fill/v1554626158/PAV_2510.jpg"
+                   class="img-fluid"
+                   alt="meeting people">
             </figure>
           </div>
           <!--  /.row -->
