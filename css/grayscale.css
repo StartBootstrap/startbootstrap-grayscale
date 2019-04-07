@@ -189,13 +189,13 @@ section#work .intro-body .intro-text {
 
 #about,
 #contact {
-  padding: 10rem 0;
+  padding-top: 10rem;
 }
 
 @media (min-width: 992px) {
   #about,
   #contact {
-    padding: 16rem 0;
+    padding-top: 16rem;
   }
 }
 
