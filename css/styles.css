@@ -182,6 +182,7 @@
   .masthead {
     background: linear-gradient(-15deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 50%), url(../img/bg-masthead-alt.jpg);
     background-size: cover;
+    background-color: #0D6A94;
     background-position: center top;
     margin-top: 5rem;
     min-height: 35rem;
