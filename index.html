@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--
+# Burst Apps Team contribution -https://twitter.com/BurstAppsTeam
+# Devolped by Zoh - https://twitter.com/Zoh63392187
+-->
 <head>
 
   <meta charset="utf-8">
@@ -20,6 +23,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/grayscale.min.css" rel="stylesheet">
+  <script src="js/global.js"></script>
 
 </head>
 
@@ -87,7 +91,7 @@
       <!-- Featured Project Row -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
+          <img class="img-fluid mb-3 mb-lg-0" src="img/Phoenix_mockup.jpg" alt="">
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
@@ -133,7 +137,7 @@
         </div>
       </div>
 <br>
-  <!-- Project One Row -->
+  <!-- Project Three Row -->
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
           <img class="img-fluid" src="img/bg_02.jpg" alt="">
@@ -158,30 +162,221 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto" >
-          <h2 class="text-white mb-4">The Burst Apps Team (BAT)</h2>
-          <p class="text-white-50 text-lg-left">
-			One of Burst’s biggest strengths lies in its sense of community. Being one of few coins to survive multiple development team turnovers, Burst is unlike other coins in many ways.  Where other coins have failed, are still trying, or haven’t even started, Burst succeeded years ago. Burst is truly decentralized, trustless, and community-driven. 
-			These core values are shared by the Burst Apps Team (BAT), a group of talented software engineers from the Burst community, recently formed to provide core development, technical leadership and community support. Our goal is to help drive Burst’s development, while professionally representing Burst developers to the outside world.<br>
-			Visit us on <a href="https://github.com/orgs/burst-apps-team/people" target="_blank">GitHub</a>
-		  </p>
+          <h2 class="text-white mb-4">BAT Roadmap</h2>
+		  <ul class="navbar">
+			<li class="nav-item">
+			  <a class="nav-link" href="#roadmap" onclick="roadmap('achieved');">ACHIEVED</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#roadmap" onclick="roadmap('current');">CURRENT</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#roadmap" onclick="roadmap('near_term');">NEAR-TERM</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#roadmap" onclick="roadmap('long_term');">LONG-TERM</a>
+			</li>
+		  </ul>
         </div>
       </div>
-      <img src="img/ipad.png" class="img-fluid" alt="">
+	  <div id="achieved" style="">
+		<div class="text-white-50">
+			<div class="text-lg-left">These are the achieved tasks starting from August 2017.</div>
+			<div class="text-white font-weight-bold" style="margin-top:50px;"><h4>Core Improvements</h4></div>
+			<div class="text-lg-left">
+				<div class="text-white">Code refactoring</div>
+				<ul>
+				  <li>Improving structure and readability with a focus on simplicity and flexibility. Getting rid of old code from the NXT wallet</li>
+				  <li>Paving the way for more advanced modifications</li>
+				</ul>
+				<div class="text-white">Improving stability and reliability</div>
+				<ul>
+				  <li>Improving the overall stability of wallets and nodes in order to maximize the security and reliability of the network</li>
+				  <li>Better debugging and logging</li>
+				</ul>
+				<div class="text-white">Better development efficiency</div>
+				<ul>
+				  <li>Adding new procedures such as Unit-Tests, improving the API and other advanced components</li>
+				</ul>
+				<div class="text-white">Soft fork: Dynamic node capabilities</div>
+				<ul>
+				  <li>Making the mempool size configurable to better adjust to the node capabilities</li>
+				</ul>
+				<div class="text-white">Hard Fork: Dynamic block size and transaction fees</div>
+				<ul>
+				  <li>Making transaction cost and block size dynamic values to be better able to cope with varying transactional load on the Burst blockchain</li>
+				</ul>
+				<div class="text-white">PoC2 protocol</div>
+				<ul>
+				  <li>A minimally invasive way to achieve time-memory tradeoff resistance, while keeping the currently used plots functional</li>
+				</ul>
+			</div>
+			<div class="text-white font-weight-bold" style="margin-top:50px;"><h4>Usability</h4></div>
+			<div class="text-lg-left">
+				<div class="text-white">Mobile Payment infrastructure</div>
+				<ul>
+				  <li>Bringing Burst closer to the ‘real economy’ by enhancing mobile payments, a vital feature for merchants</li>
+				</ul>
+			</div>
+			<div class="text-white font-weight-bold" style="margin-top:50px;"><h4>Accessibility</h4></div>
+			<div class="text-lg-left">
+				<div class="text-white">Simplified software</div>
+				<ul>
+				  <li>Facilitating the installation and deployment of the Burst softwares and packages for the end user</li>
+				</ul>
+			</div>
+			<div class="text-white font-weight-bold" style="margin-top:50px;"><h4>Infrastructure</h4></div>
+			<div class="text-lg-left">
+				<div class="text-white">New tools and services</div>
+				<ul>
+				  <li>Providing the current explorers and observers with new tools and infrastructure</li>
+				</ul>
+				<div class="text-white">Websites overhaul</div>
+				<ul>
+				  <li>Updating and improving the content, organization and aspect of the main Burst websites</li>
+				</ul>
+			</div>
+		</div>
+	  </div>
+	  <div id="current" style="display:none;">
+		<div class="text-white-50">
+			<div class="text-white font-weight-bold" style="margin-top:50px;"><h4>Core Improvements</h4></div>
+			<div class="text-lg-left">
+				<div class="text-white">Incoming Multi-Out Support in Wallet</div>
+				<ul>
+				  <li>Recipients of multi-out payments will soon have the ability to see those transactions in their wallet just like any other transaction</li>
+				</ul>
+				<div class="text-white">Improved Smart Contracts</div>
+				<ul>
+				  <li>Project Rosetta will simplify the process of creating Burst Smart Contracts. Future improvements will optimize the smart contract executions as well as reduction in cost per line of execution</li>
+				</ul>
+			</div>
+			<div class="text-white font-weight-bold" style="margin-top:50px;"><h4>Usability</h4></div>
+			<div class="text-lg-left">
+				<div class="text-white">Burst JavaScript Library</div>
+				<ul>
+				  <li>A Burst-specific JavaScript library is being developed to empower application developers and to facilitate in the development of a cross-platform wallet</li>
+				</ul>
+				<div class="text-white">New Blockchain Explorer</div>
+				<ul>
+				  <li>A new blockchain explorer is being developed which will be available in both a thin client and full node standard version</li>
+				</ul>
+				<div class="text-white">Cross-Platform Desktop/Web Wallet</div>
+				<ul>
+				  <li>A Cross-Platform Wallet UI “Phoenix” is being developed to support desktop (OSX, Windows, Linux), and web. This wallet will feature increased security and a refreshed look and feel</li>
+				</ul>
+				<div class="text-white">Burst Application Management</div>
+				<ul>
+				  <li>A Burst Application Manager “Easy2Burst” is being developed to streamline the installation of Burst core, tools and components; it will also simplify the blockchain download process and centralize Burst account management</li>
+				</ul>
+				<div class="text-white">Distributed Burst Network Explorer</div>
+				<ul>
+				  <li>Designed to be ultra-scalable, “WatchDog” is a distributed explorer currently in development. It features distributed peer discovery, a querying API, notifications, and more</li>
+				</ul>
+				<div class="text-white">New Pool Software</div>
+				<ul>
+				  <li>New pool software is being developed and licensed under the GNU GPLv3, so everyone can run a pool without concerns over licensing if they wish to do so</li>
+				</ul>
+			</div>
+			<div class="text-white font-weight-bold" style="margin-top:50px;"><h4>Accessibility</h4></div>
+			<div class="text-lg-left">
+				<div class="text-white">More exchange gateways</div>
+				<ul>
+				  <li>Getting Burst listed on more exchanges and expanding the trading of Burst for fiat</li>
+				</ul>
+				<div class="text-white">Development and Retail Adoption Bounty Programs</div>
+				<ul>
+				  <li>To encourage adoption, the Burst Marketing Fund (BMF) has been organizing and already started rolling out various development and retail-related bounty programs</li>
+				</ul>
+			</div>
+			<div class="text-white font-weight-bold" style="margin-top:50px;"><h4>Communication</h4></div>
+			<div class="text-lg-left">
+				<div class="text-white">Advertising</div>
+				<ul>
+				  <li>A bounty program has been started which rewards BURST for users who generate YouTube videos about Burst, its mining software, and tools</li>
+				</ul>
+				<div class="text-white">Weekly Updates</div>
+				<ul>
+				  <li>The Weekly Burst Report will continue to be published and produced under the flag of the Burst Alliance</li>
+				</ul>
+			</div>
+		</div>
+	  </div>
+	  <div id="near_term" style="display:none;">
+		<div class="text-white-50">
+			<div class="text-white font-weight-bold" style="margin-top:50px;"><h4>Core Improvements</h4></div>
+			<div class="text-lg-left">
+				<div class="text-white">Wallet Auto-Updater and Multi-Signature Verification</div>
+				<ul>
+				  <li>It is important that Burst nodes stay up to date, and that the process of software delivery be safeguarded against malicious actors or centralized authorities. An auto-update feature coupled with a multi-signature signing process helps ensure that Burst nodes remain up-to-date and secure</li>
+				</ul>
+			</div>
+			<div class="text-white font-weight-bold" style="margin-top:50px;"><h4>Usability</h4></div>
+			<div class="text-lg-left">
+				<div class="text-white">Cross-Platform Mobile Wallet</div>
+				<ul>
+				  <li>A Cross-Platform Wallet Application “Phoenix” is being developed to support mobile devices, including iOS and Android. This wallet will feature increased security and a refreshed look and feel</li>
+				</ul>
+			</div>
+			<div class="text-white font-weight-bold" style="margin-top:50px;"><h4>Communication</h4></div>
+			<div class="text-lg-left">
+				<div class="text-white">Advertising</div>
+				<ul>
+				  <li>To coincide with the release of the “Phoenix” mobile wallet, the BMF will use social media ads and other methods to help drive users to the new mobile wallet</li>
+				</ul>
+				<ul>
+				  <li>Redesign of the burst-coin.org website</li>
+				</ul>
+				<ul>
+				  <li>Pushing community articles with paid advertising to reach a larger target audience</li>
+				</ul>
+				<div class="text-white">More Bounty Programs</div>
+				<ul>
+				  <li>To further encourage adoption, the Burst Marketing Fund (BMF) will open new bounty programs and conduct hackathons</li>
+				</ul>
+			</div>
+		</div>
+	  </div>
+	  <div id="long_term" style="display:none;">
+		<div class="text-white-50">
+			<div class="text-white font-weight-bold" style="margin-top:50px;"><h4>Core Improvements</h4></div>
+			<div class="text-lg-left">
+				<div class="text-white">PoC3 Protocol</div>
+				<ul>
+				  <li>Taking over a custodian role in globally distributed redundant storage by allowing to store important information in plot files</li>
+				</ul>
+			</div>
+			<div class="text-white font-weight-bold" style="margin-top:50px;"><h4>Usability</h4></div>
+			<div class="text-lg-left">
+				<div class="text-white">Cross-Platform Mobile Wallet</div>
+				<ul>
+				  <li>Creating new wallet software written in languages other than Java, allowing better flexibility for the end user and potential performance gains</li>
+				</ul>
+			</div>
+			<div class="text-white font-weight-bold" style="margin-top:50px;"><h4>Communication</h4></div>
+			<div class="text-lg-left">
+				<div class="text-white">Large-scale promotional campaigns</div>
+				<ul>
+				  <li>Creating/Increasing brand recognition via social media to help promote the introduction of the PoC3 Protocol</li>
+				</ul>
+			</div>
+		</div>
+	  </div>	  
+      <img src="img/ipad2.png" class="img-fluid" alt="">
     </div>
   </section>
+  
   <!-- Contact Section -->
   <section id="contact" class="contact-section bg-black">
     <div class="container">
-
       <div class="row">
-
         <div class="col-md-4 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body text-center">
               <i class="fas fa-flag-checkered text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Next Milestone</h4>
+              <h4 class="text-uppercase m-0">Thanks to</h4>
               <hr class="my-4">
-              <div class="small text-black-50">sss</div>
+              <div class="small text-black-50"><a href="https://twitter.com/Hangoutmint" target="_blank">SKIPPER</a> for nice graphics for this website</div>
             </div>
           </div>
         </div>
@@ -244,7 +439,7 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script>
+  <script src="js/grayscale.min.js"></script> 
 
 </body>
 
