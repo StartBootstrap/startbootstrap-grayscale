@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Grayscale v5.0.7 (https://startbootstrap.com/template-overviews/grayscale)
+ * Start Bootstrap - Grayscale v5.0.8 (https://startbootstrap.com/template-overviews/grayscale)
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
