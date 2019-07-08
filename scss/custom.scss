@@ -1,0 +1,11 @@
+/* import only the necessary Bootstrap files */
+@import "grayscale/scss/mixins";
+@import "grayscale/scss/variables";
+/* -------begin customization-------- */
+/* change the primary theme color to red */
+$theme-colors: (
+  primary: red;
+);
+/* -------end customization-------- */
+/* finally, import Bootstrap to set the changes! */
+@import "grayscale";
