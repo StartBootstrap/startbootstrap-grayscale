@@ -1,13 +1,87 @@
-.services {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.7)), to(#161616)), url("../img/header-bg.png");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/header-bg.png");
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body, html {
+  height: 100%
+}
+
+.bgimg {
+  /* Background image */
+  background-color: #000000;
+  background-image: url('../img/contact-area.jpg');
+  /* Full-screen */
+  height: 100%;
+  /* Center the background image */
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+  /* Scale and zoom in the image */
   background-size: cover;
+  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+  position: relative;
+  /* Add a white text color to all elements inside the .bgimg container */
+  color: white;
+  /* Add a font */
+  font-family: "Helvetica" ;
+  /* Set the font-size to 25 pixels */
+  font-size: 35px;
+
+
+}
+
+
+/* Position text in the top-left corner */
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+/* Position text in the bottom-left corner */
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+/* Position text in the middle */
+.middle {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Style the <hr> element */
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+/* Style the Portfolio Home Button */
+.marqhome {
+    position:relative;
+
+}
+.marqhome img {
+    width:100% ;
+    vertical-align:top-middle;
+}
+.marqhome:after {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    border-radius: 15px 15px 30px 30px;
+    top:0; left:0;
+    background:rgba(0,0,0,0.3);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.marqhome:hover:after {
+    opacity:1;
+}
+
+.marqhome {
+  border-radius: 15px 15px 30px 30px;
+  background: #fafafa;
+  padding: 10px;
 }
