@@ -190,6 +190,13 @@ font: ('Helvetica');
 font-size: 15px;
 }
 
+.services-section-header {
+  font: ('Helvetica');
+  text-align: center;
+  color: black;
+
+}
+
 .services-section-font {
     font: ('Helvetica');
     text-align: center;
