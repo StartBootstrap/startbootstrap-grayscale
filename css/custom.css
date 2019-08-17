@@ -85,3 +85,22 @@ hr {
   background: #fafafa;
   padding: 10px;
 }
+
+.contact-form {
+font: Helvetica;
+color: white;
+font-size: 18px;
+
+}
+
+.page-section h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: 'Helvetica Neue'
+}
+
+.page-section h3.section-subheading {
+  font-size: 16px;
+  margin-bottom: 75px;
+  font-family: 'Helvetica Neue'

@@ -191,9 +191,10 @@ font-size: 15px;
 }
 
 .services-section-header {
-  font: ('Helvetica');
+  font: ('Varela Round');
   text-align: center;
-  color: black;
+  color: white;
+  font-size: 50px;
 
 }
 
@@ -207,13 +208,18 @@ font-size: 15px;
 }
 
 .services-text  {
-font: 'Helvetica'
+font: 'Varela Round'
 color: white;
 font-size: 15px;
 
 }
 .services-section {
   padding-top: 10rem;
+  background: linear-gradient(
+                     rgba(20,20,20, .2),
+                     rgba(20,20,20, .2)),
+                     url("../img/MARQBG.jpg");
+  background-attachment: fixed;
 }
 
 .services-section p {
@@ -279,29 +285,42 @@ font-size: 15px;
 .contact-section .card hr {
   border-color: #ffcccc;
   border-width: 0.25rem;
-  width: 3rem;
+  width: 4rem;
 }
 
-.contact-section .social {
-  margin-top: 5rem;
+.services-section .social {
+  margin-top: 2rem;
 }
 
-.contact-section .social a {
+.services-section .social a {
   text-align: center;
-  height: 3rem;
-  width: 3rem;
+  height: 10rem;
+  width: 10rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 100%;
-  line-height: 3rem;
+  line-height: 1rem;
   color: rgba(255, 255, 255, 0.9);
 }
 
-.contact-section .social a:hover {
+.services-section .social a:hover {
   color: #ffcccc;
 }
 
-.contact-section .social a:active {
+.services-section .social a:active {
   color: #fff;
+}
+h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: 'Helvetica Neue'
+  color: white;
+}
+
+h3.section-subheading {
+  font-size: 16px;
+  margin-bottom: 75px;
+  font-family: 'Helvetica Neue'
 }
 
 body {
@@ -332,4 +351,15 @@ a:focus, a:hover {
 
 footer {
   padding: 5rem 0;
+}
+
+.credits-section p {
+	visibility: hidden;
+}
+.credits-section:hover {
+	opacity: 0.5;
+}
+.credits-section:hover p {
+	visibility: visible;
+}
 }
