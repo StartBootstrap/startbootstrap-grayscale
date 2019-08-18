@@ -167,29 +167,33 @@
 }
 
 .about-section {
-background-color: #161616;
+  background-color: #161616;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-align: left !important;
+  padding: 40px;
 }
 
-.about-section-font {
-text-align: center;
-color: white;
-font: ('Helvetica');
+.about-section-description {
+  margin-top: 40px;
+  font-size: 18px;
+  line-height: 1.875;
+  line-spacing: 1.5;
+}
+
+.about-section-title {
+  font-size: 1.6em;
 }
 
 .about-h3 {
-text-align: center;
 color: white;
 font: ('Helvetica');
 font-size: 20px;
 }
 
-.about-h4 {
-text-align: center;
-color: white;
-font: ('Helvetica');
-font-size: 15px;
+.mgapic-img {
+  float: left;
 }
-
 .services-section-header {
   font: ('Varela Round');
   text-align: center;
