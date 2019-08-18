@@ -213,11 +213,12 @@ color: white;
 font-size: 15px;
 
 }
+
 .services-section {
   padding-top: 10rem;
   background: linear-gradient(
-                     rgba(20,20,20, .2),
-                     rgba(20,20,20, .2)),
+                     rgba(16,16,16, .8),
+                     rgba(16,16,16, .8)),
                      url("../img/MARQBG.jpg");
   background-attachment: fixed;
 }
