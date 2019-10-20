@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Campaign website for David Chen's city council bid." />
-    <meta name="author" content="David Chen" />
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+    <meta content="Campaign website for David Chen's city council bid." name="description"/>
+    <meta content="David Chen" name="author"/>
 
     <title>David Chen for Shoreline City Council</title>
 
-    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link href="img/favicon.png" rel="icon" type="image/png"/>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Antic+Slab|Work+Sans:300,400,500,700,900" rel="stylesheet" />
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Antic+Slab|Work+Sans:300,400,500,700,900" rel="stylesheet"/>
 
     <!-- Custom styles for this template -->
-    <link href="css/styles.min.css" rel="stylesheet" />
+    <link href="css/styles.min.css" rel="stylesheet"/>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137388171-1"></script>
@@ -38,7 +38,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="/img/logo.svg" width="150"/></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-toggle="collapse" type="button">
           Menu
           <i class="fas fa-bars"></i>
         </button>
@@ -63,7 +63,25 @@
         </div>
       </div>
     </nav>
-
+    <button class="btn contact" type="button" data-toggle="modal" data-target="#ContactModal"><i class="fas fa-phone fa-2x"></i></button>
+    <div class="modal fade" tabindex="-1" role="dialog" id="ContactModal">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body p-5">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h1>Contact David</h1>
+            <p class="ask lead">
+                Help David get elected to Shoreline City Council. If you have any any questions or comments for David, you can email him at:
+                <a href="mailto:david@electdavidchen.com">david@electdavidchen.com</a>
+                or call him at:
+                <a href="tel:+12064027637">+1 206 402 7637</a>.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Header -->
     <header class="masthead">
       <div class="container d-flex h-100 align-items-center">
@@ -72,15 +90,15 @@
             <h1>
               Running for a more vibrant, inclusive, and sustainable Shoreline.
             </h1>
-            <a href="#donate" class="btn btn-primary js-scroll-trigger">Donate Now</a>
-            <a class="btn btn-secondary typeform-share button" href="https://davidchen167036.typeform.com/to/OujZEb" data-mode="drawer_left" data-hide-headers="true" data-hide-footer="true" data-submit-close-delay="2" target="_blank">Volunteer</a>
+            <a class="btn btn-primary js-scroll-trigger" href="#donate">Donate Now</a>
+            <a class="btn btn-secondary typeform-share button" data-hide-footer="true" data-hide-headers="true" data-mode="drawer_left" data-submit-close-delay="2" href="https://davidchen167036.typeform.com/to/OujZEb" target="_blank">Volunteer</a>
           </div>
         </div>
       </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="about-section">
+    <section class="about-section" id="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-10 mx-auto text-md-center">
@@ -93,12 +111,12 @@
     </section>
 
     <!-- Bio Section -->
-    <section id="bio" class="issues-section">
+    <section class="issues-section" id="bio">
       <div class="container">
         <!-- Featured issue Row -->
         <div class="row align-items-center no-gutters bio">
           <div class="col-lg-5 family-image">
-            <img class="img-fluid mb-lg-0" src="img/family-portrait-alt.jpg" alt="My Family" />
+            <img alt="My Family" class="img-fluid mb-lg-0" src="img/family-portrait-alt.jpg"/>
           </div>
           <div class="col-lg-7 about-text">
             <div class="featured-text">
@@ -127,7 +145,7 @@
       </div>
     </section>
     <!-- Issues Section -->
-    <section id="issues" class="issues-section bg-light">
+    <section class="issues-section bg-light" id="issues">
       <div class="container">
         <div class="text-lg-center mb-5">
           <h2 class="mb-4 display-4">
@@ -180,7 +198,7 @@
         </div>
       </div>
     </section>
-    <section id="endorsements" class="issues-section">
+    <section class="issues-section" id="endorsements">
       <div class="container">
         <div class="text-lg-center">
           <h2 class="mb-4 display-4">
@@ -191,53 +209,94 @@
               <strong>Dow Constantine</strong>, King County Executive
             </li>
             <li>
-              <strong>Jesse Salomon</strong>, Democratic State Senator, 32nd District, <br class="d-none d-sm-block" />
+              <strong>Jesse Salomon</strong>, Democratic State Senator, 32nd District,
+              <br class="d-none d-sm-block"/>
               Former Deputy Mayor, City of Shoreline*
             </li>
-            <li><strong>Lauren Davis</strong>, Democratic State Representative, 32nd District</li>
             <li>
-              <strong>Cindy Ryu</strong>, Democratic State Representative, 32nd District, <br class="d-none d-sm-block" />
+              <strong>Lauren Davis</strong>, Democratic State Representative, 32nd District</li>
+            <li>
+              <strong>Cindy Ryu</strong>, Democratic State Representative, 32nd District,
+              <br class="d-none d-sm-block"/>
               Former Shoreline City Council Member and Mayor*
             </li>
-            <li><strong>Ruth Kagi</strong>, Former Democratic State Representative, 32nd District</li>
-            <li><strong>Drew Hansen</strong>, Democratic State Representative, 23rd District*</li>
-            <li><strong>Will Hall</strong>, Mayor of Shoreline</li>
-            <li><strong>Keith McGlashan</strong>, Former Mayor of Shoreline, Shoreline City Councilmember</li>
+            <li>
+              <strong>Ruth Kagi</strong>, Former Democratic State Representative, 32nd District</li>
+            <li>
+              <strong>Drew Hansen</strong>, Democratic State Representative, 23rd District*</li>
+            <li>
+              <strong>Will Hall</strong>, Mayor of Shoreline</li>
+            <li>
+              <strong>Keith McGlashan</strong>, Former Mayor of Shoreline, Shoreline City Councilmember</li>
 
-            <li><strong>Tim Burgess</strong>, Former Mayor, City of Seattle*</li>
             <li>
-              <a href="https://www.facebook.com/ShariWinstead63" target="_blank"><strong>Shari Winstead</strong></a
-              >, Former Mayor, City of Shoreline*
+              <strong>Tim Burgess</strong>, Former Mayor, City of Seattle*</li>
+            <li>
+              <a href="https://www.facebook.com/ShariWinstead63" target="_blank">
+                <strong>Shari Winstead</strong>
+              </a>, Former Mayor, City of Shoreline*
             </li>
             <li>
-              <a href="https://www.facebook.com/john.okamoto.9" target="_blank"><strong>John Okamoto</strong></a
-              >, Former Councilmember, City of Seattle*
+              <a href="https://www.facebook.com/john.okamoto.9" target="_blank">
+                <strong>John Okamoto</strong>
+              </a>, Former Councilmember, City of Seattle*
             </li>
             <li>
-              <a href="https://www.facebook.com/melissagehrig" target="_blank"><strong>Melissa Gehrig</strong></a
-              >, Vision House*
+              <a href="https://www.facebook.com/melissagehrig" target="_blank">
+                <strong>Melissa Gehrig</strong>
+              </a>, Vision House*
             </li>
-            <li><strong>Caralee Cook</strong>, Banchero Disability Partners*</li>
-            <li><strong>Jack Malek</strong>, Windermere Real Estate</li>
-            <li><strong>Marlin Gabbert</strong>, President, Shoreline Chamber of Commerce*</li>
-            <li><strong>Matthew Fairfax</strong>, James Alan Salon</li>
-            <li><strong>Derek Creisler</strong></li>
-            <li><strong>Ken and Pearl Noreen</strong></li>
-            <li><strong>Harley and Michele O’Neil</strong></li>
-            <li><strong>Marla Tullio</strong></li>
-            <li><strong>Megan Kogut</strong></li>
-            <li><strong>Norma Hanberg</strong></li>
+            <li>
+              <strong>Caralee Cook</strong>, Banchero Disability Partners*</li>
+            <li>
+              <strong>Jack Malek</strong>, Windermere Real Estate</li>
+            <li>
+              <strong>Marlin Gabbert</strong>, President, Shoreline Chamber of Commerce*</li>
+            <li>
+              <strong>Dick Potter</strong>
+              Shoreline School Board Member</li>
+            <li>
+            <li>
+              <strong>Matthew Fairfax</strong>, James Alan Salon</li>
+            <li>
+              <strong>Don and Brenda Mallet</strong>
+            </li>
+            <li>
+              <strong>Dr. Bruce and JoAnn Amundson</strong>
+            </li>
+            <li>
+              <strong>Joseph and Melissa Irons</strong>
+            </li>
+              <strong>Derek Creisler</strong>
+            </li>
+            <li>
+              <strong>Ken and Pearl Noreen</strong>
+            </li>
+            <li>
+              <strong>Harley and Michele O’Neil</strong>
+            </li>
+            <li>
+              <strong>Marla Tullio</strong>
+            </li>
+            <li>
+              <strong>Megan Kogut</strong>
+            </li>
+            <li>
+              <strong>Norma Hanberg</strong>
+            </li>
           </ul>
-          <p><em>* For identification purposes only.</em></p>
+          <p>
+            <em>* For identification purposes only.</em>
+          </p>
         </div>
       </div>
     </section>
     <!-- Get Involved Section -->
-    <section id="get-involved" class="issues-section bg-light">
+    <section class="issues-section bg-light" id="get-involved">
       <div class="container">
         <div class="row align-items-center no-gutters">
           <div class="col-lg-6">
-            <img src="img/get-involved.jpg" alt="Contact David" class="img-fluid" />
+            <img alt="Contact David" class="img-fluid" src="img/get-involved.jpg"/>
           </div>
           <div class="col-lg-6">
             <div class="featured-text">
@@ -247,10 +306,11 @@
               <p class="ask lead">
                 Help David get elected to Shoreline City Council by signing up to get involved. If you have any any questions or comments for David, you can email him at:
                 <a href="mailto:david@electdavidchen.com">david@electdavidchen.com</a>
-                or call him at: <a href="tel:+12064027637">+1 206 402 7637</a>.
+                or call him at:
+                <a href="tel:+12064027637">+1 206 402 7637</a>.
               </p>
               <p>
-                <a class="btn btn-secondary typeform-share button" href="https://davidchen167036.typeform.com/to/OujZEb" data-mode="drawer_left" data-hide-headers="false" data-hide-footer="false" data-submit-close-delay="2" target="_blank">Click Here to Volunteer</a>
+                <a class="btn btn-secondary typeform-share button" data-hide-footer="false" data-hide-headers="false" data-mode="drawer_left" data-submit-close-delay="2" href="https://davidchen167036.typeform.com/to/OujZEb" target="_blank">Click Here to Volunteer</a>
               </p>
             </div>
           </div>
@@ -258,7 +318,7 @@
       </div>
     </section>
     <!-- Donate Section -->
-    <section id="donate" class="donate-section">
+    <section class="donate-section" id="donate">
       <div class="container">
         <div class="row">
           <div class="col-auto mx-auto mb-5">
@@ -275,12 +335,12 @@
             </p>
 
             <p>
-              Committee to Elect David Chen<br />
-              P.O. BOX 55962<br />
+              Committee to Elect David Chen<br/>
+              P.O. BOX 55962<br/>
               Shoreline, WA 98133
             </p>
             <div class="small disclaimer mt-5 d-none d-lg-block">
-              <hr />
+              <hr/>
               <p>By donating, I confirm the following are true:</p>
 
               <ol>
@@ -304,7 +364,7 @@
             </div>
           </div>
           <div class="col-md-10 col-lg-5 order-lg-1">
-            <iframe src="https://secure.anedot.com/electdavid/donate?embed=true" width="100%" height="750" frameborder="0"></iframe>
+            <iframe frameborder="0" height="750" src="https://secure.anedot.com/electdavid/donate?embed=true" width="100%"></iframe>
           </div>
           <div class="col-md-10 order-lg-3 mx-auto small d-lg-none mb-5">
             <p>By donating, I confirm the following are true:</p>
@@ -335,9 +395,15 @@
     <footer class="bg-black small text-center text-white-50">
       <div class="container">
         <span class="paid-for-notice">Paid for by Committee to Elect David Chen</span>
-        <br />
+        <br/>
         P.O. BOX 55962, Shoreline, WA 98133 |
-        <a href="mailto:david@electdavidchen.com">david@electdavidchen.com</a> | <a href="tel:+12064027637">+1 206 402 7637</a> | <a class="facebook" href="https://www.facebook.com/electdavidchen"><i class="fab fa-facebook-square"></i></a>
+        <a href="mailto:david@electdavidchen.com">david@electdavidchen.com</a>
+        |
+        <a href="tel:+12064027637">+1 206 402 7637</a>
+        |
+        <a class="facebook" href="https://www.facebook.com/electdavidchen">
+          <i class="fab fa-facebook-square"></i>
+        </a>
       </div>
     </footer>
 

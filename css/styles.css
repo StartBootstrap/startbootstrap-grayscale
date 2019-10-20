@@ -194,6 +194,7 @@
     font-size: 2.5rem;
     line-height: 3rem;
     color: #fff;
+    text-shadow: 0 -1px 0 #868e96, 0 0 5rem #343a40;
   }
 }
 
@@ -396,6 +397,26 @@
   border: 0;
 }
 
+.contact {
+  position: fixed;
+  border-radius: 100px;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 200;
+  padding: 1.5rem;
+  background: #dee2e6;
+}
+
+.contact:hover {
+  background: #0D6A94;
+  color: #fff;
+}
+
+#ContactModal .close {
+  margin-right: -1.25rem;
+  margin-top: -1.25rem;
+}
+
 .contact-section {
   padding: 5rem 0 5em;
 }
@@ -411,7 +432,7 @@
 
 .contact-section .card h4 {
   font-size: 0.8rem;
-  font-family: 'Varela Round';
+  font-family: "Varela Round";
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
@@ -445,7 +466,7 @@
 }
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 .container {
@@ -453,8 +474,13 @@ body {
   padding-right: 1.5rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Antic Slab';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Antic Slab";
 }
 
 .display-1 {
@@ -566,9 +592,9 @@ footer {
 
 footer .paid-for-notice {
   border: solid 1px rgba(255, 255, 255, 0.75);
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   display: inline-block;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   margin-top: 1rem;
   background: rgba(255, 255, 255, 0.25);
   margin-bottom: 1.5rem;

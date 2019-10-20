@@ -1,3 +1,22 @@
+.contact {
+  position: fixed;
+  border-radius: 100px;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 200;
+  padding: 1.5rem;
+  background: $gray-300;
+  &:hover {
+    background: $black;
+    color: $white;
+  }
+}
+#ContactModal {
+  .close {
+    margin-right: -1.25rem;
+    margin-top: -1.25rem;
+  }
+}
 .contact-section {
   padding: 5rem 0 5em;
   .button {
@@ -8,7 +27,7 @@
     border-bottom: 0.25rem solid $primary;
     h4 {
       font-size: 0.8rem;
-      font-family: 'Varela Round';
+      font-family: "Varela Round";
       text-transform: uppercase;
       letter-spacing: 0.15rem;
     }

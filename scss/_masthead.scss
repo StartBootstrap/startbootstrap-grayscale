@@ -46,8 +46,7 @@
     }
   }
   @media (min-width: 768px) {
-    background: linear-gradient(-15deg, rgba(black, 0.25) 0%, rgba(black, 0) 50%),
-      url(../img/bg-masthead-alt.jpg);
+    background: linear-gradient(-15deg, rgba(black, 0.25) 0%, rgba(black, 0) 50%), url(../img/bg-masthead-alt.jpg);
     background-size: cover;
     background-color: $black;
     background-position: center top;
@@ -61,6 +60,7 @@
       font-size: 2.5rem;
       line-height: 3rem;
       color: $white;
+      text-shadow: 0 -1px 0 $gray-600, 0 0 5rem $gray-800;
     }
   }
   @media (min-width: 992px) {

@@ -1,23 +1,27 @@
-@import 'variables.scss';
-@import 'mixins.scss';
-@import 'navbar.scss';
-@import 'masthead.scss';
-@import 'buttons.scss';
-@import 'about.scss';
-@import 'issues.scss';
-@import 'signup.scss';
-@import 'contact.scss';
-
+@import "variables.scss";
+@import "mixins.scss";
+@import "navbar.scss";
+@import "masthead.scss";
+@import "buttons.scss";
+@import "about.scss";
+@import "issues.scss";
+@import "signup.scss";
+@import "contact.scss";
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 .container {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Antic Slab';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Antic Slab";
 }
 .display-1 {
   font-size: 4rem;
@@ -48,11 +52,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   line-height: 1.2;
   @media (min-width: 769px) {
-   font-size: 4rem;   
+    font-size: 4rem;
   }
   @media (min-width: 992px) {
     font-size: 4.5rem;
-  }  
+  }
 }
 
 .display-4 {
@@ -60,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   line-height: 1.2;
   @media (min-width: 769px) {
-    font-size: 3rem;    
+    font-size: 3rem;
   }
   @media (min-width: 992px) {
     font-size: 3.5rem;
@@ -95,21 +99,21 @@ a {
 }
 
 footer {
-  border-top: solid 1px rgba(white,.25);
+  border-top: solid 1px rgba(white, 0.25);
   padding: 3rem 0;
   .paid-for-notice {
-    border: solid 1px rgba(white,.75);
-    padding: .5rem 1rem;
+    border: solid 1px rgba(white, 0.75);
+    padding: 0.5rem 1rem;
     display: inline-block;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     margin-top: 1rem;
-    background: rgba(white,.25);
+    background: rgba(white, 0.25);
     margin-bottom: 1.5rem;
   }
   a {
-    color: rgba(white,.5);
+    color: rgba(white, 0.5);
     &:hover {
-     color: rgba(white,.75); 
+      color: rgba(white, 0.75);
     }
   }
 }
