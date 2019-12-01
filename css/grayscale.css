@@ -90,7 +90,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/IMG_5145");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -204,7 +204,7 @@
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/IMG_2733");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
