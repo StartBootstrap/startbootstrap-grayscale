@@ -163,7 +163,7 @@
 }
 
 .about-section {
-  padding-top: 2rem;
+  padding-top: 10rem;
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
@@ -172,11 +172,18 @@
 }
 
 .projects-section {
-  padding: 2rem 5;
+  padding: 10rem 0;
 }
 
 .projects-section .featured-text {
   padding: 2rem;
+}
+
+@media screen and (max-width: 368px) {
+    img.smallResolution{
+        min-height: 150px;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -198,7 +205,7 @@
   .projects-section .project-text hr {
     border-color: #64a19d;
     border-width: .25rem;
-    width: 30%;
+    width: 60%;
   }
 }
 
