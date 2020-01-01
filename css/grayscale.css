@@ -179,13 +179,6 @@
   padding: 2rem;
 }
 
-@media screen and (max-width: 368px) {
-    img.smallResolution{
-        min-height: 150px;
-    }
-
-}
-
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
