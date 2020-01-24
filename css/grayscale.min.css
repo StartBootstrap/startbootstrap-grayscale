@@ -169,7 +169,6 @@
 .paragraph-box {
   display: flex;
   flex-direction: column;
-  padding: -3rem 2rem;
 }
 .projects-section {
   padding: 5rem 0;
