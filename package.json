@@ -30,7 +30,7 @@
     "clipboard": "^2.0.1",
     "gulp": "^3.9.1",
     "gulp-htmlmin": "^5.0.1",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "jquery.easing": "^1.4.1",
     "popper.js": "^1.14.7"
   },
