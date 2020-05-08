@@ -1,0 +1,22 @@
+.projects-section {
+    padding: 10rem 0;
+    .featured-text {
+        padding: 2rem;
+        @include media-breakpoint-up(lg) {
+            padding: 0 0 0 2rem;
+            border-left: 0.5rem solid $primary;
+        }
+    }
+    .project-text {
+        padding: 3rem;
+        font-size: 90%;
+        @include media-breakpoint-up(lg) {
+            padding: 5rem;
+            hr {
+                border-color: $primary;
+                border-width: 0.25rem;
+                width: 30%;
+            }
+        }
+    }
+}

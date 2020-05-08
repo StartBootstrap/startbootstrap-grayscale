@@ -1,0 +1,158 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Grayscale - Start Bootstrap Theme
+
+        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v5.12.1/js/all.js', crossorigin='anonymous')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Varela+Round', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
+            .container
+                a.navbar-brand.js-scroll-trigger(href='#page-top') Start Bootstrap
+                button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    | Menu
+                    i.fas.fa-bars
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#about') About
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#projects') Projects
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#signup') Contact
+
+        // Masthead
+        header.masthead
+            .container.d-flex.h-100.align-items-center
+                .mx-auto.text-center
+                    h1.mx-auto.my-0.text-uppercase Grayscale
+                    h2.text-white-50.mx-auto.mt-2.mb-5 A free, responsive, one page Bootstrap theme created by Start Bootstrap.
+                    a.btn.btn-primary.js-scroll-trigger(href='#about') Get Started
+
+        // About
+        section#about.about-section.text-center
+            .container
+                .row
+                    .col-lg-8.mx-auto
+                        h2.text-white.mb-4 Built with Bootstrap 4
+                        p.text-white-50
+                            | Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on 
+                            a(href='http://startbootstrap.com/template-overviews/grayscale/') the preview page
+                            | . The theme is open source, and you can use it for any purpose, personal or commercial.
+                img.img-fluid(src='assets/img/ipad.png', alt='')
+
+        // Projects
+        section#projects.projects-section.bg-light
+            .container
+                // Featured Project Row
+                .row.align-items-center.no-gutters.mb-4.mb-lg-5
+                    .col-xl-8.col-lg-7
+                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/bg-masthead.jpg', alt='')
+                    .col-xl-4.col-lg-5
+                        .featured-text.text-center.text-lg-left
+                            h4 Shoreline
+                            p.text-black-50.mb-0
+                                | Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!
+                // Project One Row
+                .row.justify-content-center.no-gutters.mb-5.mb-lg-0
+                    .col-lg-6
+                        img.img-fluid(src='assets/img/demo-image-01.jpg', alt='')
+                    .col-lg-6
+                        .bg-black.text-center.h-100.project
+                            .d-flex.h-100
+                                .project-text.w-100.my-auto.text-center.text-lg-left
+                                    h4.text-white Misty
+                                    p.mb-0.text-white-50
+                                        | An example of where you can put an image of a project, or anything else, along with a description.
+                                    hr.d-none.d-lg-block.mb-0.ml-0
+                // Project Two Row
+                .row.justify-content-center.no-gutters
+                    .col-lg-6
+                        img.img-fluid(src='assets/img/demo-image-02.jpg', alt='')
+                    .col-lg-6.order-lg-first
+                        .bg-black.text-center.h-100.project
+                            .d-flex.h-100
+                                .project-text.w-100.my-auto.text-center.text-lg-right
+                                    h4.text-white Mountains
+                                    p.mb-0.text-white-50
+                                        | Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!
+                                    hr.d-none.d-lg-block.mb-0.mr-0
+
+        // Signup
+        section#signup.signup-section
+            .container
+                .row
+                    .col-md-10.col-lg-8.mx-auto.text-center
+                        i.far.fa-paper-plane.fa-2x.mb-2.text-white
+                        h2.text-white.mb-5 Subscribe to receive updates!
+                        form.form-inline.d-flex
+                            input#inputEmail.form-control.flex-fill.mr-0.mr-sm-2.mb-3.mb-sm-0(type='email', placeholder='Enter email address...')
+                            button.btn.btn-primary.mx-auto(type='submit') Subscribe
+
+        // Contact
+        section.contact-section.bg-black
+            .container
+                .row
+                    .col-md-4.mb-3.mb-md-0
+                        .card.py-4.h-100
+                            .card-body.text-center
+                                i.fas.fa-map-marked-alt.text-primary.mb-2
+                                h4.text-uppercase.m-0 Address
+                                hr.my-4
+                                .small.text-black-50 4923 Market Street, Orlando FL
+                    .col-md-4.mb-3.mb-md-0
+                        .card.py-4.h-100
+                            .card-body.text-center
+                                i.fas.fa-envelope.text-primary.mb-2
+                                h4.text-uppercase.m-0 Email
+                                hr.my-4
+                                .small.text-black-50
+                                    a(href='#!') hello@yourdomain.com
+                    .col-md-4.mb-3.mb-md-0
+                        .card.py-4.h-100
+                            .card-body.text-center
+                                i.fas.fa-mobile-alt.text-primary.mb-2
+                                h4.text-uppercase.m-0 Phone
+                                hr.my-4
+                                .small.text-black-50 +1 (555) 902-8832
+                .social.d-flex.justify-content-center
+                    a.mx-2(href='#!')
+                        i.fab.fa-twitter
+                    a.mx-2(href='#!')
+                        i.fab.fa-facebook-f
+                    a.mx-2(href='#!')
+                        i.fab.fa-github
+
+        // Footer
+        footer.footer.bg-black.small.text-center.text-white-50
+            .container
+                | Copyright © Your Website 2020
+
+        // Bootstrap core JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js')
+
+        // Third party plugin JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
