@@ -36,7 +36,8 @@
         "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
     },
     "dependencies": {
-        "bootstrap": "4.4.1"
+        "bootstrap": "4.4.1",
+        "react-mailchimp-form": "^1.0.2"
     },
     "devDependencies": {
         "autoprefixer": "9.7.6",
