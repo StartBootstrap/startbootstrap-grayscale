@@ -106,6 +106,9 @@ address {
   font-style: normal;
   line-height: inherit;
 }
+ul {
+    color: white;
+}
 
 ol,
 ul,
