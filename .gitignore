@@ -2,3 +2,4 @@ node_modules
 .sass-cache
 bower_components
 jandu.code-workspace
+.DS_Store
