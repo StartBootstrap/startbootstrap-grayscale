@@ -4,10 +4,8 @@ node_js:
   - "10"
 install:
   - npm ci
-  - npm i gulp@3.9.1
 script:
   - npm test
-  - gulp
 cache:
   directories:
     - node_modules

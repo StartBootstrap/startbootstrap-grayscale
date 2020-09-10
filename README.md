@@ -11,6 +11,8 @@ This is a personal presentation site. Any fixes or requests are welcome to be fi
 
 ### Installation
 
+Warning: outdated!
+
 1. Clone this repo
 2. Run `npm i` in its root folder _eg. C:\\jandu\\_
 3. `gulp dev` should start a live server with auto-updating website, opened in your default browser.
