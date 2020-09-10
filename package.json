@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.7.2",
-    "browser-sync": "^2.24.7",
+    "browser-sync": "^2.26.12",
     "eslint": "^6.6.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.16.0",
