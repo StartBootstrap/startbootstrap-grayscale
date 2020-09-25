@@ -478,6 +478,12 @@ mark,
   height: auto;
 }
 
+.img-transparent {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.6;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -2476,7 +2482,7 @@ textarea.form-control {
 }
 .btn:focus, .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(100, 161, 157, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(75, 165, 130, 0.25);
 }
 .btn.disabled, .btn:disabled {
   opacity: 0.65;
@@ -2491,8 +2497,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #64a19d;
-  border-color: #64a19d;
+  background-color: #00401d;
+  border-color: #476e5f;
 }
 .btn-primary:hover {
   color: #fff;
@@ -10012,6 +10018,10 @@ a.text-black:hover, a.text-black:focus {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
+.text-green-60 {
+  color: rgba(34, 139, 34, 0.6) !important;
+}
+
 .text-hide {
   font: 0/0 a;
   color: transparent;
@@ -10228,7 +10238,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/bg_giardino2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10239,7 +10249,9 @@ body {
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  /*background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));*/
+  /*background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(0, 48, 22, 0.9));*/
+  background: rgba(255, 255, 255, 0.7);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
@@ -10272,7 +10284,9 @@ body {
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  padding-bottom: 10rem;
+  background: black;
+  /*background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);*/
 }
 .about-section p {
   margin-bottom: 5rem;
@@ -10307,7 +10321,7 @@ body {
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../assets/img/bg-signup.jpg");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../assets/img/bg_giardino1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10325,11 +10339,11 @@ body {
 }
 
 .contact-section {
-  padding-top: 5rem;
+  padding-top: 1rem;
 }
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.1rem solid #64a19d;
 }
 .contact-section .card h4 {
   font-size: 0.8rem;
