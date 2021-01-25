@@ -10207,7 +10207,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/main_pic.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10250,7 +10250,7 @@ body {
 }
 
 .about-section {
-  padding-top: 10rem;
+  padding-top: 1rem;
   background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
@@ -10258,7 +10258,7 @@ body {
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 2rem 0;
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -10286,7 +10286,7 @@ body {
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../assets/img/bg-signup.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../assets/img/teamwork.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10343,3 +10343,30 @@ body {
 .footer {
   padding: 5rem 0;
 }
+/* member section styling */
+.team-section{
+  padding: 2rem 0;
+}
+.team_intros{
+  padding: 30px 50px 10px 30px;
+}
+.member {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+  padding: 5px 0px 5px 0px;
+  border-style: inherit;
+  border-radius: 10%;
+  border-color: #117a8b;
+}
+.member_name{
+  margin: 10px;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+}
+.member_desc{
+  margin: 10px;
+  text-align: center;
+}
+
