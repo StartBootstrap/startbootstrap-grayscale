@@ -9984,7 +9984,7 @@ a.text-black:hover, a.text-black:focus {
 }
 
 .text-black-50 {
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: black !important;
 }
 
 .text-white-50 {
