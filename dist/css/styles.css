@@ -550,7 +550,7 @@ pre code {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
   margin-right: auto;
-  /* margin-left: auto; */
+  margin-left: auto; 
 }
 
 @media (min-width: 576px) {
@@ -10350,7 +10350,7 @@ body {
   padding: 2rem 0;
 }
 .team_intros{
-  padding: 30px 50px 10px 30px;
+  padding: 0px 150px 50px 100px;
 }
 .member {
   width: 100%;
@@ -10370,5 +10370,6 @@ body {
 .member_desc{
   margin: 10px;
   text-align: center;
+  padding-left: 10px ;
 }
 
