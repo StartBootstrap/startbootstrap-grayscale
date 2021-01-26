@@ -162,7 +162,7 @@ sup {
 a {
   color: #64a19d;
   text-decoration: none;
-  background-color: transparent;
+  background-color:transparent;
 }
 a:hover {
   color: #467370;
@@ -9987,7 +9987,7 @@ a.text-black:hover, a.text-black:focus {
 }
 
 .text-white-50 {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: white !important;
 }
 
 .text-hide {
@@ -10154,12 +10154,12 @@ body {
   }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: white;
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: white;
   }
   #mainNav .nav-link:hover {
     color: rgba(255, 255, 255, 0.75);
@@ -10218,7 +10218,7 @@ body {
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  background: white;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
@@ -10246,6 +10246,7 @@ body {
   .masthead h2 {
     max-width: 30rem;
     font-size: 1.25rem;
+    color: white;
   }
 }
 
