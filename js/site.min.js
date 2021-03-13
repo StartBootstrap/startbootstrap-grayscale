@@ -1,6 +1,6 @@
 /*!
  * Elect David Chen - Elect David Chen v5.0.5 (https://electdavichen.com)
- * Copyright 2013-2019 Elect David Chen
+ * Copyright 2013-2021 Elect David Chen
  * Licensed under MIT (https://github.com/josephrlee/electdavidchen/blob/master/LICENSE)
  */
 
