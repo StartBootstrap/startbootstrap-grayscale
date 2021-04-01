@@ -12,7 +12,6 @@
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-grayscale/master/LICENSE)
 [![npm version](https://img.shields.io/npm/v/startbootstrap-grayscale.svg)](https://www.npmjs.com/package/startbootstrap-grayscale)
-[![Build Status](https://travis-ci.org/StartBootstrap/startbootstrap-grayscale.svg?branch=master)](https://travis-ci.org/StartBootstrap/startbootstrap-grayscale)
 [![dependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-grayscale/status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-grayscale)
 [![devDependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-grayscale/dev-status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-grayscale?type=dev)
 
@@ -69,4 +68,4 @@ Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework
 
 ## Copyright and License
 
-Copyright 2013-2020 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-grayscale/blob/gh-pages/LICENSE) license.
+Copyright 2013-2021 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE) license.
