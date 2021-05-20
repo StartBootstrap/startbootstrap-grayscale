@@ -1,14 +1,63 @@
-// Override Bootstrap color system
+//
+// Colors
+// 
+
+// Color system
+
+// Grayscale
+
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+// Colors
 
 $teal: #64a19d;
-$black: #000000;
+$red: #a16468;
+$purple: #7464a1;
+$yellow: #e4c662;
+$green: #67c29c;
+$cyan: #1cabc4;
 
-// Override Bootstrap default state colors
+// State colors
 
 $primary: $teal;
+$secondary: $purple;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-900;
 
-// Add colors to the color map
+// Bootstrap color map
 
-$theme-colors: (
-    "black": $black,
+$theme-colors: ("primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark);
+
+// Expanded color map
+
+$expanded-colors: ('black': $black,
+    'white': $white,
 );
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $expanded-colors);
+
+// Override Bootstrap contrast ratio
+
+$min-contrast-ratio: 2.5;
