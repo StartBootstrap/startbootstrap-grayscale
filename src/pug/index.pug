@@ -105,9 +105,54 @@ html(lang='en')
                     .col-md-10.col-lg-8.mx-auto.text-center
                         i.far.fa-paper-plane.fa-2x.mb-2.text-white
                         h2.text-white.mb-5 Subscribe to receive updates!
-                        form.form-signup.d-flex.flex-column.flex-sm-row
-                            input#inputEmail.form-control.flex-fill.me-0.me-sm-2.mb-3.mb-sm-0(type='email', placeholder='Enter email address...')
-                            button.btn.btn-primary(type='submit') Subscribe
+
+                        // * * * * * * * * * * * * * * *
+                        // * * SB Forms Contact Form * *
+                        // * * * * * * * * * * * * * * *
+
+                        // This form is pre-integrated with SB Forms.
+                        // To make this form functional, sign up at
+                        // https://startbootstrap.com/solution/contact-forms
+                        // to get an API token!
+                        
+                        form#contactForm.form-signup(data-sb-form-api-token='API_TOKEN')
+
+                            // Email address input
+
+                            .row.input-group-newsletter
+                                .col
+                                    input#emailAddress.form-control(
+                                        type='email',
+                                        placeholder='Enter email address...',
+                                        aria-label='Enter email address...',
+                                        data-sb-validations='required,email'
+                                    )
+                                .col-auto
+                                    button#submitButton.btn.btn-primary.disabled(type='submit') Notify Me!
+                            .invalid-feedback.mt-2(data-sb-feedback='emailAddress:required')
+                                | An email is required.
+                            .invalid-feedback.mt-2(data-sb-feedback='emailAddress:email')
+                                | Email is not valid.
+
+                            // Submit success message
+                            //
+                            // This is what your users will see when the form
+                            // has successfully submitted
+
+                            #submitSuccessMessage.d-none
+                                .text-center.mb-3.mt-2.text-white
+                                    .fw-bolder Form submission successful!
+                                    | To activate this form, sign up at
+                                    br
+                                    a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
+
+                            // Submit error message
+                            //
+                            // This is what your users will see when there is
+                            // an error submitting the form
+
+                            #submitErrorMessage.d-none
+                                .text-center.text-danger.mb-3.mt-2 Error sending message!
 
         // Contact
         section.contact-section.bg-black
@@ -149,7 +194,14 @@ html(lang='en')
                 | Copyright &copy; Your Website 2021
 
         // Bootstrap core JS
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js')
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js')
 
         // Core theme JS
         script(src='js/scripts.js')
+
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+        // * *                               SB Forms JS                               * *
+        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
