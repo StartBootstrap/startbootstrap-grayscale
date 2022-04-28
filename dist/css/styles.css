@@ -11611,7 +11611,13 @@ body {
 .about-section p {
   margin-bottom: 5rem;
 }
-
+.donate-section {
+  padding-top: 10rem;
+  background: linear-gradient(to bottom, #333333 3%, rgba(0,0, 0, 0.8) 75%, rgba(0, 0, 30, .7) 100%);
+}
+.donate-section p {
+  margin-bottom: 5rem;
+}
 .projects-section {
   padding: 10rem 0;
 }
