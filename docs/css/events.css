@@ -1,0 +1,45 @@
+.event {
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.event-data span {display: block;}
+
+.event-date span.event-month {
+    font-weight: 300;
+    font-size: 11pt;
+}
+
+.event-date span.event-day {
+    font-weight: bold;
+    font-size: 17pt;
+}
+
+.event-data span.event-title {
+    font-weight: bold;
+    font-size: 13pt;
+    margin-bottom: 5px;
+}
+
+.event-month {
+    font-weight: bold;
+}
+
+.event-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #111;
+    color: white;
+    padding: 15px;
+}
+
+div#events-list {position: relative;}
+
+.event-data {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+}
