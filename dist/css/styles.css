@@ -11611,6 +11611,17 @@ body {
 .about-section p {
   margin-bottom: 5rem;
 }
+
+.sign-section {
+  padding-top: 10rem;
+  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 1) 100%);
+}
+.sign-section p {
+  margin-bottom: 5rem;
+}
+.about-section p {
+  margin-bottom: 5rem;
+}
 .donate-section {
   padding-top: 10rem;
   background: linear-gradient(to bottom, #333333 3%, rgba(0,0, 0, 0.8) 75%, rgba(0, 0, 30, .7) 100%);
@@ -11651,7 +11662,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: 100%;
 }
 .signup-section .form-signup input {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
