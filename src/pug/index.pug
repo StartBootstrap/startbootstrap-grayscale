@@ -8,9 +8,9 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Grayscale - Start Bootstrap Theme
+        title Power Geospatial
 
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        link(rel='icon', type='image/x-icon', href='assets/pg-icon.svg')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v6.1.0/js/all.js', crossorigin='anonymous')
@@ -27,7 +27,9 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
             .container.px-4.px-lg-5
-                a.navbar-brand(href='#page-top') Start Bootstrap
+                a.navbar-brand(href='#page-top')
+                    img(src='assets/pg-icon.svg', alt='Power Geospatial Icon', style="height:2rem;width:auto")
+                    span.navbar-brand Power Geospatial
                 button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars
@@ -38,27 +40,26 @@ html(lang='en')
                         li.nav-item
                             a.nav-link(href='#projects') Projects
                         li.nav-item
-                            a.nav-link(href='#signup') Contact
+                            a.nav-link(href='#contact') Contact
 
         // Masthead
         header.masthead
             .container.px-4.px-lg-5.d-flex.h-100.align-items-center.justify-content-center
                 .d-flex.justify-content-center
                     .text-center
-                        h1.mx-auto.my-0.text-uppercase Grayscale
-                        h2.text-white-50.mx-auto.mt-2.mb-5 A free, responsive, one page Bootstrap theme created by Start Bootstrap.
-                        a.btn.btn-primary(href='#about') Get Started
+                        h1.mx-auto.my-0.text-uppercase Power Geospatial
+                        h2.text-white-50.mx-auto.mt-2.mb-5 A portfolio.
+                        //- a.btn.btn-primary(href='#about') Get Started
 
         // About
         section#about.about-section.text-center
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.justify-content-center
                     .col-lg-8
-                        h2.text-white.mb-4 Built with Bootstrap 5
+                        h2.text-white.mb-4 Devin Power, PE (MN, ND)
                         p.text-white-50
-                            | Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on 
-                            a(href='https://startbootstrap.com/theme/grayscale/') the preview page.
-                            | The theme is open source, and you can use it for any purpose, personal or commercial.
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        a.btn.btn-primary(href='#!') More Information
                 img.img-fluid(src='assets/img/ipad.png', alt='...')
 
         // Projects
@@ -70,9 +71,11 @@ html(lang='en')
                         img.img-fluid.mb-3.mb-lg-0(src='assets/img/bg-masthead.jpg', alt='...')
                     .col-xl-4.col-lg-5
                         .featured-text.text-center.text-lg-left
-                            h4 Shoreline
-                            p.text-black-50.mb-0
-                                | Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!
+                            h4 MnDOT Bid Price Dashboard
+                            p.text-black-50
+                                | An interactive dashboard for understanding bid item unit prices.
+                            a.btn.btn-primary.mb-2(href='#!') Launch Dashboard
+                            a.btn.btn-primary.mb-2(href='#!') More Information
                 // Project One Row
                 .row.gx-0.mb-5.mb-lg-0.justify-content-center
                     .col-lg-6
@@ -81,9 +84,11 @@ html(lang='en')
                         .bg-black.text-center.h-100.project
                             .d-flex.h-100
                                 .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white Misty
-                                    p.mb-0.text-white-50
-                                        | An example of where you can put an image of a project, or anything else, along with a description.
+                                    h4.text-white Engineering Project Map
+                                    p.text-white-50
+                                        | A web map highlighting the engineering projects I've contributed to, and my role on each.
+                                    a.btn.btn-primary.mb-2(href='#!') Launch Map
+                                    a.btn.btn-primary.mb-2(href='#!') More Information
                                     hr.d-none.d-lg-block.mb-0.ms-0
                 // Project Two Row
                 .row.gx-0.justify-content-center
@@ -93,9 +98,12 @@ html(lang='en')
                         .bg-black.text-center.h-100.project
                             .d-flex.h-100
                                 .project-text.w-100.my-auto.text-center.text-lg-right
-                                    h4.text-white Mountains
-                                    p.mb-0.text-white-50
-                                        | Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!
+                                    h4.text-white MN Stormwater Regulation Map
+                                    p.text-white-50
+                                        | A web map that allows for rapid discovery of the water resources near and stormwater 
+                                        | regulation landscape of a given project location in MN.
+                                    a.btn.btn-primary.mb-2(href='#!') Launch Map
+                                    a.btn.btn-primary.mb-2(href='#!') More Information
                                     hr.d-none.d-lg-block.mb-0.me-0
 
         // Signup
@@ -106,65 +114,65 @@ html(lang='en')
                         i.far.fa-paper-plane.fa-2x.mb-2.text-white
                         h2.text-white.mb-5 Subscribe to receive updates!
 
-                        // * * * * * * * * * * * * * * *
-                        // * * SB Forms Contact Form * *
-                        // * * * * * * * * * * * * * * *
+                         // * * * * * * * * * * * * * * *
+                         // * * SB Forms Contact Form * *
+                         // * * * * * * * * * * * * * * *
 
-                        // This form is pre-integrated with SB Forms.
-                        // To make this form functional, sign up at
-                        // https://startbootstrap.com/solution/contact-forms
-                        // to get an API token!
+                         // This form is pre-integrated with SB Forms.
+                         // To make this form functional, sign up at
+                         // https://startbootstrap.com/solution/contact-forms
+                         // to get an API token!
                         
-                        form#contactForm.form-signup(data-sb-form-api-token='API_TOKEN')
+                         form#contactForm.form-signup(data-sb-form-api-token='API_TOKEN')
 
-                            // Email address input
+                             // Email address input
 
-                            .row.input-group-newsletter
-                                .col
-                                    input#emailAddress.form-control(
-                                        type='email',
-                                        placeholder='Enter email address...',
-                                        aria-label='Enter email address...',
-                                        data-sb-validations='required,email'
-                                    )
-                                .col-auto
-                                    button#submitButton.btn.btn-primary.disabled(type='submit') Notify Me!
-                            .invalid-feedback.mt-2(data-sb-feedback='emailAddress:required')
-                                | An email is required.
-                            .invalid-feedback.mt-2(data-sb-feedback='emailAddress:email')
-                                | Email is not valid.
+                             .row.input-group-newsletter
+                                 .col
+                                     input#emailAddress.form-control(
+                                         type='email',
+                                         placeholder='Enter email address...',
+                                         aria-label='Enter email address...',
+                                         data-sb-validations='required,email'
+                                     )
+                                 .col-auto
+                                     button#submitButton.btn.btn-primary.disabled(type='submit') Notify Me!
+                             .invalid-feedback.mt-2(data-sb-feedback='emailAddress:required')
+                                 | An email is required.
+                             .invalid-feedback.mt-2(data-sb-feedback='emailAddress:email')
+                                 | Email is not valid.
 
-                            // Submit success message
-                            //
-                            // This is what your users will see when the form
-                            // has successfully submitted
+                             // Submit success message
+                             //
+                             // This is what your users will see when the form
+                             // has successfully submitted
 
-                            #submitSuccessMessage.d-none
-                                .text-center.mb-3.mt-2.text-white
-                                    .fw-bolder Form submission successful!
-                                    | To activate this form, sign up at
-                                    br
-                                    a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
+                             #submitSuccessMessage.d-none
+                                 .text-center.mb-3.mt-2.text-white
+                                     .fw-bolder Form submission successful!
+                                     | To activate this form, sign up at
+                                     br
+                                     a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
 
-                            // Submit error message
-                            //
-                            // This is what your users will see when there is
-                            // an error submitting the form
+                             // Submit error message
+                             //
+                             // This is what your users will see when there is
+                             // an error submitting the form
 
-                            #submitErrorMessage.d-none
-                                .text-center.text-danger.mb-3.mt-2 Error sending message!
+                             #submitErrorMessage.d-none
+                                 .text-center.text-danger.mb-3.mt-2 Error sending message!
 
         // Contact
-        section.contact-section.bg-black
+        section#contact.contact-section.bg-black
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5
                     .col-md-4.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
-                                i.fas.fa-map-marked-alt.text-primary.mb-2
-                                h4.text-uppercase.m-0 Address
+                                i.fab.fa-linkedin.text-primary.mb-2
+                                h4.text-uppercase.m-0 Social
                                 hr.my-4.mx-auto
-                                .small.text-black-50 4923 Market Street, Orlando FL
+                                a.small.text-black-50(href="https://www.linkedin.com/in/devin-power") linkedin.com/in/devin-power
                     .col-md-4.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
@@ -172,14 +180,14 @@ html(lang='en')
                                 h4.text-uppercase.m-0 Email
                                 hr.my-4.mx-auto
                                 .small.text-black-50
-                                    a(href='#!') hello@yourdomain.com
+                                    a(href='mailto:devin@powergeospatial.xyz') devin@powergeospatial.xyz
                     .col-md-4.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
                                 i.fas.fa-mobile-alt.text-primary.mb-2
                                 h4.text-uppercase.m-0 Phone
                                 hr.my-4.mx-auto
-                                .small.text-black-50 +1 (555) 902-8832
+                                .small.text-black-50 +1 (612) 208-8078
                 .social.d-flex.justify-content-center
                     a.mx-2(href='#!')
                         i.fab.fa-twitter
@@ -191,7 +199,7 @@ html(lang='en')
         // Footer
         footer.footer.bg-black.small.text-center.text-white-50
             .container.px-4.px-lg-5
-                | Copyright &copy; Your Website 2022
+                | Copyright &copy; Power Geospatial 2022
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')

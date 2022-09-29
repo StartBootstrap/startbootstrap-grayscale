@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <ellipse style="fill: rgb(255, 255, 255);" cx="250" cy="250" rx="240" ry="240"/>
+  <g transform="matrix(5.591178, 0, 0, 5.444775, 16.476559, 16.768368)" style="filter: none;" bx:origin="-1.171752 0.324981">
+    <title>Globe</title>
+    <g id="layer1" transform="translate(-163.82485,-265.4736)">
+      <path d="M 245.357 308.309 C 245.371 330.817 227.647 349.081 205.729 349.145 C 183.811 349.208 165.964 331.047 165.826 308.54 C 165.688 286.032 183.311 267.666 205.229 267.475 C 227.146 267.284 245.093 285.341 245.355 307.848" id="path4750" style="stroke-dasharray: none; stroke-opacity: 1; stroke-width: 2.71925px; paint-order: fill; fill-rule: nonzero; stroke: rgb(0, 0, 0); stroke-miterlimit: 1; stroke-linecap: square; fill: none;" transform="matrix(0.999928, -0.012351, 0.011728, 0.999928, -3.600892, 2.561585)">
+        <title>Outline</title>
+      </path>
+      <g id="g4154">
+        <path id="path3620" d="m 189.15106,271.00919 c -16.36395,25.82487 -6.13124,67.60133 24.74864,77.07478" style="stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1; stroke: rgb(0, 0, 0); paint-order: fill; fill-rule: nonzero; fill: none; stroke-width: 1.35963px;"/>
+        <path id="path3935" d="m 189.15107,271.50922 c 32.09573,2.85285 48.39693,40.47572 41.01228,68.79643" style="stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1; stroke: rgb(0, 0, 0); paint-order: fill; fill-rule: nonzero; fill: none; stroke-width: 1.35963px;"/>
+        <path id="path4227" d="m 188.79751,271.00919 33.94113,74.24621" style="stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1; stroke: rgb(0, 0, 0); paint-order: fill; fill-rule: nonzero; fill: none; stroke-width: 1.35963px;"/>
+        <path id="path4229" d="m 171.11984,287.97975 c 16.74685,8.85302 37.73485,-2.8244 44.54772,-19.09171" style="stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1; stroke: rgb(0, 0, 0); paint-order: fill; fill-rule: nonzero; fill: none; stroke-width: 1.35963px;"/>
+        <path id="path4231" d="m 166.52364,306.01098 c 24.60224,7.89225 54.44926,-4.40807 65.05383,-28.28428" style="stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1; stroke: rgb(0, 0, 0); paint-order: fill; fill-rule: nonzero; fill: none; stroke-width: 1.35963px;"/>
+        <path id="path4233" d="m 169.70563,325.80996 c 27.65718,6.82915 61.50704,-5.53724 72.47844,-33.23398" style="stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1; stroke: rgb(0, 0, 0); paint-order: fill; fill-rule: nonzero; fill: none; stroke-width: 1.35963px;"/>
+        <path id="path4235" d="m 180.66579,340.30565 c 24.57844,8.65261 55.43914,-4.1511 64.70028,-28.99143" style="stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1; stroke: rgb(0, 0, 0); paint-order: fill; fill-rule: nonzero; fill: none; stroke-width: 1.35963px;"/>
+        <path style="stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1; stroke: rgb(0, 0, 0); paint-order: fill; fill-rule: nonzero; fill: none; stroke-width: 1.35963px;" id="path4152" d="m -248.78199,311.28744 a 39.766212,40.835579 0 0 1 -0.31225,-7.69921" transform="matrix(-0.99992372,-0.01235137,-0.01235137,0.99992372,0,0)"/>
+      </g>
+    </g>
+  </g>
+  <g transform="matrix(0.677348, 0, 0, 0.61376, 39.99374, -2.204475)" style="filter: none;">
+    <title>PowerButton</title>
+    <path d="m310.06 655.31c-122.25 1e-5 -221.47-99.225-221.47-221.47 0-60.886 24.713-115.94 64.531-155.97l0.1875 0.1875c8.0497-11.113 21.051-18.406 35.812-18.406 24.449 0 44.312 19.832 44.312 44.281 0 14.992-7.4971 28.204-18.906 36.219l0.15625 0.15625c-23.926 24.097-38.906 56.998-38.906 93.531 0 73.701 60.11 133.53 134.16 133.53s134.12-59.83 134.12-133.53c-1e-5 -33.343-12.54-63.58-32.906-86.938-12.115-7.9066-20.187-21.527-20.188-37.062 0-24.449 19.864-44.313 44.312-44.312 11.953 0 22.748 4.8266 30.719 12.531l0.625-0.625c40.052 40.057 64.875 95.319 64.875 156.41 3e-5 122.24-99.192 221.47-221.44 221.47zm-0.03125-219.94c-24.537 0-44.281-20.102-44.281-45.094v-178.66c0-24.991 19.744-45.094 44.281-45.094s44.313 20.102 44.312 45.094v178.66c0 24.991-19.775 45.094-44.312 45.094z" fill-rule="evenodd" style="stroke: rgb(255, 255, 255); filter: none; stroke-width: 3.09811px;"/>
+  </g>
+</svg>
