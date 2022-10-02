@@ -11606,10 +11606,16 @@ body {
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  min-height: 70rem;
+  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 15%, rgba(0, 0, 0, 0) 100%), url("../assets/img/me-tree-bw.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 .about-section p {
   text-align: left;
+  opacity: 0.8;
 }
 
 .projects-section {
