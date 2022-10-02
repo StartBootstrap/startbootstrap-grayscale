@@ -11607,7 +11607,7 @@ body {
 .about-section {
   padding-top: 10rem;
   min-height: 70rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 15%, rgba(0, 0, 0, 0) 100%), url("../assets/img/me-tree-bw.jpg");
+  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 15%, rgba(0, 0, 0, 0) 100%), url("../assets/img/me-tree-bw-narrow.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
