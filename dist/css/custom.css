@@ -1,0 +1,79 @@
+
+:root {
+    --b-white:#ECF7F4;
+    --b-grey:#3F4241;
+    --b-lightBlack:#222123;
+    --b-red:#C71515;
+}
+
+body{
+    background-color: var(--b-white);
+}
+
+
+#mainNav div {
+    position: relative;
+}
+
+
+#logo {
+    width:50px;
+    margin-right: 5px;
+    position: absolute;
+    left: -20px; 
+}
+
+
+#slogan {
+    font-size: 15px;
+}
+
+.masthead {
+    background-image: url("/Users/pc/desktop/projet_Web_Esprit/Template_Project_Esprit/img/road.jpg");
+}
+
+#about{
+    background-image:url("/Users/pc/desktop/projet_Web_Esprit/Template_Project_Esprit/img/car.jpg");
+}
+
+a{
+    color: var(--b-red);
+}
+
+a:hover{
+    color: var(--b-red) !important;
+}
+
+.btn-link {
+    color: var(--b-red) !important;   
+}
+
+
+i{
+    color: var(--b-red) !important;
+}
+
+
+#signup{
+    background-image: url("/Users/pc/desktop/projet_Web_Esprit/Template_Project_Esprit/img/contact.jpg");
+}
+
+
+.contact-section .card {
+    border-bottom: 0.25rem solid var(--b-red);
+}
+
+
+@media (min-width: 992px){
+.projects-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid var(--b-red);
+}
+
+#mainNav.navbar-shrink .nav-link.active {
+    color: red;
+    outline: none;
+    border-bottom: 0.25rem solid var(--b-red);
+}
+}
+ 

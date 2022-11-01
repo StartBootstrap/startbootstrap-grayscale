@@ -18,7 +18,7 @@
   --bs-red: #a16468;
   --bs-orange: #fd7e14;
   --bs-yellow: #e4c662;
-  --bs-green: #67c29c;
+  --bs-green: #C71515;
   --bs-teal: #64a19d;
   --bs-cyan: #1cabc4;
   --bs-white: #fff;
@@ -239,12 +239,9 @@ sup {
 }
 
 a {
-  color: #64a19d;
   text-decoration: underline;
 }
-a:hover {
-  color: #50817e;
-}
+
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
@@ -3893,7 +3890,6 @@ textarea.form-control-lg {
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #64a19d;
 }
 .dropdown-item.disabled, .dropdown-item:disabled {
   color: #adb5bd;
