@@ -29,11 +29,11 @@ body{
 }
 
 .masthead {
-    background-image: url("/Users/pc/desktop/projet_Web_Esprit/Template_Project_Esprit/img/road.jpg");
+    background-image: url("../../img/road.jpg");
 }
 
 #about{
-    background-image:url("/Users/pc/desktop/projet_Web_Esprit/Template_Project_Esprit/img/car.jpg");
+    background-image:url("../../img/car.jpg");
 }
 
 a{
@@ -55,7 +55,7 @@ i{
 
 
 #signup{
-    background-image: url("/Users/pc/desktop/projet_Web_Esprit/Template_Project_Esprit/img/contact.jpg");
+    background-image: url("../../img/contact.jpg");
 }
 
 
