@@ -60,8 +60,9 @@ html(lang='en')
                         p.text-white
                             | I am a professional water resources engineer with more than a decade of 
                             | experience designing, permitting, and inspecting public infrastructure 
-                            | projects. For more details on that, check out my 
-                            a.text-white(href="#!") experience story map.
+                            | projects. 
+                            //- | For more details on that, check out my 
+                            //- a.text-white(href="#!") experience story map.
                         p.text-white
                             | I am currently a full-time student, studying Geographic Information Science 
                             | through the online 
@@ -74,11 +75,13 @@ html(lang='en')
                             | This site is my little corner of the internet to show off what I've learned from
                             | those two programs, and (with luck!) provide web-based tools that solve practical
                             | problems. Check out my projects below.
-                        a.btn.btn-primary(href='#!') More Information
+                        //- a.btn.btn-primary(href='#!') More Information
 
         // Projects
         section#projects.projects-section.bg-light
-            .container.px-4.px-lg-5
+            .container.px-4.px-lg-5.overlay-parent
+                div.overlay-filter.d-flex.align-items-center.justify-content-center
+                    div.overlay-text COMING SOON
                 // Featured Project Row
                 .row.gx-0.mb-4.mb-lg-5.align-items-center
                     .col-xl-8.col-lg-7
@@ -101,9 +104,9 @@ html(lang='en')
                                     h4.text-white Engineering Project Map
                                     p.text-white-50
                                         | A web map highlighting the engineering projects I've contributed to, and my role on each.
-                                    a.btn.btn-primary.mb-2(href='#!') Launch Map
-                                    a.btn.btn-primary.mb-2(href='#!') More Information
-                                    hr.d-none.d-lg-block.mb-0.ms-0
+                                    //- a.btn.btn-primary.mb-2(href='#!') Launch Map
+                                    //- a.btn.btn-primary.mb-2(href='#!') More Information
+                                    //- hr.d-none.d-lg-block.mb-0.ms-0
                 // Project Two Row
                 .row.gx-0.justify-content-center
                     .col-lg-6
@@ -116,9 +119,9 @@ html(lang='en')
                                     p.text-white-50
                                         | A web map that allows for rapid discovery of the water resources near and stormwater 
                                         | regulation landscape of a given project location in MN.
-                                    a.btn.btn-primary.mb-2(href='#!') Launch Map
-                                    a.btn.btn-primary.mb-2(href='#!') More Information
-                                    hr.d-none.d-lg-block.mb-0.me-0
+                                    //- a.btn.btn-primary.mb-2(href='#!') Launch Map
+                                    //- a.btn.btn-primary.mb-2(href='#!') More Information
+                                    //- hr.d-none.d-lg-block.mb-0.me-0
 
         // Contact
         section#contact.contact-section.bg-black
@@ -146,13 +149,13 @@ html(lang='en')
                                 h4.text-uppercase.m-0 Phone
                                 hr.my-4.mx-auto
                                 .small.text-black-50 +1 (612) 208-8078
-                .social.d-flex.justify-content-center
-                    a.mx-2(href='#!')
-                        i.fab.fa-twitter
-                    a.mx-2(href='#!')
-                        i.fab.fa-facebook-f
-                    a.mx-2(href='#!')
-                        i.fab.fa-github
+                //- .social.d-flex.justify-content-center
+                //-     a.mx-2(href='#!')
+                //-         i.fab.fa-twitter
+                //-     a.mx-2(href='#!')
+                //-         i.fab.fa-facebook-f
+                //-     a.mx-2(href='#!')
+                //-         i.fab.fa-github
 
         // Footer
         footer.footer.bg-black.small.text-center.text-white-50

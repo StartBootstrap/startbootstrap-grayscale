@@ -11644,6 +11644,24 @@ body {
     width: 30%;
   }
 }
+.projects-section .overlay-parent {
+  position: relative;
+}
+.projects-section .overlay-filter {
+  position: absolute;
+  background-color: darkgray;
+  opacity: 70%;
+  top: -5%;
+  left: -5%;
+  height: 110%;
+  width: 110%;
+}
+.projects-section .overlay-text {
+  position: absolute;
+  font-size: 10vw;
+  color: white;
+  transform: rotate(45deg);
+}
 
 .signup-section {
   padding: 10rem 0;

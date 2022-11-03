@@ -28,4 +28,25 @@
             }
         }
     }
+
+    .overlay-parent {
+        position: relative;
+    }
+
+    .overlay-filter {
+        position: absolute;
+        background-color: darkgray;
+        opacity: 70%;
+        top: -5%;
+        left: -5%;
+        height: 110%;
+        width: 110%;
+    }
+
+    .overlay-text {
+        position: absolute;
+        font-size: 10vw;
+        color: white;
+        transform: rotate(45deg)
+    }
 }
