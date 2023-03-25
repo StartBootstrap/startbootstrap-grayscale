@@ -20,12 +20,6 @@
 
         @include media-breakpoint-up(lg) {
             padding: 5rem;
-
-            hr {
-                border-color: $primary;
-                border-width: 0.25rem;
-                width: 30%;
-            }
         }
     }
 }
