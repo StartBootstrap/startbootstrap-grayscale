@@ -1,6 +1,6 @@
 {
-    "title": "Grayscale",
-    "name": "startbootstrap-grayscale",
+    "title": "Political Law",
+    "name": "Tau-TacTic9369",
     "version": "7.0.6",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
@@ -21,10 +21,9 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/theme/grayscale",
+    "homepage": "https://tau-tactic9369.github.io/Political-Law",
     "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-grayscale/issues",
-        "email": "feedback@startbootstrap.com"
+
     },
     "license": "MIT",
     "author": "Start Bootstrap",
@@ -33,7 +32,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-grayscale.git"
+        "url": "https://github.com/Tau-TacTic9369/Political-Law.git"
     },
     "dependencies": {
         "bootstrap": "5.2.3"
