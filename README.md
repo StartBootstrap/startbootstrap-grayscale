@@ -4,6 +4,7 @@
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/demoklion/jandu/master/LICENSE)
 [![Build Status](https://travis-ci.org/demoklion/jandu.svg?branch=master)](https://travis-ci.org/demoklion/jandu)
+[![CodeQL](https://github.com/demoklion/jandu/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/demoklion/jandu/actions/workflows/codeql-analysis.yml)
 
 ## Purpose
 
