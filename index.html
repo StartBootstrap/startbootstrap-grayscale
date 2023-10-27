@@ -177,20 +177,27 @@
 
           <ul class="list-inline banner-social-buttons">
             <li class="list-inline-item">
-              <button class="btn btn-default btn-lg"
+              <button id="copyButton"
+                      class="btn btn-default btn-lg"
                       data-clipboard-text="dugovicjan@gmail.com"
                       title="Copy address to clipboard"
                       aria-describedby="tip1">
-
-                <span id="tip1"
-                      class="tooltip"
-                      role="tooltip">Copy address to clipboard</span>
-
                 <i class="fas fa-envelope fa-fw"></i>
-                <span class="network-name">
-                  dugovicjan@gmail.com
-                </span>
+                dugovicjan@gmail.com
               </button>
+
+              <script>
+                document.getElementById("copyButton").addEventListener("click", function () {
+                  var textToCopy = "dugovicjan@gmail.com"; // Replace with the text you want to copy
+                  var tempTextArea = document.createElement("textarea");
+                  tempTextArea.value = textToCopy;
+                  document.body.appendChild(tempTextArea);
+                  tempTextArea.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(tempTextArea);
+                  alert("E–mail address copied to clipboard: " + textToCopy);
+                });
+              </script>
             </li>
 
             <li class="list-inline-item">
@@ -1111,36 +1118,25 @@
   <script defer
           src="js/grayscale.min.js"></script>
 
-  <!--  Clipboard.js  -->
-  <script defer
-          src="js/clipboard.min.js"></script>
-  <!--  We initiate it and add tooltips from jQuery and Bootstrap-->
-  <script defer>
-    function setTooltip(t, o) { $(t).tooltip("hide").attr("data-original-title", o).tooltip("show") } function hideTooltip(t) { setTimeout(function () { $(t).tooltip("hide") }, 1e3) } $("button").tooltip({ trigger: "click", placement: "bottom" }); var clipboard = new ClipboardJS(".btn"); clipboard.on("success", function (t) { setTooltip(t.trigger, "Copied to clipboard!"), hideTooltip(t.trigger) }), clipboard.on("error", function (t) { setTooltip(t.trigger, "Failed! Refresh and try again?"), hideTooltip(t.trigger) });
+  // This is the "Offline page" service worker
 
-  </script>
-  <script>
-    // This is the "Offline page" service worker
+  // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
 
-    // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
-
-    // Check compatibility for the browser we're running this in
-    if ("serviceWorker" in navigator) {
-      if (navigator.serviceWorker.controller) {
-        console.log("[PWA Builder] active service worker found, no need to register");
-      } else {
-        // Register the service worker
-        navigator.serviceWorker
-          .register("pwabuilder-sw.js", {
-            scope: "./"
-          })
-          .then(function (reg) {
-            console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
-          });
-      }
-    }
-
-  </script>
+  // Check compatibility for the browser we're running this in
+  if ("serviceWorker" in navigator) {
+  if (navigator.serviceWorker.controller) {
+  console.log("[PWA Builder] active service worker found, no need to register");
+  } else {
+  // Register the service worker
+  navigator.serviceWorker
+  .register("pwabuilder-sw.js", {
+  scope: "./"
+  })
+  .then(function (reg) {
+  console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+  });
+  }
+  }
 
 </body>
 
