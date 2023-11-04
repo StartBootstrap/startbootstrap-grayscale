@@ -113,8 +113,7 @@
               data-target="#navbarResponsive"
               aria-controls="navbarResponsive"
               aria-expanded="false">
-        Menu
-        <i class="fas fa-bars"></i>
+        Menu ≡
       </button>
 
       <div id="navbarResponsive"
@@ -169,10 +168,10 @@
                       data-clipboard-text="dugovicjan@gmail.com"
                       title="Copy address to clipboard"
                       aria-describedby="tip1">
-                <i class="fas fa-envelope fa-fw"></i>
-                dugovicjan@gmail.com
+                📧 dugovicjan@gmail.com
               </button>
 
+              <!-- copies email address to clipboard -->
               <script>
                 document.getElementById("copyButton").addEventListener("click", function () {
                   var textToCopy = "dugovicjan@gmail.com"; // Replace with the text you want to copy
@@ -191,9 +190,7 @@
               <a href="tel:+420777663976"
                  class="btn btn-default btn-lg"
                  title="Call me maybe?">
-                <i class="fas fa-phone fa-fw"></i>
-                <span class="network-name">
-                  (+420)777 663 976
+                🤙 (+420)777 663 976
                 </span>
               </a>
             </li>
@@ -203,8 +200,7 @@
                  target="_blank"
                  class="btn btn-default btn-lg"
                  title="Write me on Facebook Messenger">
-                <i class="fas fa-comment fa-fw"></i>
-                <span class="network-name">Messenger</span>
+                💬 Messenger
               </a>
             </li>
           </ul>
@@ -241,18 +237,14 @@
               <a href="CV Ján Dugovič 2024.pdf"
                  target="_blank"
                  class="btn btn-default btn-lg">
-                <i class="far fa-file-pdf fa-fw"
-                   aria-hidden="true"></i>
-                Curriculum Vitæ</a>
+                📄 Curriculum Vitæ</a>
             </li>
 
             <li class="list-inline-item">
               <a href="https://www.linkedin.com/in/dugi/"
                  target="_blank"
                  class="btn btn-default btn-lg">
-                <i class="fab fa-linkedin fa-fw"
-                   aria-hidden="true"></i>
-                LinkedIn
+                👨‍💼 LinkedIn
               </a>
             </li>
           </ul>
@@ -312,13 +304,11 @@
             data-target=".modal1">
       <div class="intro-body">
         <h1>Golem Design System
-          <i class="fas fa-expand animated fa-1x p-3 d-inline-block d-md-none"></i>
         </h1>
         <p class="intro-text">
           Work in progress! Inside: target, my role, artifacts.
         </p>
-        <i class="fas fa-expand animated fa-2x p-3 d-none d-md-block d-lg-none"></i>
-        <i class="fas fa-expand animated fa-3x p-3 d-none d-lg-block"></i>
+        ❖
         Tap to open
       </div>
     </button>
@@ -331,15 +321,11 @@
 
       <div class="intro-body">
         <h1>Obrazy bez domova
-          <i class="fas fa-expand animated fa-1x p-3 fa-rotate-90 d-inline-block d-md-none"></i>
         </h1>
         <p class="intro-text">
           <span class="small-caps">ngo</span> project. Inside: problem, barriers, process, result.
         </p>
-
-
-        <i class="fas fa-expand animated fa-2x p-3 fa-rotate-90 d-none d-md-block d-lg-none"></i>
-        <i class="fas fa-expand animated fa-3x p-3 fa-rotate-90 d-none d-lg-block"></i>
+❖
         Tap to open
 
       </div>
@@ -352,16 +338,12 @@
             data-target=".modal3">
       <div class="intro-body">
         <h1>HeO
-          <i class="fas fa-expand animated fa-1x p-3 d-inline-block d-md-none"></i>
         </h1>
         <p class="intro-text">
           <span class="small-caps">erp sw</span> redesign. Inside: problem, barriers, process, result.
         </p>
-
-        <i class="fas fa-expand animated fa-2x p-3 d-none d-md-block d-lg-none"></i>
-        <i class="fas fa-expand animated fa-3x p-3 d-none d-lg-block"></i>
+        ❖
         Tap to open
-
       </div>
     </button>
     <!-- OPENS MODAL3 -->
@@ -382,9 +364,7 @@
 
           <br class="d-sm-none">
 
-          Fork me on<i class="fab fa-github fa-2x pl-1"
-             alt="GitHub"
-             title="Fork me on GitHub!"></i></a>
+          Fork me on GitHub 🐙🐈</a>
       </p>
     </div>
   </footer>
@@ -1105,25 +1085,28 @@
   <script defer
           src="js/grayscale.min.js"></script>
 
-  // This is the "Offline page" service worker
+  <script defer>
 
-  // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+    // This is the "Offline page" service worker
 
-  // Check compatibility for the browser we're running this in
-  if ("serviceWorker" in navigator) {
-  if (navigator.serviceWorker.controller) {
-  console.log("[PWA Builder] active service worker found, no need to register");
-  } else {
-  // Register the service worker
-  navigator.serviceWorker
-  .register("pwabuilder-sw.js", {
-  scope: "./"
-  })
-  .then(function (reg) {
-  console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
-  });
-  }
-  }
+    // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+    // Check compatibility for the browser we're running this in
+    if ("serviceWorker" in navigator) {
+      if (navigator.serviceWorker.controller) {
+        console.log("[PWA Builder] active service worker found, no need to register");
+      } else {
+        // Register the service worker
+        navigator.serviceWorker
+          .register("pwabuilder-sw.js", {
+            scope: "./"
+          })
+          .then(function (reg) {
+            console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+          });
+      }
+    }
+  </script>
 
 </body>
 
