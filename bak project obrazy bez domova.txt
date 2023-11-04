@@ -1,0 +1,168 @@
+<!-- <div class="modal fade modal2"
+       tabindex="-1"
+       role="dialog"
+       aria-labelledby="myLargeModalLabel"
+       aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+
+      <div class="modal-content text-dark">
+        <div class="container-fluid">
+
+          <div class="modal-header">
+            <h2 class="modal-title">
+              <span class="small-caps">
+                ngo
+              </span>
+              project needed a website
+            </h2>
+            <button type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <!--  /.modal-header  -->
+
+<!-- <div class="modal-body">
+            <div class="pb-4">
+              <h3>
+                Problem
+                <small class="text-secondary">
+                  1/4
+                </small>
+              </h3>
+              <p class="blockquote">
+                How might we explain the project's goal to help it reach public officials?
+              </p>
+            </div>
+
+            <div class="row">
+              <figure class=" mx-auto col-6">
+                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                     data-src="https://res.cloudinary.com/jandu-top/image/upload/q_auto,f_auto,dpr_auto/v1526113251/skec_obd.jpg"
+                     class="img-fluid pb-1"
+                     loading="lazy"
+                     alt="Sketch of the page">
+                <figcaption class="font-italic small pb-3">
+                  A sketch of the proposed page
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="pb-4">
+              <h3>
+                Barriers
+                <small class="text-secondary">
+                  2/4
+                </small>
+              </h3>
+              <p>
+                A friend of mine who's a social anthropologist asked me to make her a website for this project she's
+                been working on for
+                past few years. The project has a lot of audio & video material and a clear purpose, but lacks any
+                kind
+                of digital presence. It's usually presented at public events and exhibitions with follow–ups on
+                Facebook.
+                <br>The project has a very limited budget.
+              </p>
+            </div>
+
+            <div class="pb-4">
+              <h3>
+                Process
+                <small class="text-secondary">
+                  3/4
+                </small>
+              </h3>
+              <ol>
+                <li>
+                  Review of options to publish and maintain a simple single–page website.
+                </li>
+
+                <li>
+                  Rapid prototyping, peer critique and 5–second tests.
+                </li>
+
+                <li>
+                  Website prototype in code.
+                </li>
+
+                <li>
+                  Release, more testing and evaluation.
+                </li>
+
+                <li>
+                  Ongoing iteration and promotion.
+                </li>
+              </ol>
+            </div>
+
+            <figure>
+              <a href="https://obrazybezdomova.cz/"
+                 target="_blank">
+                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                     data-src="https://res.cloudinary.com/jandu-top/image/upload/q_auto,f_auto,dpr_auto/v1526113253/obd.jpg"
+                     class="img-fluid pb-1"
+                     loading="lazy"
+                     alt="The final website">
+              </a>
+
+              <figcaption class="font-italic small pb-3">
+                Final website made in VS Code, hosted for free. Click through for the live site!
+              </figcaption>
+            </figure>
+
+
+            <div>
+              <h3>
+                Result
+                <small class="text-secondary">
+                  4/4
+                </small>
+              </h3>
+              <p>
+                According to Google Analytics, the website was visited by every other visitor of the exphibition it was
+                first mentioned on.
+                It has reached about 5× as much supporters through Facebook.
+              </p>
+              <p>
+                The project requires minimal maintenance and the simplicity of it has inspired the researcher herself
+                to learn to code, so
+                she can take care of it in the future.
+              </p>
+
+            </div>
+          </div> -->
+<!--  /.modal-body  -->
+
+<!--           <div class="modal-footer justify-content-between">
+            <p>
+              Client:
+              <span class="font-weight-bold">
+                Barbora Bírová
+              </span>
+            </p>
+
+            <p>Location: Prague
+            </p>
+
+            <p>
+              Project length: 2 weeks
+            </p>
+
+            <button type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div> -->
+<!--  /.modal-footer -->
+
+<!--         </div>
+ --> <!--  /.container-fluid in modal -->
+<!--   </div>
+    </div>
+  </div> - -->
+<!--  /.modal2  -->
