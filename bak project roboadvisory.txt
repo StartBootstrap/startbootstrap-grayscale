@@ -1,0 +1,207 @@
+ <!--
+          <div class="modal-body">
+            <div class="pb-4">
+              <h3>
+                Target
+                <small class="text-secondary">
+                  1/3
+                </small>
+              </h3>
+              <p class="blockquote">
+                How might we help people save money — for things they usually borrow for?
+              </p>
+
+              <p>
+                Obvious solution for savings now are <abbr title="Robotic, ie. automatic, not human">robo</abbr>
+                advisers.
+                The problem is, they still <a href="https://www.wired.com/story/beware-roboadvisors-wealthfront-betterment/"
+                   rel="noopener noreferrer"
+                   class="font-weight-bold text-primary">don't work</a>. What does, is traditional, empathetic,
+                realistic,
+                face 2 face human advisers. So instead of making another <em>Nutmeg</em> or <em>Betterment</em>, we decided
+                to improve
+                the rocky parts of client–adviser relationship.
+              </p>
+
+              <p>
+                We did that by simplifying discovery of client's goals
+                for the adviser. Necessary paperwork was also improved, by making it (finally) digital and easy to use.
+                Because the best time to start saving was yesterday.
+              </p>
+
+              <p>
+                Why did we not make another robo advisor? We think the Czech market is not ready for it yet. Financial
+                literacy and technology adoption rates are low. There already are robo advisers available, for those
+                who can use them. Who really needs help, are those who cannot, the uneducated and less fortunate. They
+                are more
+                often in debt or under distraint.
+              </p>
+            </div>
+
+            <div class="pb-4">
+              <h3>
+                My role
+                <small class="text-secondary">
+                  2/3
+                </small>
+              </h3>
+
+              <p>
+                Find out how do (human) advisers work now:
+              <ul>
+                <li>
+                  research relationships and norms with Desk Research and Evidence Gathering throught the team
+                </li>
+
+                <li>
+                  plan and conduct Exploratory Interviews with established
+                  professionals
+                </li>
+
+                <li>
+                  create Customer Experience Map
+                </li>
+
+                <li>
+                  plan Service Blueprinting
+                </li>
+
+                <li>
+                  verify the synthesis with further series of Exploratory Interviews; first with advisers, then
+                  brokerpool
+                  stakeholders and finally clients
+                </li>
+              </ul>
+              </p>
+            </div>
+
+            <div class="row">
+              <figure class="col-11 mx-auto">
+                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                     data-src="https://res.cloudinary.com/jandu-top/image/upload/q_auto,f_auto,dpr_auto/v1544367146/Customer_Journey_Map.png"
+                     class="img-fluid pb-1"
+                     loading="lazy"
+                     alt="Customer Journey Map of the client and the adviser in In Investments's service">
+
+                <figcaption class="font-italic small pb-3">
+                  Customer Journey Map of the client and the adviser in In Investments's service
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="row">
+              <figure class="col-11 mx-auto">
+                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                     data-src="https://res.cloudinary.com/jandu-top/image/upload/q_auto,f_auto,dpr_auto/v1528269445/Experience_Map.png"
+                     alt="Experience map of the Advisor with the Product"
+                     loading="lazy"
+                     class="img-fluid pb-1">
+                <figcaption class="font-italic small pb-3">
+                  Experience Map of the Client
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="pb-4">
+              <h3>
+                Artifacts
+                <small class="text-secondary">
+                  3/3
+                </small>
+              </h3>
+              <ul>
+                <li>
+                  Hi-fi interactive prototype with Wireflows of the new Goal–Based section of the Investment Calculator
+                  (InKalkulačka: Podle cíle)
+                </li>
+
+                <li>
+                  Priority guides and Wirefows for the Investment Questionnaire
+                </li>
+
+                <li>
+                  Hi-fi interactive prototype of both print and online versions of the simplified Investment
+                  Questionnaire
+                </li>
+
+                <li>
+                  Design elements inventory, to be made into a full Design system at a later date
+                </li>
+
+                <li>
+                  <span class="small-caps">html</span> form elements inventory
+                </li>
+
+                <li>
+                  Usability testing plan, A/B testing plan
+                </li>
+              </ul>
+            </div>
+
+            <div class="row">
+              <figure class="col">
+                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                     data-src="https://res.cloudinary.com/jandu-top/image/upload/q_auto,f_auto,dpr_auto/v1544367144/podle%20cile%200.png"
+                     class="img-fluid pb-1"
+                     loading="lazy"
+                     alt="The app's entry screen, with input field for the client's name">
+                <figcaption class="font-italic small pb-3">
+                  The app's entry screen, with input field for the client's name
+                </figcaption>
+              </figure>
+
+              <figure class="col">
+                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                     data-src="https://res.cloudinary.com/jandu-top/image/upload/q_auto,f_auto,dpr_auto/v1544367144/podle%20cile%205_vyvoj.png"
+                     class="img-fluid pb-1"
+                     loading="lazy"
+                     alt="Offer summary with expected performance">
+                <figcaption class="font-italic small pb-3">
+                  Offer summary with expected performance
+                </figcaption>
+              </figure>
+
+              <figure class="col">
+                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                     data-src="https://res.cloudinary.com/jandu-top/image/upload/q_auto,f_auto,dpr_auto/v1544472629/investicni%20dotaznik%20Q13.png"
+                     class="img-fluid pb-1"
+                     loading="lazy"
+                     alt="Example question from the Investment questionnaire companion app">
+                <figcaption class="font-italic small pb-3">
+                  Example question from the Investment questionnaire companion app
+                </figcaption>
+              </figure>
+            </div>
+            <!--  /.row -->
+          <!--           </div> -->
+          <!--  /.modal-body  -->
+
+          <!--  <div class="modal-footer justify-content-between">
+            <p>
+              Client:
+              <abbr title="Website of the client company">
+                <a href="https://www.ininvest.cz/"
+                   class="text-body">
+                  <span class="font-weight-bold">
+                    In Investments
+                  </span>
+                </a></abbr>
+              <br><em>⇑ I've made this site too!</em>
+            </p>
+            <p>
+              Location: Prague
+            </p>
+            <p>
+              Project length: 6 months
+            </p>
+            <button type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div> -->
+          <!--  /.modal-footer -->
+
+          <!--         </div>
+ --> <!--  /.container-fluid in modal -->
